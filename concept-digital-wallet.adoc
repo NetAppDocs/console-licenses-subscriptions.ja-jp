@@ -1,0 +1,55 @@
+---
+sidebar: sidebar 
+permalink: concept-digital-wallet.html 
+keywords: license, licensing, licenses, subscriptions, 
+summary: ライセンスとサブスクリプションを使用すると、 NetAppコンソール ライセンス、 NetAppマーケットプレイス サブスクリプション、およびNetApp Keystone を管理および監視できます。 
+---
+= ライセンスとサブスクリプションについて学ぶ
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetAppから購入したライセンス (BYOL)、 NetAppデータ サービスのマーケットプレイス サブスクリプション ( Cloud Volumes ONTAPを含む)、およびNetApp KeystoneサブスクリプションをNetAppコンソールで管理および監視できます。
+
+
+
+== コンソールでのライセンスとサブスクリプションの表示方法
+
+コンソール アカウントがNetAppサポート サイト (NSS) アカウントにも関連付けられている場合、ライセンスとサブスクリプションの情報がコンソールに自動的に表示されます。コンソール アカウントが NSS アカウントに関連付けられていない場合は、ライセンスを手動で追加する必要があります。ライセンスを手動で追加すると、使用量、容量、その他の詳細は自動的に更新されません。
+
+
+NOTE: サブスクリプション情報を表示するには、コンソール エージェントを展開する必要があります。  Cloud Volumes ONTAPのノード ライセンスを表示するにはエージェントも必要です。
+
+
+
+=== 自動ライセンス検出
+
+コンソールはNetAppライセンス サービスに自動的にクエリを実行し、 NetAppサポート サイト アカウントに関連付けられているライセンスの詳細を取得します。クエリが成功すると、コンソールはライセンスを自動的に追加します。
+
+
+
+=== 手動ライセンス追加
+
+コンソールがライセンスを自動的に追加できない場合は、手動で追加する必要があります。これは、コンソール アカウントがNetAppサポート サイト アカウントに関連付けられていない場合に発生します。
+
+NetApp の営業担当者からライセンスを購入すると、 NetAppシリアル番号とライセンスの詳細が記載されたメールが送信されます。そのシリアル番号を使用して、コンソールでライセンスを追加または更新します。
+
+https://docs.netapp.com/us-en/console-setup-admin/task-adding-nss-accounts.html["NetAppサポートサイトアカウントをコンソールの資格情報に追加する方法を学びます"^] 。
+
+
+
+== サポートされているサービス
+
+コンソールでは、次のサービスのライセンスとサブスクリプションを管理できます。
+
+* https://docs.netapp.com/us-en/console-backup-recovery/index.html["バックアップとリカバリ"^]
+* https://docs.netapp.com/us-en/console-cloud-volumes-ontap/index.html["Cloud Volumes ONTAP"^]
+* https://docs.netapp.com/us-en/console-disaster-recovery/index.html["ディザスタ リカバリ"^](BYOLのみ)
+* https://docs.netapp.com/us-en/console-ransomware-protection/index.html["ランサムウェア耐性"^]
+* https://docs.netapp.com/us-en/console-tiering/index.html["クラウド階層化"^]
+

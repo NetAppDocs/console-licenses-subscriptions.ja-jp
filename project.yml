@@ -1,0 +1,58 @@
+---
+settings:
+  name: Licenses and subscriptions
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  langs: ja-jp,us-en,de-de,es-es,fr-fr,it-it,pt-br,ko-kr,zh-cn,zh-tw
+sidebar:
+  entries:
+  - title: ライセンスとサブスクリプションに関するドキュメント
+    url: "/index.html"
+  - title: リリース ノート
+    entries:
+    - title: 新機能
+      url: "/whats-new.html"
+  - title: 始めましょう
+    entries:
+    - title: 詳しくはこちら
+      url: "/concept-digital-wallet.html"
+  - title: ライセンスとサブスクリプションを使用する
+    entries:
+    - title: 概要ダッシュボードを使用する
+      url: "/task-homepage.html"
+    - title: ライセンスを管理します。
+      entries:
+      - title: 直接ライセンスの管理
+        url: "/task-manage-data-services-licenses.html"
+      - title: Cloud Volumes ONTAPのライセンスを管理する
+        entries:
+        - title: Cloud Volumes ONTAPの容量ベースのライセンス
+          url: "/task-manage-capacity-licenses.html"
+        - title: Cloud Volumes ONTAPのノードベースのライセンス
+          url: "/task-manage-node-based-licenses.html"
+    - title: プライベートオファーを管理する
+      entries:
+      - title: AWSプライベートオファーを管理する
+        url: "/task-manage-private-aws.html"
+      - title: Azure プライベート オファーを管理する
+        url: "/task-manage-private-azure.html"
+      - title: Google Cloud のプライベート オファーを管理する
+        url: "/task-manage-private-google-cloud.html"
+    - title: マーケットプレイスのサブスクリプションを管理する
+      url: "/task-manage-subscriptions.html"
+    - title: Keystoneサブスクリプションを管理する
+      url: "/task-manage-keystone.html"
+    - title: 知識とサポート
+      entries:
+      - title: サポートに登録する
+        url: "/task-support-registration.html"
+      - title: ヘルプを受ける
+        url: "/task-get-help.html"
+    - title: 法律上の表示
+      url: "/legal-notices.html"
+product-family:
+  name: NetApp Console
+  repo: console-family

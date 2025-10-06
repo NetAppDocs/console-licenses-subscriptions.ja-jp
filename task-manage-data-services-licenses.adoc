@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: task-manage-data-services-licenses.html 
+keywords: data services, byol, cloud backup, cloud tiering, data sense, cloud data sense, obtain license file, nlf, add license, update license, bluexp, netapp console, classification, tiering, backup and recovery, disaster recovery 
+summary: 'NetAppデータ サービスで使用するためにNetAppから直接購入したライセンス (BYOL) を管理します。使用済みのライセンス容量、残りの空き容量を確認でき、容量制限または有効期限に達した場合は通知が表示されます。' 
+---
+= NetAppデータサービスのライセンスを管理する
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Volumes ONTAPなどのNetAppデータ サービスで使用するためにNetAppから直接購入したライセンス (BYOL) を管理できます。使用済みのライセンス容量、残りの空き容量を確認でき、容量制限または有効期限に達したときに通知が表示されます。
+
+
+NOTE: *直接ライセンス* ページにはすべてのライセンスがリストされます。特定のデータ サービスのライセンスの詳細が必要な場合は、[*概要*] ダッシュボードのデータ サービス タイルを使用します。link:task-homepage.html#overview-page["概要ダッシュボードの詳細"] 。
+
+このページの説明には、各サービスに適用される情報が記載されています。これらのサービスのライセンスに関する詳細については、次のページを参照してください。
+
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/br-start-licensing.html["BlueXP backup and recoveryのライセンスを設定する"^]
+* https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html["BlueXP disaster recoveryのライセンスを設定する"^]
+* https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html["BlueXP ransomware protectionのライセンスを設定する"^]
+* https://docs.netapp.com/us-en/bluexp-tiering/task-licensing-cloud-tiering.html["BlueXP tieringのライセンスを設定する"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html["Cloud Volumes ONTAPのライセンスを設定する"^]
+
+
+
+
+== ライセンスファイルを取得する
+
+<stdin> 内の未解決のディレクティブ - include::_include/task-obtain-license.adoc[]
+
+
+
+== ライセンスの追加
+
+<stdin> 内の未解決のディレクティブ - include::_include/task-add-license.adoc[]
+
+
+
+== ライセンスを更新する
+
+<stdin> 内の未解決のディレクティブ - include::_include/task-update-license.adoc[]
+
+
+
+== ライセンスステータスの表示
+
+<stdin> 内の未解決のディレクティブ - include::_include/task-view-license-status.adoc[]

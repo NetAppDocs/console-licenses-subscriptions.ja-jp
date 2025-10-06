@@ -1,0 +1,31 @@
+---
+indexpage:
+  title: ライセンスとサブスクリプションに関するドキュメント
+  summary: NetAppコンソールでライセンスとサブスクリプションを管理および監視します。
+  keywords: netapp console, bluexp, documentation, licenses, subscriptions
+  lead: NetAppコンソールでライセンスとサブスクリプションを管理および監視します。
+  tiles:
+  - title: 始めましょう
+    links:
+    - title: ライセンスとサブスクリプションについて学ぶ
+      url: concept-digital-wallet.html
+  - title: ライセンスを管理する
+    links:
+    - title: Cloud Volumes ONTAPの容量ベースのライセンスを管理する
+      url: task-manage-capacity-licenses.html
+    - title: NetAppデータサービスのライセンスを管理する
+      url: task-manage-data-services-licenses.html
+  - title: サブスクリプションを管理する
+    links:
+    - title: マーケットプレイスのサブスクリプションと契約を管理する
+      url: task-manage-subscriptions.html
+    - title: Keystoneサブスクリプションを管理する
+      url: task-manage-keystone.html
+  - title: ブログとコミュニティ
+    links:
+    - title: NetAppコミュニティ
+      url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
+    - title: BlueXPブログ
+      url: https://bluexp.netapp.com/blog
+    - title: クラウドウェビナー
+      url: https://bluexp.netapp.com/events

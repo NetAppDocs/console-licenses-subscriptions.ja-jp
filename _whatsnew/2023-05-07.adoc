@@ -1,0 +1,23 @@
+= Google Cloud プライベート オファー
+:allow-uri-read: 
+
+
+
+
+=== Google Cloud プライベート オファー
+
+BlueXP digital walletでは、プライベート オファーに関連付けられている Google Cloud Marketplace サブスクリプションが識別され、サブスクリプションの終了日と期間が表示されるようになりました。この機能強化により、プライベート オファーを正常に承諾したことを確認し、その条件を検証できるようになります。
+
+
+
+=== 充電使用量の内訳
+
+容量ベースのライセンスをサブスクライブすると、何に対して課金されるのかがわかるようになりました。以下の種類の使用状況レポートは、BlueXP digital walletからダウンロードできます。使用状況レポートには、サブスクリプションの容量の詳細が提供され、 Cloud Volumes ONTAPサブスクリプション内のリソースに対してどのように課金されるかが示されます。ダウンロード可能なレポートは他のユーザーと簡単に共有できます。
+
+* Cloud Volumes ONTAPパッケージの使用
+* 高レベルの使用法
+* ストレージVMの使用状況
+* ボリューム使用量
+
+
+使用状況レポートの詳細については、以下を参照してください。 https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html#download-usage-reports["使用状況レポートをダウンロードする"] 。

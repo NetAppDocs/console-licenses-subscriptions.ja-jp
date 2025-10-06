@@ -1,0 +1,227 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'what"s new, features, release notes, enhancements, fixes, licenses, subscriptions' 
+summary: NetAppコンソールのライセンスとサブスクリプションの新機能について説明します。 
+---
+= 新着情報
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetAppコンソールのライセンスとサブスクリプションの新機能について説明します。
+
+
+
+== 2025年10月6日
+
+
+
+=== BlueXPはNetAppコンソールになりました
+
+NetAppコンソールは、強化され再構築されたBlueXP基盤上に構築され、オンプレミスとクラウド環境全体にわたるエンタープライズ グレードのNetAppストレージとNetAppデータ サービスの集中管理を提供し、リアルタイムの分析情報、ワークフローの高速化、および高度なセキュリティとコンプライアンスを備えた簡素化された管理を実現します。
+
+変更内容の詳細については、link:https://docs.netapp.com/us-en/bluexp-relnotes/index.html["NetAppコンソールのリリースノート"] 。
+
+
+
+== 2025年3月10日
+
+
+
+=== サブスクリプションを削除する機能
+
+サブスクリプションを解除した場合は、デジタル ウォレットからサブスクリプションを削除できるようになりました。
+
+
+
+=== マーケットプレイスサブスクリプションの使用済み容量を表示する
+
+PAYGO サブスクリプションを表示するときに、サブスクリプションの消費容量を表示できるようになりました。
+
+
+
+== 2025年2月10日
+
+BlueXP digital walletは使いやすさを考慮して再設計され、追加のサブスクリプションとライセンスの管理機能を提供するようになりました。
+
+
+
+=== 新しい概要ダッシュボード
+
+デジタル ウォレットのホームページには、 NetAppライセンスと Marketplace サブスクリプションの更新されたダッシュボードがあり、特定のサービス、ライセンスの種類、必要なアクションをドリルダウンできます。
+
+
+
+=== 資格情報へのサブスクリプションの構成
+
+BlueXP digital walletでは、プロバイダー資格情報へのサブスクリプションを設定できるようになりました。通常、これはマーケットプレイスのサブスクリプションまたは年間契約に初めて加入するときに行います。以前は、サブスクリプションの資格情報の変更は、「資格情報」ページでのみ実行できました。
+
+
+
+=== サブスクリプションを組織に関連付ける
+
+サブスクリプションが関連付けられている組織をデジタル ウォレットから直接更新できるようになりました。
+
+
+
+=== Cloud Volume ONTAPライセンスの管理
+
+Cloud Volumes ONTAPライセンスは、ホームページまたは *直接ライセンス* タブから管理できるようになりました。サブスクリプション情報を表示するには、「*マーケットプレイス サブスクリプション*」タブを使用します。
+
+
+
+== 2024年3月5日
+
+
+
+=== BlueXP disaster recovery
+
+BlueXP digital walletでは、BlueXP disaster recoveryのライセンスを管理できるようになりました。ライセンスを追加したり、ライセンスを更新したり、ライセンス容量の詳細を表示したりできます。
+
+https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["BlueXPデータサービスのライセンスを管理する方法を学びます"]
+
+
+
+== 30 2023年7月
+
+
+
+=== 使用状況レポートの機能強化
+
+Cloud Volumes ONTAP使用状況レポートにいくつかの改善が加えられました。
+
+* 列名に TiB 単位が含まれるようになりました。
+* シリアル番号用の新しい _node(s)_ フィールドが追加されました。
+* ストレージ VM 使用状況レポートに新しい _ワークロード タイプ_ 列が追加されました。
+* ストレージ VM およびボリュームの使用状況レポートに作業環境名が含まれるようになりました。
+* ボリューム タイプ _file_ のラベルが _Primary (読み取り/書き込み)_ に変更されました。
+* ボリューム タイプ「_secondary_」のラベルが「_Secondary (DP)_」に変更されました。
+
+
+使用状況レポートの詳細については、以下を参照してください。 https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html#download-usage-reports["使用状況レポートをダウンロードする"] 。
+
+
+
+== 2023年5月7日
+
+
+
+=== Google Cloud プライベート オファー
+
+BlueXP digital walletでは、プライベート オファーに関連付けられている Google Cloud Marketplace サブスクリプションが識別され、サブスクリプションの終了日と期間が表示されるようになりました。この機能強化により、プライベート オファーを正常に承諾したことを確認し、その条件を検証できるようになります。
+
+
+
+=== 充電使用量の内訳
+
+容量ベースのライセンスをサブスクライブすると、何に対して課金されるのかがわかるようになりました。以下の種類の使用状況レポートは、BlueXP digital walletからダウンロードできます。使用状況レポートには、サブスクリプションの容量の詳細が提供され、 Cloud Volumes ONTAPサブスクリプション内のリソースに対してどのように課金されるかが示されます。ダウンロード可能なレポートは他のユーザーと簡単に共有できます。
+
+* Cloud Volumes ONTAPパッケージの使用
+* 高レベルの使用法
+* ストレージVMの使用状況
+* ボリューム使用量
+
+
+使用状況レポートの詳細については、以下を参照してください。 https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html#download-usage-reports["使用状況レポートをダウンロードする"] 。
+
+
+
+== 2023年4月3日
+
+
+
+=== メール通知
+
+BlueXP digital walletで電子メール通知がサポートされるようになりました。
+
+通知設定を構成すると、BYOL ライセンスの有効期限が近づいたとき (「警告」通知)、またはすでに有効期限が切れたとき (「エラー」通知) に電子メール通知を受け取ることができます。
+
+https://docs.netapp.com/us-en/consosetup-admin/task-monitor-cm-operations.html["メール通知の設定方法を学ぶ"^]
+
+
+
+=== マーケットプレイスサブスクリプションのライセンス容量
+
+Cloud Volumes ONTAPの容量ベースのライセンスを表示すると、 BlueXP digital walletに、マーケットプレイスのプライベート オファーで購入したライセンス容量が表示されるようになりました。
+
+https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["アカウントで消費された容量を確認する方法を学びます"] 。
+
+
+
+== 2022年11月6日
+
+
+
+=== サブスクリプションと年間契約
+
+BlueXPの PAYGO サブスクリプションと年間契約を、BlueXP digital walletから表示および管理できるようになりました。
+
+https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-subscriptions.html["サブスクリプションの管理方法を学ぶ"] 。
+
+
+
+== 2022年9月18日
+
+
+
+=== 最適化されたI/OとWORM容量
+
+BlueXP digital walletには、最適化された I/O ライセンス パッケージの概要と、アカウント全体のCloud Volumes ONTAPシステムにプロビジョニングされた WORM 容量が表示されるようになりました。
+
+これらの詳細は、料金がどのように請求されるか、追加の容量を購入する必要があるかどうかをよりよく理解するのに役立ちます。
+
+https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["アカウントで消費された容量を確認する方法を学びます"] 。
+
+
+
+== 31 2022年7月
+
+
+
+=== 充電方法を変更する
+
+容量ベースのライセンスを使用するCloud Volumes ONTAPシステムの課金方法を変更できるようになりました。たとえば、Essentials パッケージを使用してCloud Volumes ONTAPシステムを導入した場合、ビジネス ニーズの変化に応じて Professional パッケージに変更できます。
+
+https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["充電方法の変更方法を学ぶ"] 。
+
+
+
+== 3 2022年7月
+
+
+
+=== 消費容量
+
+アカウント内の消費済み容量の合計とライセンス パッケージ別の消費済み容量が表示されるようになりました。これにより、料金がどのように請求されるか、追加の容量を購入する必要があるかどうかを把握できます。
+
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/main/media/screenshot-digital-wallet-summary.png["容量ベースのライセンスのページを示すスクリーンショット。このページには、アカウントで消費された容量の概要が表示され、ライセンス パッケージごとに消費された容量の内訳が表示されます。"]
+
+
+
+== 2022年2月27日
+
+
+
+=== オンプレミスのONTAPクラスタのライセンス
+
+オンプレミスのONTAPクラスターのインベントリと、そのハードウェアおよびサービス契約の有効期限を表示できるようになりました。クラスターに関する追加の詳細も利用できます。
+
+https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-on-prem-clusters.html["オンプレミスのONTAPクラスタのライセンスを管理する方法を学びます"] 。
+
+
+
+== 2022年1月2日
+
+
+
+=== ライセンス条件は自動的に更新されます
+
+ライセンスの容量または期間を変更すると、ライセンス条件が で自動的に更新されるようになりました。ライセンスを自分で手動で更新する必要はありません。
+
+自動ライセンス更新は、すべてのタイプのCloud Volumes ONTAPライセンスとデータ サービスのすべてのライセンスで機能します。

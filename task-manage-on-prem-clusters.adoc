@@ -1,0 +1,79 @@
+---
+sidebar: sidebar 
+permalink: task-manage-on-prem-clusters.html 
+keywords: cluster, on-prem ontap cluster, onprem cluster, contract, licensing, ontap licensing, ontap contract, bluexp, netapp console 
+summary: オンプレミスの各ONTAPクラスターの契約詳細を表示します。コンソールでクラスターをまだ検出していない場合は、検出することもできます。 
+---
+= オンプレミスのONTAPのライセンスを管理する
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+コンソールで、オンプレミスの各ONTAPクラスターの契約の詳細を表示できます。クラスターをまだ検出していない場合は、検出することもできます。
+
+.開始する前に
+コンソールには、システムとして検出されたオンプレミスのONTAPクラスターの詳細、またはコンソールに追加したNetAppサポート サイト アカウントに関連付けられているクラスターの詳細が表示されます。
+
+* https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["オンプレミスのONTAPクラスターを検出する方法を学ぶ"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["コンソール組織またはアカウントに関連付けられた NSS 認証情報を管理する方法を学びます"^]
+
+
+
+
+== クラスター情報と契約の詳細を表示する
+
+オンプレミスのONTAPクラスターのハードウェアおよびソフトウェア契約のステータスを表示して、期限が切れる前に更新できるようにします。
+
+.手順
+. NetAppコンソール メニューから、*ガバナンス > ライセンスとサブスクリプション* を選択します。
+. *オンプレミスONTAP*を選択します。
++
+ソフトウェア契約とハードウェア契約の有効期限は、各クラスターの行に表示されます。
+
++
+最初にNetAppサポート サイト (NSS) アカウントの資格情報を入力するように求められた場合は、*NSS アカウントの追加* を選択します。アカウントを追加すると、その NSS アカウントに関連付けられているクラスターが表示されます。
+
+. 契約の有効期限が近い場合、または期限が切れている場合は、コンソールの右下にあるチャット アイコンを選択して、契約の延長をリクエストできます。
+. 詳細を表示するには、image:button_down_caret.png["下向きキャレットアイコン"]クラスター情報を展開します。
+
+
+
+
+== クラスターを発見する
+
+オンプレミスのONTAPクラスターをシステムとして検出していない場合は、コンソールから検出できます。検出された後は、クラスターをシステムとして使用して管理できるようになります。
+
+.開始する前に
+検出と管理のオプション (コンソール エージェントを使用した検出またはエージェントを使用しない直接検出) と検出要件を理解する必要があります。
+
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["検出オプションと要件について学ぶ"^] 。
+
+.手順
+. NetAppコンソール メニューから、*ガバナンス > ライセンスとサブスクリプション* を選択します。
+. *オンプレミスONTAP*を選択します。
++
+ONTAPクラスタは、コンソールで検出されたかどうかのステータスとともに表示されます。
+
++
+最初にNetAppサポート サイト (NSS) アカウントの資格情報を入力するように求められた場合は、*NSS アカウントの追加* を選択します。アカウントを追加すると、その NSS アカウントに関連付けられているクラスターが表示されます。
+
+. コンソールを通じて管理するクラスターの *Discover* を選択します。
+. [_Discover ONTAP Cluster_] ページで、管理者ユーザー アカウントのパスワードを入力し、[*Discover*] を選択します。
+
+
+
+NOTE: クラスタ管理 IP アドレスは、 NetAppサポート サイト アカウントの情報に基づいて入力されます。
+
+.結果
+コンソールはクラスターを検出し、それをシステムとして「システム」ページに追加します。 _On-Premises ONTAP_ ページで、クラスターのステータスが *Discovered* に変わります。システム名はクラスターの名前であることに注意してください。
+
+これでクラスターの管理を開始できます。
+
+* https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-manage-ontap-connector.html["コンソールエージェントで検出されたクラスターを管理する方法を学びます"^]
+* https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-manage-ontap-direct.html["直接検出されたクラスターを管理する方法を学ぶ"^]
+
