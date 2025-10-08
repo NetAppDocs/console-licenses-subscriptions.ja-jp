@@ -8,7 +8,7 @@ indexpage:
   - title: 始めましょう
     links:
     - title: ライセンスとサブスクリプションについて学ぶ
-      url: concept-digital-wallet.html
+      url: concept-licenses-subscriptions.html
   - title: ライセンスを管理する
     links:
     - title: Cloud Volumes ONTAPの容量ベースのライセンスを管理する
@@ -23,9 +23,9 @@ indexpage:
       url: task-manage-keystone.html
   - title: ブログとコミュニティ
     links:
+    - title: NetAppコンソール
+      url: https://wwww.netapp.com/console
+    - title: NetAppデータサービス
+      url: https://wwww.netapp.com/data-services/
     - title: NetAppコミュニティ
-      url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
-    - title: BlueXPブログ
-      url: https://bluexp.netapp.com/blog
-    - title: クラウドウェビナー
-      url: https://bluexp.netapp.com/events
+      url: https://community.netapp.com/

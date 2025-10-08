@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: concept-digital-wallet.html 
+permalink: concept-licenses-subscriptions.html 
 keywords: license, licensing, licenses, subscriptions, 
 summary: ライセンスとサブスクリプションを使用すると、 NetAppコンソール ライセンス、 NetAppマーケットプレイス サブスクリプション、およびNetApp Keystone を管理および監視できます。 
 ---

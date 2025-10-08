@@ -9,7 +9,7 @@ settings:
   langs: ja-jp,us-en,de-de,es-es,fr-fr,it-it,pt-br,ko-kr,zh-cn,zh-tw
 sidebar:
   entries:
-  - title: ライセンスとサブスクリプションに関するドキュメント
+  - title: ライセンスとサブスクリプションのドキュメント
     url: "/index.html"
   - title: リリース ノート
     entries:
@@ -18,7 +18,7 @@ sidebar:
   - title: 始めましょう
     entries:
     - title: 詳しくはこちら
-      url: "/concept-digital-wallet.html"
+      url: "/concept-licenses-subscriptions.html"
   - title: ライセンスとサブスクリプションを使用する
     entries:
     - title: 概要ダッシュボードを使用する
