@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blocks>
+  <block id="d41d8cd98f00b204e9800998ecf8427e" category="doc"></block>
+  <block id="f272914b94d98181b4b5b5374a222ace" category="paragraph">ライセンスに関連付けられたNetApp ConsoleアカウントがNetAppサポート サイト アカウントでもあり、インターネットにアクセスできる場合、ライセンス情報は **Licenses and subscriptions** セクションに自動的に表示されます。  NSS アカウントに関連付けられていないコンソール アカウントを使用した場合は、ライセンスを手動で追加する必要があります。</block>
+  <block id="32ba7365dfc460f8c57339fc1c2a9f76" category="paragraph">シリアル番号と関連付けられた NSS アカウントを入力するか、 NetAppライセンス ファイル (NLF) をアップロードすることで、コンソールにライセンスを追加できます。コンソールがインターネットにアクセスできない場合 (プライベート モードのインストール)、アップロードするNetAppライセンス ファイルを取得する必要があります。</block>
+  <block id="7e803dfc4831e069b5856fd52cb537ed" category="paragraph">NetApp の営業担当者からライセンスを購入すると、 NetAppシリアル番号と追加のライセンス詳細が記載されたメールが送信されます。コンソールでそれぞれのライセンスを追加または更新するには、そのシリアル番号が必要になります。</block>
+  <block id="64c3bf191a7a3aa11f89d25d0284c2a4" category="inline-link">NetAppサポートサイトのアカウントをコンソールに追加する</block>
+  <block id="c0d26ee72011a383155a1ac972516b07" category="admonition">シリアル番号を入力するには、まず<block ref="cd0ca1d0032a534b9da0eebdd3e962e6" category="inline-link-rx"></block>。これは、シリアル番号にアクセスする権限を持つNetAppサポート サイトのアカウントです。</block>
+  <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">手順</block>
+  <block id="1e287a793773a0dc0c78e536804c43e1" category="list-text">NetApp Consoleメニューから、*ガバナンス &gt;Licenses and subscriptions* を選択し、*直接ライセンス* タブを選択します。</block>
+  <block id="37fcb8e7d30cc5903f7318cd979d8ae4" category="list-text">*ライセンスの追加*を選択します。</block>
+  <block id="5b0603de038451942370226099e5125d" category="list-text">*ライセンスの追加*ダイアログで、ライセンス情報を入力し、*ライセンスの追加*を選択します。</block>
+  <block id="b20365c7ce019b6e1f4c2c98af493327" category="list-text">シリアル番号があり、NSS アカウントがわかっている場合は、「*シリアル番号を入力*」を選択してその情報を入力します。</block>
+  <block id="204d2b4625a88f2700ea6c08a4f85014" category="paragraph">シリアル番号を入力した場合は、シリアル番号にアクセスする権限を持つNetAppサポート サイト アカウントも選択する必要があります。</block>
+  <block id="bd9c93cee386ed91aa5dc8049039c809" category="inline-link">NSSアカウントをコンソールに追加する</block>
+  <block id="f7d5c0f386ab5ad458ade69cf5ab0a00" category="paragraph">NetAppサポートサイトのアカウントがドロップダウンリストから選択できない場合は、<block ref="d3fb432f1a71fdd6fc4568fb070a943a" category="inline-link-rx"></block></block>
+  <block id="d048bd0aafa42d1bd84efa6a6295d8b0" category="list-text">ライセンス ファイルがある場合 ( NetApp Consoleをプライベート モードで使用する場合に必要)、[ライセンス ファイルのアップロード] オプションを選択し、プロンプトに従ってファイルを添付します。</block>
+  <block id="50affd6ad4d0230c729736816aaa8a7f" category="paragraph">コンソールがインターネットにアクセスできない場合 (プライベート モードのインストール)、アップロードするNetAppライセンス ファイルを取得する必要があります。</block>
+  <block id="57722f38f0769837013f699d7a50ea2f" category="paragraph">NetApp の営業担当者からライセンスを購入すると、シリアル番号とライセンスの詳細が記載された電子メールが届きます。コンソールにライセンスが自動的に表示されない場合は、シリアル番号を使用してライセンス ファイルを取得します。</block>
+  <block id="01b303f7b3ef03f12696877f4c3e3aa7" category="list-text">コンソールアカウントIDを見つけます:</block>
+  <block id="3a22d72e96eaed671b6481401ea5678f" category="inline-image-macro">Web コンソールの右上に表示される設定アイコン。</block>
+  <block id="fe492bd792914d6a6a736f1771046149" category="list-text">コンソールの右上で、<block ref="598b4690da54e99b9c3d3ed3a0e90044" category="inline-image-macro-rx" type="image"></block> &gt; *アイデンティティとアクセス管理*。</block>
+  <block id="3bcef3f6238058ae825d608e1557c538" category="list-text">「組織」ページで、アカウント ID を探してコピーします。</block>
+  <block id="4eab72b3176dbce57d106f22b3eae44a" category="paragraph">アカウントIDがリストされておらず、組織IDのみがある場合は、組織IDの最初の8文字をコピーして*account-*に追加します。</block>
+  <block id="73d422631f1acfc181e143e47ab93172" category="paragraph">たとえば、これが組織 ID である場合:</block>
+  <block id="2740d3013330ec13ae7693ee76bc6509" category="paragraph">ea10e1c6-80cc-4219-8e99-3c3e6b161ba5</block>
+  <block id="efc397150f1dd599d7f7d185952dd710" category="paragraph">アカウント ID は次のようになります:</block>
+  <block id="c0b58edc6437b03c81d24f7ded6f3648" category="paragraph">アカウント-ea10e1c6</block>
+  <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">NetAppサポート サイト</block>
+  <block id="24586b03da03249c22a79822574b4e88" category="list-text">Sign in<block ref="fcc52edac3ce57829c48ee35d97a295d" category="inline-link-rx"></block>*システム &gt; ソフトウェア ライセンス*を選択します。</block>
+  <block id="5f734fc198c7d1b1aaf7c6893cc13cd2" category="list-text">ライセンスのシリアル番号を入力します。</block>
+  <block id="929a00c33ff1e797afba661a33f187d7" category="list-text">*ライセンス キー* 列で、* NetAppライセンス ファイルの取得* を選択します。</block>
+  <block id="e314caf74bad83d328deff96d32d1ccc" category="list-text">コンソール アカウント ID (サポート サイトではテナント ID と呼ばれます) を入力し、[送信] を選択してライセンス ファイルをダウンロードします。</block>
+  <block id="e09579f9572906d8a0d18955a30952bc" category="paragraph">ライセンス期間の有効期限が近づいたり、ライセンス容量が制限に近づいたりすると、コンソールから通知が表示されます。  NetAppデータ サービスまたはCloud Volumes ONTAP の中断を回避するには、ライセンスの有効期限が切れる前にライセンスを更新してください。</block>
+  <block id="a454c51fc72968cff661d8bfbd93620a" category="paragraph">NetAppから追加の容量を購入するか、ライセンス期間を延長すると、両方の条件が満たされたときにコンソールによってライセンスが自動的に更新されます。</block>
+  <block id="45ba27e09bcfcd6ce0093fca8b03012c" category="list-text">コンソールアカウントはNetAppサポートサイトのアカウントに関連付けられています</block>
+  <block id="f91551e63cd215502b2564330925938e" category="list-text">コンソールはインターネットにアクセスできる</block>
+  <block id="f57d14bc06b867286aeb7cd3a0ed7f9c" category="paragraph">コンソール アカウントが NSS アカウントに関連付けられていない場合、またはコンソールがインターネットにアクセスできないプライベート モードで動作している場合は、ライセンスを手動で更新する必要があります。</block>
+  <block id="50eeb105c082cae7da72a71937a1fba7" category="paragraph">いずれかの方法を使用してライセンスを手動で更新できます。</block>
+  <block id="7f061475a33614b34ba0b8c0c41caf38" category="list-text">シリアル番号と関連するNSSアカウントを入力してください</block>
+  <block id="00ad4aca8186d81c3fb81651a0aa41b7" category="list-text">NetAppライセンス ファイル (またはCloud Volumes ONTAP HA ペアのファイル) をアップロードします。</block>
+  <block id="497436fcceb1489927a762f9aa5ac135" category="paragraph">NetApp の営業担当者からライセンスを購入すると、シリアル番号とライセンスの詳細が記載された電子メールが届きます。このシリアル番号を使用してライセンスを更新します。</block>
+  <block id="6846667eda1dd419dc43f80098c2d88c" category="admonition">シリアル番号を入力するには、まず<block ref="cd0ca1d0032a534b9da0eebdd3e962e6" category="inline-link-rx"></block>。この NSS アカウントはシリアル番号にアクセスすることを承認される必要があります。</block>
+  <block id="62ca97cf836f45c764a166cc79d1c91c" category="list-text">新しいライセンスを購入するには、 NetApp の担当者にお問い合わせください。</block>
+  <block id="e840f33e74c506b01cf075aec6b19e8b" category="paragraph">支払いが完了し、ライセンスがNetAppサポート サイトに登録されると、コンソールによってライセンスが自動的に更新されます。  *直接ライセンス* ページには 5 ～ 10 分以内に変更が反映されます。</block>
+  <block id="5a25c9da253ea71b2f8779b02afe0ab3" category="inline-xref">ライセンス ファイルを取得する方法について説明します。</block>
+  <block id="1986b67d4932e32eb4d4f16e109e3075" category="list-text">コンソールがライセンスを自動的に更新できない場合 (たとえば、プライベート モードで動作している場合) は、サポートからNetAppライセンス ファイルを取得し、手動でアップロードします。<block ref="19f08aed796241a6f1136d21f3565562" category="inline-xref-macro-rx"></block></block>
+  <block id="8f0a75d2d5a82f31f2cf069c3b0ee684" category="inline-image-macro">その他のアイコン</block>
+  <block id="e06c0fa5d89fae49d22ec1f1c9a90fa1" category="list-text">*直接ライセンス*タブで、<block ref="c2d801cfb83353ade7055f5accb1a490" category="inline-image-macro-rx" type="image"></block>更新するシリアル番号を選択し、[ライセンスの更新] を選択します。</block>
+  <block id="8d41ba787c10f2cc6998265252545826" category="list-text">*ライセンスの更新*ページで、ライセンス ファイルをアップロードし、*ライセンスの更新*を選択します。</block>
+  <block id="060a6559f6065c5058aca6b22d897bce" category="doc">Google Cloud プライベート オファー</block>
+  <block id="bfe876190faa5e7a4cd6d5029395b658" category="paragraph">BlueXP digital walletでは、プライベート オファーに関連付けられている Google Cloud Marketplace サブスクリプションが識別され、サブスクリプションの終了日と期間が表示されるようになりました。この機能強化により、プライベート オファーを正常に承諾したことを確認し、その条件を検証できるようになります。</block>
+  <block id="2cd5985150a2728c0c6295c5162b2b1d" category="section-title">充電使用量の内訳</block>
+  <block id="d0f5a029263e80e902caf444fa5e9080" category="paragraph">容量ベースのライセンスをサブスクライブすると、何に対して課金されるのかがわかるようになりました。以下の種類の使用状況レポートは、BlueXP digital walletからダウンロードできます。使用状況レポートには、サブスクリプションの容量の詳細が提供され、 Cloud Volumes ONTAPサブスクリプション内のリソースに対してどのように課金されるかが示されます。ダウンロード可能なレポートは他のユーザーと簡単に共有できます。</block>
+  <block id="ed54fb55b53f11e61f612ff99520f4bc" category="list-text">Cloud Volumes ONTAPパッケージの使用</block>
+  <block id="160ba974abba347f5e939a1a0acd5982" category="list-text">高レベルの使用法</block>
+  <block id="bf951096cc9eea5fae867ec94f06dfa3" category="list-text">ストレージVMの使用状況</block>
+  <block id="3c5979c173a0a4fe3ff27e0e6185a693" category="list-text">ボリューム使用量</block>
+  <block id="37532cd27e3c53471b1caed0ba1f90ed" category="inline-link">使用状況レポートをダウンロードする</block>
+  <block id="7cc7b7a6d80d31d0e4806abd9de3d8f3" category="paragraph">使用状況レポートの詳細については、以下を参照してください。<block ref="a7d17f594b62c1bde4179fc580d7da6f" category="inline-link-rx"></block> 。</block>
+  <block id="ee4272223579f1299444d14f2d185eb5" category="doc">使用状況レポートの機能強化</block>
+  <block id="c1ab40aac4724ff5a3b9540c19eed579" category="paragraph">Cloud Volumes ONTAP使用状況レポートにいくつかの改善が加えられました。</block>
+  <block id="4c63050f1e33aa32db50cc80b682e805" category="list-text">列名に TiB 単位が含まれるようになりました。</block>
+  <block id="c352c835cf612ee328fb7dba772bce4d" category="list-text">シリアル番号用の新しい _node(s)_ フィールドが追加されました。</block>
+  <block id="f949b800c66bf942c10c1e2b5847f5cf" category="list-text">ストレージ VM 使用状況レポートに新しい _ワークロード タイプ_ 列が追加されました。</block>
+  <block id="9f02e3f417792785e27aead6a388ce7b" category="list-text">ストレージ VM およびボリュームの使用状況レポートに作業環境名が含まれるようになりました。</block>
+  <block id="001f2392fde5e9977a349af817fa07e9" category="list-text">ボリューム タイプ _file_ のラベルが _Primary (読み取り/書き込み)_ に変更されました。</block>
+  <block id="af30dca925032347d49fd49d710f0164" category="list-text">ボリューム タイプ「_secondary_」のラベルが「_Secondary (DP)_」に変更されました。</block>
+  <block id="c08885153d0680dab7349b930f5310c4" category="doc">BlueXP disaster recovery</block>
+  <block id="1804830d648adf9126d51f4a827ca950" category="paragraph">BlueXP digital walletでは、BlueXP disaster recoveryのライセンスを管理できるようになりました。ライセンスを追加したり、ライセンスを更新したり、ライセンス容量の詳細を表示したりできます。</block>
+  <block id="85bdddc8ce218c6365f105f9d309d898" category="inline-link">BlueXPデータサービスのライセンスを管理する方法を学びます</block>
+  <block id="ca654cde28a00db1fb587b8b6bb82015" category="paragraph"><block ref="ca654cde28a00db1fb587b8b6bb82015" category="inline-link-rx"></block></block>
+  <block id="abbf3397e656c62394e67cdc1337be3c" category="doc">新しい概要ダッシュボード</block>
+  <block id="3aff149422876e5f443408fd802b4fb2" category="paragraph">BlueXP digital walletは使いやすさを考慮して再設計され、追加のサブスクリプションとライセンスの管理機能を提供するようになりました。</block>
+  <block id="890f7a0157ba95ff799f6f457d82439a" category="paragraph">デジタル ウォレットのホームページには、 NetAppライセンスと Marketplace サブスクリプションの更新されたダッシュボードがあり、特定のサービス、ライセンスの種類、必要なアクションをドリルダウンできます。</block>
+  <block id="f0d1256b3b97280543cbb16be1fea4b3" category="section-title">資格情報へのサブスクリプションの構成</block>
+  <block id="a2aa4487721a3b63f1893d33bdb67c28" category="paragraph">BlueXP digital walletでは、プロバイダー資格情報へのサブスクリプションを設定できるようになりました。通常、これはマーケットプレイスのサブスクリプションまたは年間契約に初めて加入するときに行います。以前は、サブスクリプションの資格情報の変更は、「資格情報」ページでのみ実行できました。</block>
+  <block id="175fca0ca5f306258c490378dc2367db" category="section-title">サブスクリプションを組織に関連付ける</block>
+  <block id="a5f7678a307b711643d239d80564147c" category="paragraph">サブスクリプションが関連付けられている組織をデジタル ウォレットから直接更新できるようになりました。</block>
+  <block id="e8545e234450bbc06ae95bfd7828cfcd" category="section-title">Cloud Volume ONTAPライセンスの管理</block>
+  <block id="0bc14678dfe9cde6019256774c92b34e" category="paragraph">Cloud Volumes ONTAPライセンスは、ホームページまたは *直接ライセンス* タブから管理できるようになりました。サブスクリプション情報を表示するには、「*マーケットプレイス サブスクリプション*」タブを使用します。</block>
+  <block id="626a42c4b175379d9d0e723ada0cf740" category="doc">サブスクリプションを削除する機能</block>
+  <block id="0d4a9d16793bcc1fc3c4982137275a77" category="paragraph">サブスクリプションを解除した場合は、デジタル ウォレットからサブスクリプションを削除できるようになりました。</block>
+  <block id="86eb6e7f10c1d00078e563696c2882c7" category="section-title">マーケットプレイスサブスクリプションの使用済み容量を表示する</block>
+  <block id="0a85a2f78dadf31d5b3bcc7353bae9d1" category="paragraph">PAYGO サブスクリプションを表示するときに、サブスクリプションの消費容量を表示できるようになりました。</block>
+  <block id="bc2fe31b1e2682a9a79513d792e9c721" category="doc">BlueXPはNetApp Consoleになりました</block>
+  <block id="995c8f79a8e07fbd8d519e45d03d6004" category="paragraph">NetApp Consoleは、強化され再構築されたBlueXP基盤上に構築され、オンプレミスとクラウド環境全体にわたるエンタープライズ グレードのNetAppストレージとNetApp Data Servicesの集中管理を提供し、リアルタイムの分析情報、より高速なワークフロー、および高度なセキュリティとコンプライアンスを備えた簡素化された管理を実現します。</block>
+  <block id="2ef9d641d45afe99b74ad6f9a9f797ad" category="inline-link-macro">NetApp Consoleのリリースノート</block>
+  <block id="9fad6bb6d30ac060d7377371e39b12c0" category="paragraph">変更内容の詳細については、<block ref="a3987562479f1a66db4eec298b79e00c" category="inline-link-macro-rx"></block> 。</block>
+  <block id="15ab47d5fc648efe1f188a856f6bec01" category="summary">ライセンスとサブスクリプションを使用すると、 NetApp Consoleライセンス、 NetAppマーケットプレイス サブスクリプション、およびNetApp Keystone を管理および監視できます。</block>
+  <block id="1a64901c54ab09814efdf25e5f43e721" category="doc">ライセンスとサブスクリプションについて学ぶ</block>
+  <block id="095a6074d8cac073313583b5aec86563" category="paragraph">NetAppから購入したライセンス (BYOL)、 NetAppデータ サービスのマーケットプレイス サブスクリプション ( Cloud Volumes ONTAPを含む)、およびNetApp KeystoneサブスクリプションをNetApp Consoleで管理および監視できます。</block>
+  <block id="a555aeea3ec67a6c83d73b1bfdefb4ab" category="section-title">コンソールでのライセンスとサブスクリプションの表示方法</block>
+  <block id="de7d3dd9b9cde1be1ad6f0d2b933e1a2" category="paragraph">コンソール アカウントがNetAppサポート サイト (NSS) アカウントにも関連付けられている場合、ライセンスとサブスクリプションの情報がコンソールに自動的に表示されます。コンソール アカウントが NSS アカウントに関連付けられていない場合は、ライセンスを手動で追加する必要があります。ライセンスを手動で追加すると、使用量、容量、その他の詳細は自動的に更新されません。</block>
+  <block id="0ce8098d87732b7ddaff9494e1959f72" category="admonition">サブスクリプション情報を表示するには、コンソール エージェントを展開する必要があります。  Cloud Volumes ONTAPのノード ライセンスを表示するにはエージェントも必要です。</block>
+  <block id="92d0f4057dd78c03677b13a3df9a24f0" category="section-title">自動ライセンス検出</block>
+  <block id="d4c8d0b101189503f6888a4d0e84fec5" category="paragraph">コンソールはNetAppライセンス サービスに自動的にクエリを実行し、 NetAppサポート サイト アカウントに関連付けられているライセンスの詳細を取得します。クエリが成功すると、コンソールはライセンスを自動的に追加します。</block>
+  <block id="6fc732417eef67838e6035198387d225" category="section-title">手動ライセンス追加</block>
+  <block id="d17765d0bd586794bc42e672483dfa7e" category="paragraph">コンソールがライセンスを自動的に追加できない場合は、手動で追加する必要があります。これは、コンソール アカウントがNetAppサポート サイト アカウントに関連付けられていない場合に発生します。</block>
+  <block id="29941f395c340d98e875b9b6a4531e8a" category="paragraph">NetApp の営業担当者からライセンスを購入すると、 NetAppシリアル番号とライセンスの詳細が記載されたメールが送信されます。そのシリアル番号を使用して、コンソールでライセンスを追加または更新します。</block>
+  <block id="ff463599b3533c437bb7e54290f136e9" category="inline-link">NetAppサポートサイトアカウントをコンソールの資格情報に追加する方法を学びます</block>
+  <block id="7b620a8ccd9da5dcdf297927bf94bd15" category="paragraph"><block ref="681ecab2b03b177eb7ca28ee3c5b91a4" category="inline-link-rx"></block> 。</block>
+  <block id="ea22f9957523103248d84695e98b17ba" category="section-title">サポートされているサービス</block>
+  <block id="87d2fa29fe25a72abd1da044bf3e0021" category="paragraph">コンソールでは、次のサービスのライセンスとサブスクリプションを管理できます。</block>
+  <block id="f05ea9e0c9ccffc58a546b5b7a0d8608" category="inline-link">バックアップとリカバリ</block>
+  <block id="4938ada517361ec7a2e07204328e7617" category="list-text"><block ref="4938ada517361ec7a2e07204328e7617" category="inline-link-rx"></block></block>
+  <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="inline-link">Cloud Volumes ONTAP</block>
+  <block id="c5df3096761f7d2f075a15fbdaa8b007" category="list-text"><block ref="c5df3096761f7d2f075a15fbdaa8b007" category="inline-link-rx"></block></block>
+  <block id="e413eba49b15917b0c9dbf2620f3e66e" category="inline-link">ディザスタ リカバリ</block>
+  <block id="7cbdc51e3262a6b28b8f9076a87714d1" category="list-text"><block ref="1608ff6f635486fdb3c47410d68b020d" category="inline-link-rx"></block>(BYOLのみ)</block>
+  <block id="c36b12344113082dcf8a9786e36a3536" category="inline-link">ランサムウェア耐性</block>
+  <block id="37137db3211d64b5e51e67578857f45b" category="list-text"><block ref="37137db3211d64b5e51e67578857f45b" category="inline-link-rx"></block></block>
+  <block id="92d2b6aba6afa3f690540cf3dba9b633" category="inline-link">クラウド階層化</block>
+  <block id="ee9533cd820edc5f9c4ea09b73d5e8fc" category="list-text"><block ref="ee9533cd820edc5f9c4ea09b73d5e8fc" category="inline-link-rx"></block></block>
+  <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律上の表示</block>
+  <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">法的通知から、著作権情報、商標、特許などを確認できます。</block>
+  <block id="6016a2b341113bf496b719905398ecd2" category="section-title">著作権</block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="126a02652da6de02962cf1b654fd6376" category="section-title">商標</block>
+  <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp、NetAppのロゴ、NetAppの商標一覧のページに掲載されているマークは、NetApp, Inc.の商標です。その他の会社名と製品名は、それを所有する各社の商標である場合があります。</block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">特許</block>
+  <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">現在NetAppが所有する特許の一覧は以下のページから閲覧できます。</block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">プライバシー ポリシー</block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">オープンソース</block>
+  <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知ファイルには、 NetAppソフトウェアで使用されるサードパーティの著作権およびライセンスに関する情報が提供されます。</block>
+  <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link">BlueXPに関するお知らせ</block>
+  <block id="abaec7963eb8222ed14431be024401a4" category="paragraph"><block ref="abaec7963eb8222ed14431be024401a4" category="inline-link-rx"></block></block>
+  <block id="a99fab69b8aa9775fe1767ce605ae8bd" category="summary">NetApp は、さまざまな方法でNetApp Consoleのサポートを提供します。ナレッジベース (KB) 記事やコミュニティ フォーラムなど、広範な無料のセルフサポート オプションが 24 時間 365 日ご利用いただけます。サポート登録には、Webチケットによるリモートテクニカルサポートも含まれます。</block>
+  <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">ヘルプを受ける</block>
+  <block id="2feeca48692986e9cc471ec61f847fca" category="paragraph">NetApp は、 NetApp Consoleとそのクラウド サービスをさまざまな方法でサポートします。ナレッジ ベース (KB) 記事やコミュニティ フォーラムなど、豊富な無料のセルフ サポート オプションが 24 時間 365 日ご利用いただけます。サポート登録には、Webチケットによるリモートテクニカルサポートも含まれます。</block>
+  <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">クラウドプロバイダーのファイルサービスのサポートを受ける</block>
+  <block id="317cbd2c4fdbfd06a6c66bcd3f57d7ad" category="paragraph">クラウド プロバイダーのファイル サービス、そのインフラストラクチャ、またはサービスを使用するソリューションに関連するテクニカル サポートについては、その製品のドキュメントを参照してください。</block>
+  <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">Amazon FSx for ONTAP</block>
+  <block id="359d8b16e442ffaa72e03c95fcd60448" category="list-text"><block ref="359d8b16e442ffaa72e03c95fcd60448" category="inline-link-macro-rx"></block></block>
+  <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link-macro">Azure NetApp Files</block>
+  <block id="153836c062a78213f2aa165322254aa4" category="list-text"><block ref="153836c062a78213f2aa165322254aa4" category="inline-link-macro-rx"></block></block>
+  <block id="1215f8190533dfdf63d2224a6d88266f" category="inline-link-macro">Google Cloud NetApp Volumes</block>
+  <block id="0d592360c983f234b130127efee38805" category="list-text"><block ref="0d592360c983f234b130127efee38805" category="inline-link-macro-rx"></block></block>
+  <block id="68e6fe8cde496154d24fd032b4262070" category="paragraph">NetAppとそのストレージ ソリューションおよびデータ サービスに固有のテクニカル サポートを受けるには、以下に説明するサポート オプションを使用してください。</block>
+  <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">セルフサポートオプションを使用する</block>
+  <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">以下のオプションは、24 時間 365 日無料でご利用いただけます。</block>
+  <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">ドキュメント</block>
+  <block id="5bb94d173380c00577f5e04b6f26bb94" category="paragraph">現在表示しているNetApp Consoleのドキュメント。</block>
+  <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">ナレッジベース</block>
+  <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
+  <block id="0e20091afcea2d83d0033a933ba85092" category="paragraph">NetAppナレッジベースを検索して、問題のトラブルシューティングに役立つ記事を見つけます。</block>
+  <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">コミュニティ</block>
+  <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
+  <block id="777d75a90b107e4f18469f82c4f81fe2" category="paragraph">NetApp Consoleコミュニティに参加して、進行中のディスカッションをフォローしたり、新しいディスカッションを作成したりできます。</block>
+  <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">NetAppサポートでケースを作成する</block>
+  <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">上記のセルフ サポート オプションに加えて、サポートを有効にした後は、 NetAppサポート スペシャリストと協力して問題を解決することもできます。</block>
+  <block id="8fece025a1a8fef7018449bf104a2527" category="list-title">始める前に</block>
+  <block id="c406bf0ac8ac87bc5bb7132a7351b2ae" category="inline-link">コンソールログインに関連付けられた資格情報を管理する方法を学びます</block>
+  <block id="377118f28487e70bd456993144b72fc7" category="list-text">*ケースの作成*機能を使用するには、まずNetAppサポート サイトの資格情報をコンソール ログインに関連付ける必要があります。<block ref="68c4321a756e3ffe955b62cff6fea46d" category="inline-link-rx"></block> 。</block>
+  <block id="e49aa971c20ec071f1b5bbc3c7266769" category="list-text">シリアル番号を持つONTAPシステムのケースを開く場合は、NSS アカウントがそのシステムのシリアル番号に関連付けられている必要があります。</block>
+  <block id="0ab80a63088581d58dcf067051f4c894" category="list-text">NetApp Consoleで、[ヘルプ] &gt; [サポート] を選択します。</block>
+  <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">*リソース*ページで、テクニカル サポートの下にある利用可能なオプションのいずれかを選択します。</block>
+  <block id="6a1b74969231967ed071d465206b15c7" category="list-text">電話で誰かと話したい場合は、「電話する」を選択してください。電話をかけることができる電話番号をリストした netapp.com のページに移動します。</block>
+  <block id="d65a2a6fc9caad1867728d4382eeb989" category="list-text">NetAppサポート スペシャリストとのチケットを開くには、[ケースを作成] を選択します。</block>
+  <block id="a1123cd59d7bd876c080c33906ae65ce" category="list-text">*サービス*: 問題が関連付けられているサービスを選択します。たとえば、* NetApp Console* は、コンソール内のワークフローまたは機能に関するテクニカル サポートの問題に固有の場合です。</block>
+  <block id="987df7518e2afb50a860647c832afd13" category="list-text">*システム*: ストレージに該当する場合は、* Cloud Volumes ONTAP* または *On-Prem* を選択し、関連する作業環境を選択します。</block>
+  <block id="8f8e8a86e5f52b6186a37bdf266c4320" category="paragraph">システムのリストは、コンソール組織と、上部のバナーで選択したコンソール エージェントの範囲内にあります。</block>
+  <block id="e6f29fb3c7636dc0040600dd0e84bb79" category="list-text">*ケースの優先度*: ケースの優先度 (低、中、高、重大) を選択します。</block>
+  <block id="835eb4008e97c2a7f69bbb2725285e34" category="paragraph">これらの優先順位の詳細を確認するには、フィールド名の横にある情報アイコンの上にマウスを置きます。</block>
+  <block id="0f7d9319c95a8be1492e74601c4b3259" category="list-text">*問題の説明*: 該当するエラー メッセージや実行したトラブルシューティング手順など、問題の詳細な説明を入力します。</block>
+  <block id="002c6f26fb01affb37b8cf3cef7a1fb0" category="list-text">*追加のメールアドレス*:この問題を他の人に知らせたい場合は、追加のメールアドレスを入力してください。</block>
+  <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">*添付ファイル (オプション)*: 一度に 1 つずつ、最大 5 つの添付ファイルをアップロードします。</block>
+  <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">添付ファイルはファイルごとに 25 MB までに制限されます。サポートされているファイル拡張子は、txt、log、pdf、jpg/jpeg、rtf、doc/docx、xls/xlsx、csv です。</block>
+  <block id="baaf0e61add7d12cf8d12e023d5aef18" category="inline-image-macro">NetAppサポートでケースを作成できる「ケースの作成」フォームのスクリーンショット。</block>
+  <block id="77c89527ec8a9f89b24c5579d19b3b4b" category="paragraph"><block ref="77c89527ec8a9f89b24c5579d19b3b4b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">終了後の操作</block>
+  <block id="18f487556417bb6d9721a7005ae097c9" category="paragraph">サポート ケース番号を示すポップアップが表示されます。NetAppサポート スペシャリストがお客様のケースを確認し、すぐにご連絡いたします。</block>
+  <block id="0ff9b4b8684b9e03c9c1e1320935eae3" category="paragraph">サポート ケースの履歴については、*設定 &gt; タイムライン* を選択し、「サポート ケースの作成」というアクションを探します。右端のボタンを使用すると、アクションを展開して詳細を表示できます。</block>
+  <block id="5c56753585e89a84941bb3a78bc681af" category="paragraph">ケースを作成しようとすると、次のエラー メッセージが表示される場合があります。</block>
+  <block id="a30f69ab0ec85d427a3e8835713525bd" category="paragraph">「選択したサービスに対してケースを作成する権限がありません」</block>
+  <block id="178fdaf97b1d1577437f11ee9d5e5229" category="paragraph">このエラーは、NSS アカウントとそれに関連付けられているレコード会社が、NetApp Consoleアカウントのシリアル番号のレコード会社と同じではないことを意味している可能性があります (つまり、960xxxx) または作業環境のシリアル番号。次のいずれかのオプションを使用してサポートを求めることができます。</block>
+  <block id="639be990cfca56ab4b63685d8bacd437" category="list-text">非技術的なケースを提出する<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block></block>
+  <block id="e1100b46295d42ed50ba7a4630710164" category="section-title">サポートケースを管理する</block>
+  <block id="316508a3483178100806a9d44b49aba2" category="paragraph">アクティブなサポート ケースと解決済みのサポート ケースをコンソールから直接表示および管理できます。NSS アカウントおよび会社に関連付けられたケースを管理できます。</block>
+  <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">次の点に注意してください。</block>
+  <block id="5e4e7672ec2ba2b8a763da7f6714e212" category="list-text">ページ上部のケース管理ダッシュボードには、次の 2 つのビューがあります。</block>
+  <block id="01c3ffea552d74a5ae390b10e71a1f26" category="list-text">左側のビューには、指定したユーザー NSS アカウントによって過去 3 か月間に開かれたケースの合計が表示されます。</block>
+  <block id="e3b6c09a5686233f72ce1ea60a1eb088" category="list-text">右側のビューには、ユーザーの NSS アカウントに基づいて、会社レベルで過去 3 か月間に開かれたケースの合計が表示されます。</block>
+  <block id="b19b168cc8a2b8c984465e140256b3a2" category="paragraph">表の結果には、選択したビューに関連するケースが反映されます。</block>
+  <block id="56dcadeee6b0e5c47a52673f9b5a0bb3" category="list-text">関心のある列を追加または削除したり、優先度やステータスなどの列の内容をフィルタリングしたりできます。その他の列は並べ替え機能のみを提供します。</block>
+  <block id="6f936762e1223311f031685422fcd3a4" category="paragraph">詳細については、以下の手順をご覧ください。</block>
+  <block id="b14929795a61440e9b4ec9f8a4885ae3" category="list-text">ケースごとに、ケースメモを更新したり、まだ「クローズ」または「クローズ保留中」ステータスになっていないケースをクローズしたりする機能を提供します。</block>
+  <block id="9163e8bca6fd93c080d35ab49e3efdfa" category="list-text">NetApp Consoleで、[ヘルプ] &gt; [サポート] を選択します。</block>
+  <block id="2019fd19051c3ef493dbbb9ca65bab87" category="list-text">*ケース管理*を選択し、プロンプトが表示されたら、NSS アカウントをコンソールに追加します。</block>
+  <block id="75e54e3a6fdbf43ed890669e079d7594" category="paragraph">*ケース管理* ページには、コンソール ユーザー アカウントに関連付けられている NSS アカウントに関連するオープン ケースが表示されます。これは、*NSS 管理* ページの上部に表示される NSS アカウントと同じです。</block>
+  <block id="2ae5ae78bdb2d222f15fd8e89248709c" category="list-text">必要に応じて、テーブルに表示される情報を変更します。</block>
+  <block id="1d39d3ab518e1e3f16cbafb2a56e1fd9" category="list-text">*組織のケース*の下で*表示*を選択すると、会社に関連付けられているすべてのケースが表示されます。</block>
+  <block id="059e856250b59be3069246887b74a23c" category="list-text">正確な日付範囲を選択するか、別の期間を選択して日付範囲を変更します。</block>
+  <block id="a1bb576be9e5a356290f231efb51b3f5" category="list-text">列の内容をフィルタリングします。</block>
+  <block id="1c6ea5ef583389e18e7d7bda70beaa71" category="inline-image-macro">表に表示されるプラスアイコン</block>
+  <block id="8ac6be88c1aa79062825a147fb263b0e" category="list-text">表に表示される列を変更するには、<block ref="500a336e7ba1c54bcffba4e27bda4eb6" category="inline-image-macro-rx" type="image"></block>次に、表示する列を選択します。</block>
+  <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">表の最後の列に表示される3つの点のアイコン</block>
+  <block id="049b7b9fab1242f5e715952973c9474d" category="list-text">既存のケースを管理するには、<block ref="7381d9baeaf62eb099ce84f1a21ed5ca" category="inline-image-macro-rx" type="image"></block>利用可能なオプションのいずれかを選択します。</block>
+  <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*ケースを表示*: 特定のケースに関する詳細をすべて表示します。</block>
+  <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*ケースノートを更新*: 問題に関する追加の詳細を入力するか、*ファイルのアップロード*を選択して最大 5 つのファイルを添付します。</block>
+  <block id="bb6d5d351525342dd6b3cf4d15b6f298" category="list-text">*ケースを閉じる*: ケースを閉じる理由の詳細を入力し、[*ケースを閉じる*] を選択します。</block>
+  <block id="03b153bc2d764b77f2cac255c25a9c44" category="summary">コンソールの概要ダッシュボードで、組織のすべてのサブスクリプションとライセンスの概要を確認します。</block>
+  <block id="1422a70676b07393dc91f1692eb84c3a" category="doc">ダッシュボードの概要を使用する</block>
+  <block id="99047c89ee9039cb58ca11db90ee0f4c" category="paragraph">コンソールの*概要*ダッシュボードを使用して、ライセンスとサブスクリプションの健全性を監視し、サブスクリプションの有効期限や容量制限に達したときにコストを管理してサービスを維持できるようにします。</block>
+  <block id="301dbc606c8f334574bafb1c7a450f13" category="paragraph">各データ サービス ( Cloud Volumes ONTAPを含む) に関する特定のライセンスとサブスクリプションの情報を表示し、それぞれの詳細にドリルダウンできます。</block>
+  <block id="08101f34e43d83aeb4f8cca226c41d9f" category="paragraph">また、容量制限や有効期限が近づいていることも通知され、対応が求められます。</block>
+  <block id="f32e0dc1a8e546cf508129c8548de21e" category="section-title">特定のデータ サービスの詳細を表示する</block>
+  <block id="56fab234456fa527f3acd23a65d45fc3" category="paragraph">*概要*ダッシュボードでは、次のデータ サービスの詳細を表示できます。</block>
+  <block id="9772870a1dc0150f2bcd33d79bbae28f" category="paragraph">たとえば、 Cloud Volumes ONTAPリソースの管理を担当する管理者は、各ライセンスまたはサブスクリプションの現在の容量を表示できるため、自分の権限内のリソースを重点的に把握できます。</block>
+  <block id="592511f5f465bd0013130ee5b2d1cdec" category="admonition">ダッシュボードからライセンスを更新したり削除したりすることはできますが、新しいライセンスやサブスクリプションを追加することはできません。</block>
+  <block id="5e61525870b8ecb7cda0015f4b7208db" category="inline-link-macro">ライセンスの管理について詳しくはこちら</block>
+  <block id="0bfbd2ad670f16ca87b68145ca0b64cf" category="inline-link-macro">サブスクリプションの管理について詳しくはこちら</block>
+  <block id="483b8e46eb21b512550083b13a6ba1de" category="paragraph"><block ref="f5d9875e96b8ed7153bab8f22c840330" category="inline-link-macro-rx"></block> 。<block ref="f050330f0428b7d1c9a33b47b1e41be1" category="inline-link-macro-rx"></block> 。</block>
+  <block id="0aa8bceb217782b5e4390aefe60d271f" category="list-text">NetApp Consoleメニューから、*ガバナンス &gt;Licenses and subscriptions*を選択します。</block>
+  <block id="32790cf377a1a575eece70f624d64118" category="list-text">*概要*を選択します。</block>
+  <block id="de9c819c70af50797f21116704502cee" category="list-text">各データ サービス ( Cloud Volumes ONTAPを含む) の [*表示*] を選択して、詳細を表示し、ライセンスとサブスクリプションを管理します。</block>
+  <block id="77f5141787aa2cd1e98caca9f5ff20ed" category="paragraph">各タイルには、容量の概要がグラフィカルに表示されます。詳細ページを表示して、その容量の支払い方法を確認し、管理することができます。</block>
+  <block id="d3a8f85cb0b390c3875d9014a9f0e6a1" category="list-text">*ライセンス* または *サブスクリプション* タブを選択します。</block>
+  <block id="661d4023a402ca9354d866c7cb4a3bf7" category="list-text">列フィルターとフィルターする値を選択して、テーブルをフィルターします。たとえば、[*サブスクリプション*] タブでは、[タイプ] 列を年間契約またはサブスクリプションでフィルタリングできます。</block>
+  <block id="0413b8d744f898335195f39542d7ebc0" category="list-text">表に表示される列をカスタマイズします。  *列*アイコンを選択して表示または非表示にする列を指定することにより、テーブルに列を追加したり削除したりできます。</block>
+  <block id="57cba9caf80ab7bb6590dd12a1c40e9a" category="list-text">任意の行を展開すると、サブスクリプションまたはライセンスに含まれる内容、購入した容量、条件の詳細が表示されます。</block>
+  <block id="9243d7dd2d44fbffa034fd50ceb6daeb" category="list-text">アクション メニューを使用して、ライセンスの更新やサブスクリプションの別の組織への関連付けなど、特定のライセンスまたはサブスクリプションを管理します。</block>
+  <block id="50d836849f90d9b3c57e6f88060c361e" category="paragraph">特定のサービスの*概要*ページから新しいライセンスまたはサブスクリプションを追加することはできません。ライセンスまたはサブスクリプションは、それぞれ *直接ライセンス* タブまたは *マーケットプレイス サブスクリプション* タブからのみ追加できます。</block>
+  <block id="ca23b039c5d1d583cc53022c31a54485" category="inline-link-macro">ライセンスの管理について詳しくはこちらをご覧ください。</block>
+  <block id="4b2167e14a21898c791009b50b46ec9e" category="inline-link-macro">サブスクリプションの管理について詳しくはこちらをご覧ください。</block>
+  <block id="edf4dbcbd1200ec7acd2d146b799e81e" category="paragraph"><block ref="1126b2e5fef6a9209f75e5a91faff8ca" category="inline-link-macro-rx"></block> <block ref="841d65307797c9e89f68fecb565ac37f" category="inline-link-macro-rx"></block></block>
+  <block id="fbd2684546a6cae5f9a894684eaa9c6a" category="section-title">ライセンスまたはサブスクリプションの問題を解決する</block>
+  <block id="39cc53a4b658b6eadd0d5b6dba23db59" category="paragraph">解決する必要があるライセンスとサブスクリプションの問題を表示できます。問題には、期限切れまたは容量に達したライセンスとサブスクリプションが含まれます。</block>
+  <block id="83b5f3a5fb05f69da2408855be2db387" category="list-text">調整が必要な問題を表示するには、[*アクションが必要*] タイルで [*解決*] を選択します。  *解決* が表示されない場合は、現時点で対処が必要な問題はありません。</block>
+  <block id="b082a603fd1e4f128d09f1041b260d65" category="list-text">*アクションが必要* ページで、*ライセンス* タブまたは *サブスクリプション* タブを選択します。</block>
+  <block id="4b394fc77dc85e2d296bba38de906efe" category="list-text">アクション メニューを使用して問題を解決します。</block>
+  <block id="1827ef91dcbc868f9c589f010df6effd" category="summary">コンソールから容量ベースのライセンスを管理して、 NetAppアカウントにCloud Volumes ONTAPシステムに十分な容量があることを確認します。</block>
+  <block id="43c4357f2e2861af46d95bae9c7873e1" category="doc">容量ベースの Cloud Volume ONTAPライセンスを管理する</block>
+  <block id="2eb14dc3edd9fb392b8095df85f2f222" category="paragraph">NetApp Consoleから容量ベースのライセンスを管理して、 NetAppアカウントにCloud Volumes ONTAPシステムに十分な容量があることを確認します。</block>
+  <block id="93ed65a89f306426be7980ddc22595e8" category="paragraph">_容量ベースのライセンス_ を使用すると、容量 1 TiB ごとにCloud Volumes ONTAPの料金を支払うことができます。</block>
+  <block id="96a603641f48a14047d20b26a1cfeefa" category="paragraph">容量ベースのCloud Volumes ONTAPライセンスは、 NetApp Consoleから管理できます。</block>
+  <block id="d3c2fb9e07de60e097ad32d8e9ad56eb" category="admonition">コンソールで管理される製品とサービスの実際の使用量と計測値は常に GiB と TiB で計算されますが、GB/GiB と TB/TiB という用語は同じ意味で使用されます。これは、クラウドマーケットプレイスのリスト、価格見積もり、リストの説明、およびその他のサポートドキュメントに反映されます。</block>
+  <block id="8caaaa4afae93c31b741be21eed669cc" category="inline-link">Cloud Volumes ONTAPライセンスの詳細</block>
+  <block id="25e7b507c919c21847b291c84a88ba36" category="paragraph"><block ref="73e1a6a2075a5d292111b694a644abf3" category="inline-link-rx"></block> 。</block>
+  <block id="a5e948b3ddd458b93125330e6dde9f94" category="section-title">NetApp Consoleにライセンスを追加する方法</block>
+  <block id="792eeb7f686f2ad37b664f6478d40bed" category="paragraph">NetApp の営業担当者からライセンスを購入すると、 NetAppシリアル番号と追加のライセンス詳細が記載されたメールが送信されます。</block>
+  <block id="8948f0f0bc878d55b118339a79ece349" category="paragraph">その間、コンソールは自動的に NetApp のライセンス サービスにクエリを実行し、 NetAppサポート サイト アカウントに関連付けられているライセンスの詳細を取得します。エラーがなければ、ライセンスが追加されます。</block>
+  <block id="ad0be4bc913a8026a3f5e42fc7656d23" category="inline-link">購入したライセンスをアカウントに追加する方法を学びます</block>
+  <block id="4db74114ac6514de873c5bc9b5b30cf1" category="paragraph">コンソールでライセンスを追加できない場合は、手動で追加する必要があります。たとえば、コンソール エージェントがインターネットにアクセスできない場所にインストールされている場合は、ライセンスを自分で追加する必要があります。<block ref="21379db3c6d74c3a5d2d6d121cdcf537" category="inline-link-rx"></block> 。</block>
+  <block id="03021ab228ad1d1c921bbf536e2913a4" category="section-title">アカウントで消費された容量を表示する</block>
+  <block id="61233c99902f0b66422b062168ba63a5" category="paragraph">コンソールには、アカウント内の消費済み容量の合計と、ライセンス パッケージ別の消費済み容量が表示されます。これにより、料金がどのように請求されるか、追加の容量を購入する必要があるかどうかを把握できます。</block>
+  <block id="f6d5cd6d364915d1012d5e7d29aa3d78" category="list-text">左側のナビゲーション ペインから、*管理 &gt;Licenses and subscriptions*を選択します。</block>
+  <block id="a495aa39c60dc5d48d7bb146e6f7265a" category="list-text">*概要*タブのCloud Volumes ONTAPタイルには、アカウントにプロビジョニングされている現在の容量が表示されます。</block>
+  <block id="85ac3ef33729a6408e85a09c9b5ebc4f" category="inline-image-macro">width=300 Cloud Volumes ONTAPライセンスとサブスクリプションの容量の概要を表示するスクリーンショット。</block>
+  <block id="ef94465b68195bb5523f36cf2d8ea3bd" category="paragraph"><block ref="ef94465b68195bb5523f36cf2d8ea3bd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b989e51822e011c35b6e3fc2f6e007cf" category="list-text">_直接ライセンス_ は、 NetAppアカウント内のすべてのCloud Volumes ONTAPシステムのプロビジョニングされた合計容量です。課金は、ボリューム内のローカル、使用済み、保存済み、または有効なスペースに関係なく、各ボリュームのプロビジョニングされたサイズに基づいて行われます。</block>
+  <block id="80495a5c91b6e7cae60c8c5c750734bc" category="list-text">_年間契約_ は、 NetAppから購入したライセンス容量 (ライセンス持ち込み (BYOL) またはマーケットプレイス契約) の合計です。</block>
+  <block id="18ef4a3a3844dea97bcae43ccdf60b1e" category="list-text">_PAYGO_ は、クラウド マーケットプレイスのサブスクリプションを使用してプロビジョニングされた合計容量です。PAYGO による課金は、消費容量がライセンス容量よりも大きい場合、またはコンソールで利用できる BYOL ライセンスがない場合にのみ使用されます。</block>
+  <block id="d02d58b5b8770f720f9d912913a80f1a" category="list-text">各ライセンス パッケージの消費容量を確認するには、[表示] を選択します。</block>
+  <block id="a4f95858d82d890dcc9a5123e1f315e6" category="list-text">購入した各パッケージ ライセンスの詳細を表示するには、[ライセンス] タブを選択します。</block>
+  <block id="d30bc4bd5cee7ac23a1df54311d1f4b3" category="inline-link">Essentials パッケージの料金について</block>
+  <block id="b2678f2b003e23f7f5f3a7cd8451a26b" category="paragraph">Essentials パッケージに表示される容量をよりよく理解するには、充電の仕組みを理解しておく必要があります。<block ref="8d04d0643798fbb69d5260f477ea213c" category="inline-link-rx"></block> 。</block>
+  <block id="452cf2122664eef3e8c620ec413c8d43" category="list-text">ライセンス消費モデル別に消費された容量を確認するには、「*サブスクリプション*」タブを選択します。このタブには、PAYGO ライセンスと年間契約ライセンスの両方が含まれます。</block>
+  <block id="a6fd7fff8d44ac917f29be623cc64da2" category="paragraph">現在表示している組織に関連付けられているサブスクリプションのみが表示されます。</block>
+  <block id="24456dcfa7781b6f3a972b5f11ed0d88" category="list-text">サブスクリプションに関する情報を表示しながら、テーブル内の詳細を操作できます。詳細を表示するには行を展開します。</block>
+  <block id="56594b7222b35921f9fe676eadf6bbdf" category="inline-image-macro">表のヘッダーの末尾にあるプラスアイコン</block>
+  <block id="2eab7ff26639a8d2e45cece515ff781f" category="list-text">選択<block ref="98b11313fea6c4106e5a3c018f0ffbc9" category="inline-image-macro-rx" type="image"></block>テーブルに表示する列を選択します。期間と自動更新の列はデフォルトでは表示されないことに注意してください。「自動更新」列には、Azure 契約の更新情報のみが表示されます。</block>
+  <block id="8ac1ecc7ceb7a49d071b4f1b71f0e176" category="section-title">パッケージの詳細を表示する</block>
+  <block id="f88e8fee4b6b78cbc9779b73098653b5" category="paragraph">Cloud Volumes ONTAPページでレガシー モードに切り替えると、パッケージごとに使用されている容量の詳細を表示できます。</block>
+  <block id="4a95292c803539c8cf72591c54db0644" category="list-text">各ライセンス パッケージのプロビジョニングされた容量を確認するには、[表示] を選択します。</block>
+  <block id="40d1f3228e91a00383279859612f7ba5" category="list-text">*詳細表示に切り替える*を選択します。</block>
+  <block id="3df898a44cd4e747f0651fff3683bca8" category="inline-image-macro">詳細表示に切り替えるボタンのスクリーンショット</block>
+  <block id="4247aeb98dbe93036110943452fb15a7" category="paragraph"><block ref="4247aeb98dbe93036110943452fb15a7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cf5e0e2d5e3b97433dcea18ed2c97b91" category="list-text">確認したいパッケージの詳細を表示します。</block>
+  <block id="f651647ac9ca970bf81f92917731dcbb" category="inline-image-macro">標準ビューへの切り替えボタンのスクリーンショット</block>
+  <block id="322ba871ee257d334ca304536b56b324" category="paragraph"><block ref="322ba871ee257d334ca304536b56b324" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="662442d32a5fd91298fcf8b6391fdf17" category="section-title">充電方法を変更する</block>
+  <block id="3a320310638e1b673183daababec1ba0" category="paragraph">容量ベースのライセンスは、_パッケージ_の形式で利用できます。Cloud Volumes ONTAPシステムを作成するときは、ビジネス ニーズに応じて複数のライセンス パッケージから選択できます。システムを作成した後にニーズが変化した場合は、いつでもパッケージを変更できます。たとえば、Essentials パッケージから Professional パッケージに変更する場合があります。</block>
+  <block id="58dcfad3183b701a8f1b8781a5644d09" category="inline-link">容量ベースのライセンスパッケージの詳細</block>
+  <block id="6b5c2460f150173d3723de8a857a4d33" category="paragraph"><block ref="179c8a3ed717f2c4de3149f0e9edf685" category="inline-link-rx"></block> 。</block>
+  <block id="bbe48fb854ea022537208eeeff822f91" category="list-title">タスク概要</block>
+  <block id="31ccaa5879eee7a69ef3c48f1004c59c" category="list-text">課金方法を変更しても、 NetAppから購入したライセンス (BYOL) を通じて課金されるか、クラウド プロバイダーのマーケットプレイスの従量課金制 (PAYGO) サブスクリプションを通じて課金されるかには影響しません。</block>
+  <block id="ac2e949b0b6c58b83082083327f0fd77" category="paragraph">コンソールは常に最初にライセンスに対して課金を試みます。ライセンスが利用できない場合は、マーケットプレイスのサブスクリプションに対して料金が請求されます。BYOL サブスクリプションをマーケットプレイス サブスクリプションに変換したり、その逆を行ったりする必要はありません。</block>
+  <block id="cfdb32f80009b1e5c5c0468dda9f013d" category="list-text">クラウド プロバイダーのマーケットプレイスからプライベート オファーまたは契約を結んでいる場合、契約に含まれていない課金方法に変更すると、BYOL ( NetAppからライセンスを購入した場合) または PAYGO に対して課金されることになります。</block>
+  <block id="2daabc6822724771970f17e8ae6a4cee" category="list-text">*概要*タブを選択します。</block>
+  <block id="5b37c7034b369fcc6d9b931180eef46f" category="list-text">Cloud Volumes ONTAPタイルで、[*表示*] を選択します。</block>
+  <block id="13bb1907bdca20408e78b483332beab6" category="inline-image-macro">レガシービューに切り替えるボタンのスクリーンショット</block>
+  <block id="07d6c0208f77e132c7e96286497713f8" category="paragraph"><block ref="07d6c0208f77e132c7e96286497713f8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0e4bc6fa91df5edc0eafb52c324b38f3" category="list-text">*容量ベースのライセンス*テーブルまで下にスクロールし、*課金方法の変更*を選択します。</block>
+  <block id="7c32cfa3b543a8f69513e758629bc263" category="inline-image-macro">コンソールのCloud Volumes ONTAPページのスクリーンショット。テーブルのすぐ上に「課金方法の変更」ボタンがあります。</block>
+  <block id="7c3ea09c5ec07ba244bc674f632d4c79" category="paragraph"><block ref="7c3ea09c5ec07ba244bc674f632d4c79" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e6e33712a923fd615674fad11214317f" category="list-text">*課金方法の変更*ポップアップで、 Cloud Volumes ONTAPシステムを選択し、新しい課金方法を選択して、パッケージ タイプを変更するとサービス料金に影響することを理解していることを確認します。</block>
+  <block id="c2a404ae45ebabafb7f3598bcd8a1a18" category="list-text">*充電方法の変更*を選択します。</block>
+  <block id="85be1733025dd0b3e190d956ed6e380c" category="paragraph">コンソールから 4 つの使用状況レポートをダウンロードできます。これらの使用状況レポートには、サブスクリプションの容量の詳細が提供され、 Cloud Volumes ONTAPサブスクリプション内のリソースに対してどのように課金されるかが示されます。ダウンロード可能なレポートでは、ある時点でのデータが取得され、他のユーザーと簡単に共有できます。</block>
+  <block id="fe1db4ddb29c070770259869ba7aa5bb" category="inline-image-macro">スクリーンショットは、Cloud Volumes ONTAP の容量ベースのライセンス ページを示し、使用状況レポート ボタンが強調表示されています。</block>
+  <block id="61b0c512c4663de969f8c21e23e50f0e" category="paragraph"><block ref="61b0c512c4663de969f8c21e23e50f0e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d11dcbec58d47bd13de1dcccfbd640ff" category="paragraph">以下のレポートをダウンロードできます。表示される容量値は TiB 単位です。</block>
+  <block id="a9bcc09a5114887c29b3f365ee72e9e5" category="list-text">*高レベルの使用状況*: このレポートには次の情報が含まれます。</block>
+  <block id="c596c9291f76a11af1aefc235c262de6" category="list-text">総消費容量</block>
+  <block id="8dd7541d6c4e83402d88448119068a02" category="list-text">事前コミット済み容量合計</block>
+  <block id="b01a146aed01aa8af61e034befc116ce" category="list-text">総BYOL容量</block>
+  <block id="109323142d354af9ccc7eb636b1dcbce" category="list-text">マーケットプレイス契約総容量</block>
+  <block id="baf09c6c43fd26effd8f15e252649384" category="list-text">総PAYGO容量</block>
+  <block id="219fa750a13ad456df1d25524d9f6ad9" category="list-text">* Cloud Volumes ONTAPパッケージの使用状況*: このレポートには、各パッケージに関する次の情報が含まれます。</block>
+  <block id="a65d4ec7ff2941ad2ea2bc688a6dbbb3" category="list-text">*ストレージ VM の使用状況*: このレポートには、課金された容量がCloud Volumes ONTAPシステムとストレージ仮想マシン (SVM) 全体でどのように内訳されているかが表示されます。この情報はレポートでのみ利用可能です。次の情報が含まれています。</block>
+  <block id="16f96639acdb5e88fcbe97e6d8720ba6" category="list-text">システムIDと名前（UUIDとして表示されます）</block>
+  <block id="c8e2277ecfb1427838c488c217f99466" category="list-text">クラウド</block>
+  <block id="4736cd35bf5b3fe63e1b1785fb2aa664" category="list-text">NetAppアカウントID</block>
+  <block id="3c4e32d95f12c00d16a76057a7af18f6" category="list-text">システム設定</block>
+  <block id="203c4205822c007d08ecafe163b02ea2" category="list-text">SVM名</block>
+  <block id="b567847dd629376ac84ed4958fd61687" category="list-text">プロビジョニング済み容量</block>
+  <block id="a09b8df9fd0007770b0a8c10f9a17d81" category="list-text">充電容量のまとめ</block>
+  <block id="671095c17b0e9e0deda06cff2fa103e6" category="list-text">マーケットプレイスの請求期間</block>
+  <block id="d38764d5edf26bd9b744840cd2ea3c17" category="list-text">Cloud Volumes ONTAPパッケージまたは機能</block>
+  <block id="a016fcdfd1d7159ffd537d78d4b68f74" category="list-text">課金SaaSマーケットプレイスのサブスクリプション名</block>
+  <block id="fe6ac599d13d94a0ee0800482bec7e41" category="list-text">課金SaaSマーケットプレイスサブスクリプションID</block>
+  <block id="427af860f9733f0c5427a1408195bb2b" category="list-text">ワークロードの種類</block>
+  <block id="2d0394437aca88cac134fb1bce72e08f" category="list-text">*ボリュームの使用状況*: このレポートには、Cloud Volumes ONTAPシステム内のボリュームごとに課金容量がどのように内訳されているかが表示されます。この情報はコンソールのどの画面でも表示されません。以下の情報が含まれます。</block>
+  <block id="3edb9123c69629ec86469d96d3feb0aa" category="list-text">SVN name</block>
+  <block id="cccc95b62282240886ee975a3f122adb" category="list-text">ボリューム ID</block>
+  <block id="fc18634852d4299cd5f8c7ad55ddefbe" category="list-text">ボリューム タイプ</block>
+  <block id="3756f66a273f440893f16ee968ce3450" category="list-text">ボリュームプロビジョニング容量</block>
+  <block id="8b3da2ed858ee5c956acde26c9ef7dd0" category="admonition">FlexCloneボリュームは料金が発生しないため、このレポートには含まれません。</block>
+  <block id="b2b74732b80350970fadfac4db3ba17e" category="list-text">*概要*タブで、 Cloud Volumes ONTAPタイルから*表示*を選択します。</block>
+  <block id="f4c2ce2a853a74c3742ccc54482c074e" category="list-text">*使用状況レポート*を選択します。</block>
+  <block id="23e918e9f1c9f1bb5769dcc236489de2" category="paragraph">使用状況レポートがダウンロードされます。</block>
+  <block id="05655bb3cbd3604d6c71a1db823ad94f" category="list-text">レポートにアクセスするには、ダウンロードしたファイルを開きます。</block>
+  <block id="99368e41fe86f03ceb9c0b049772ef29" category="summary">NetAppデータ サービスで使用するためにNetAppから直接購入したライセンス (BYOL) を管理します。使用済みのライセンス容量、残りの空き容量を確認でき、容量制限または有効期限に達した場合は通知が表示されます。</block>
+  <block id="0b8de14fb3434085b0be4b2778f365e0" category="doc">NetAppデータサービスのライセンスを管理する</block>
+  <block id="655a48b4a07bad11b97ddb1f7de8b150" category="paragraph">Cloud Volumes ONTAPなどのNetAppデータ サービスで使用するためにNetAppから直接購入したライセンス (BYOL) を管理できます。使用済みのライセンス容量、残りの空き容量を確認でき、容量制限または有効期限に達したときに通知が表示されます。</block>
+  <block id="bac99350c8b9abdf51c8cb6c7a0467fd" category="inline-link-macro">概要ダッシュボードの詳細</block>
+  <block id="2ef1ddd95077dddfd70d5ab07187d1f8" category="admonition">*直接ライセンス* ページにはすべてのライセンスがリストされます。特定のデータ サービスのライセンスの詳細が必要な場合は、[*概要*] ダッシュボードのデータ サービス タイルを使用します。<block ref="9a2921323c53c040741c05db9c27525e" category="inline-link-macro-rx"></block> 。</block>
+  <block id="9733849463a86c6a043ab58c8ddf1ac4" category="paragraph">このページの説明には、各サービスに適用される情報が記載されています。これらのサービスのライセンスに関する詳細については、次のページを参照してください。</block>
+  <block id="50913c9499a96938febd19de9c1bf895" category="inline-link">NetApp Backup and Recoveryのライセンスを設定する</block>
+  <block id="7c2a90c11b23f49e26dfb6d98b2f294a" category="list-text"><block ref="7c2a90c11b23f49e26dfb6d98b2f294a" category="inline-link-rx"></block></block>
+  <block id="ee93b1d439ecea7d556ad659d00a499f" category="inline-link">NetApp Disaster Recoveryのライセンスを設定する</block>
+  <block id="b548e91c76ffa0a847b7391d807382b7" category="list-text"><block ref="b548e91c76ffa0a847b7391d807382b7" category="inline-link-rx"></block></block>
+  <block id="8c4e51cf0af97fc084c32c7697ac400c" category="inline-link">NetApp Ransomware Resilienceのライセンスを設定する</block>
+  <block id="0756aa27fe61dae2fde62385bb00a616" category="list-text"><block ref="0756aa27fe61dae2fde62385bb00a616" category="inline-link-rx"></block></block>
+  <block id="d4cdf3ad28a947017bac9a28090b4755" category="inline-link">NetApp Cloud Tieringのライセンスを設定する</block>
+  <block id="83f337ebda6ebd9464706f5c1c9630d5" category="list-text"><block ref="83f337ebda6ebd9464706f5c1c9630d5" category="inline-link-rx"></block></block>
+  <block id="353c347239342af7353680135c05995b" category="inline-link">Cloud Volumes ONTAPのライセンスを設定する</block>
+  <block id="db5f4e2c0efdad7e19e2179ef05db67e" category="list-text"><block ref="db5f4e2c0efdad7e19e2179ef05db67e" category="inline-link-rx"></block></block>
+  <block id="73acd586df3bf9938d39f0e738d5c161" category="section-title">ライセンスファイルを取得する</block>
+  <block id="ec01ce5d7a75843507cddc0f1e980f6a" category="section-title">ライセンスの追加</block>
+  <block id="6c1c5737355a8b30e87ad5d7c6da9553" category="section-title">ライセンスを更新する</block>
+  <block id="6d6c2071320d39aedc7f752f83e093e6" category="section-title">ライセンスステータスの表示</block>
+  <block id="6e79c672327d05321fb0d16a797aca70" category="paragraph">&lt;stdin&gt; 内の未解決のディレクティブ - include::_include/task-view-license-status.adoc[]</block>
+  <block id="a58a19877ed0bf7f9b6d06fdd8387763" category="summary">Cloud Volumes ONTAPで使用するサブスクリプションを有効にし、サブスクリプションのサービス レベルのコミット済み容量の変更を要求することで、 NetApp ConsoleでKeystoneサブスクリプションを管理します。サービス レベルの追加容量を要求すると、Cloud Volumes ONTAPシステムにさらに多くのストレージが提供されます。</block>
+  <block id="52ba144dbaac8239e9b6d8e287db93dc" category="doc">Keystoneサブスクリプションを管理する</block>
+  <block id="a3b1d6e06d4fd8ccc20c61ce51e45853" category="paragraph">NetApp Keystone は、 CapEx やリースよりも OpEx を好む顧客にハイブリッド クラウド エクスペリエンスを提供する、成長に合わせて拡張できる柔軟なサブスクリプションベースのサービスです。</block>
+  <block id="8635fd9dae0faf14591abf5c00ba4c36" category="inline-link">Keystoneについて詳しくはこちら</block>
+  <block id="d9e1f569a60d13d4540b611846d761f5" category="paragraph"><block ref="d9e1f569a60d13d4540b611846d761f5" category="inline-link-rx"></block></block>
+  <block id="4edb70089cdbc18de22fa9ead5189bc8" category="section-title">アカウントを承認する</block>
+  <block id="df5e66b5e7999995b53a0f100212d79f" category="paragraph">コンソールでKeystoneサブスクリプションを使用および管理する前に、 NetAppに連絡して、コンソール アカウントにKeystoneサブスクリプションを承認してもらう必要があります。</block>
+  <block id="1ce97cc664bad2b8b354b3220e6331e7" category="list-text">* Keystoneサブスクリプション* を選択します。</block>
+  <block id="daf4ae396784c74ec2cbf002eaaa25f4" category="list-text">*Welcome to NetApp Keystone* ページが表示された場合は、ページに記載されているアドレスに電子メールを送信します。</block>
+  <block id="a53c428d90f592127da49a8d5a558130" category="paragraph">NetApp の担当者が、お客様のアカウントにサブスクリプションへのアクセスを許可して、お客様のリクエストを処理します。</block>
+  <block id="23698106a2d9dc1f2df20e97a71a625c" category="list-text">サブスクリプションを表示するには、* Keystoneサブスクリプション* タブに戻ってください。</block>
+  <block id="06f358c39bc3b4633cefd78beb67e671" category="section-title">サブスクリプションをリンクする</block>
+  <block id="8afaab6946e4a914b70539d7502e26ac" category="paragraph">NetApp がアカウントを承認すると、 KeystoneサブスクリプションをCloud Volumes ONTAPで使用するためにリンクできるようになります。このアクションにより、ユーザーは新しいCloud Volumes ONTAPシステムの課金方法としてサブスクリプションを選択できるようになります。</block>
+  <block id="b0afff19aa3343a6f86619d833dbd316" category="inline-image-macro">3つの点が並んだアイコン</block>
+  <block id="fc6ada65ff8f08c80e7d6167f68c89c2" category="list-text">リンクしたいサブスクリプションについては、<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> *リンク*を選択します。</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">結果</block>
+  <block id="9c2f6d6e4376237ad065b1baa0ad822d" category="paragraph">サブスクリプションはコンソール組織またはアカウントにリンクされ、 Cloud Volumes ONTAP作業環境を作成するときに選択できるようになります。</block>
+  <block id="1b02ed65c5ea56c85fffa6b88378d762" category="section-title">コミットされた容量の増減を要求する</block>
+  <block id="10d2905ee5dfcb309d64e3633fb774c1" category="paragraph">サブスクリプションのサービス レベルのコミット済み容量を変更する場合は、コンソールから直接NetAppにリクエストを送信できます。サービス レベルの追加容量を要求すると、Cloud Volumes ONTAPシステムにさらに多くのストレージが提供されます。</block>
+  <block id="e45b542fbde799582edd5059bc1991a9" category="list-text">容量を調整するサブスクリプションについては、<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> [詳細を表示して編集]を選択します。</block>
+  <block id="56ecf988dec174f4d23028e78eeed82c" category="list-text">1 つ以上のサブスクリプションに対して要求されたコミット容量を入力します。</block>
+  <block id="dbae9df22f08344d5508b91cb73c6d15" category="list-text">下にスクロールして、リクエストの追加詳細を入力し、[送信] をクリックします。</block>
+  <block id="8f140d9c4d508c36e3d4c57102f117eb" category="paragraph">リクエストにより、NetApp のシステムに処理用のチケットが作成されます。</block>
+  <block id="ec6e0d1bd46f010ced65478c609b1636" category="section-title">使用状況を監視する</block>
+  <block id="a3a13a09504a7f25eb72dede89db4f24" category="paragraph">Digital Advisorダッシュボードを使用すると、 Keystoneサブスクリプションの使用状況を監視し、レポートを生成できます。</block>
+  <block id="20ea4c62f4c9e4254314fe7fbbef0319" category="inline-link">サブスクリプションの使用状況の監視について詳しくは、こちらをご覧ください。</block>
+  <block id="d7105dd212dc96a8b292b6b48f84916f" category="paragraph"><block ref="d7105dd212dc96a8b292b6b48f84916f" category="inline-link-rx"></block></block>
+  <block id="0c0401d1e9169d6dd38462b1e0d04126" category="section-title">サブスクリプションのリンクを解除する</block>
+  <block id="e29343f0ee1c0051a367e02b49c1c5ff" category="paragraph">コンソールでKeystoneサブスクリプションを使用したくなくなった場合は、サブスクリプションのリンクを解除できます。既存のCloud Volumes ONTAPサブスクリプションに接続されていないサブスクリプションのみをリンク解除できることに注意してください。</block>
+  <block id="492847bcbc9ec0bd3075b612aa43e4a7" category="list-text">* Keystone*を選択します。</block>
+  <block id="a666a430e484ea214384aefaa30da852" category="list-text">リンクを解除したいサブスクリプションについては、<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> *リンク解除*を選択します。</block>
+  <block id="0e1096776546966fb22c4752766d55a9" category="paragraph">サブスクリプションはコンソール組織またはアカウントからリンク解除され、 Cloud Volumes ONTAP作業環境を作成するときに選択できなくなります。</block>
+  <block id="84d46f62b819e413ba1572fee9e31acc" category="summary">コンソールでノードベースのライセンスを管理して、各Cloud Volumes ONTAPシステムに必要な容量を持つ有効なライセンスがあることを確認します。</block>
+  <block id="de94398a333e3b7bdafad2ddf3232331" category="doc">ノードベースのライセンスを管理する</block>
+  <block id="63e5ea33dc9b9a10458ac73abae91075" category="paragraph">NetApp Consoleでノードベースのライセンスを管理して、各Cloud Volumes ONTAPシステムに必要な容量を持つ有効なライセンスがあることを確認します。</block>
+  <block id="4627bd080634e9380c75a1cc04a09486" category="paragraph">_ノードベースのライセンス_ は、以前の世代のライセンス モデルです (新規顧客には利用できません)。</block>
+  <block id="0d4e36aae457a1001b3373de2fd510f1" category="list-text">NetAppから購入したライセンスを持参 (BYOL)</block>
+  <block id="17ac9e85cf5b6f7b77acf61fb7721242" category="list-text">クラウド プロバイダーのマーケットプレイスから時間単位の従量課金制 (PAYGO) サブスクリプションを購入する</block>
+  <block id="3501754bb69f70ed8f72d23562bab97c" category="paragraph">NetApp ConsoleからノードベースのCloud Volumes ONTAPライセンスを管理できます。</block>
+  <block id="9426b05d2fc423b761e34f9d75b4066d" category="section-title">PAYGOライセンスの管理</block>
+  <block id="fcd2026c30c1b902d032e35337e8888c" category="paragraph">「Licenses and subscriptions」メニューでは、シリアル番号や PAYGO ライセンスの種類など、各 PAYGO Cloud Volumes ONTAPシステムの詳細を表示できます。</block>
+  <block id="343c7ed77049523f4d99e8d4c436a330" category="list-text">ドロップダウンから*ノードベースのライセンス*を選択します。</block>
+  <block id="87089bacab591352ad6ad6579e34d93e" category="list-text">[PAYGO]をクリックします。</block>
+  <block id="82be8e06ac169a3de0fce42cd01f5760" category="list-text">各 PAYGO ライセンスの詳細を表で表示します。</block>
+  <block id="bbfa86a1d5f6c6f85f7a434a983b34e1" category="inline-image-macro">Licenses and subscriptionsページに 3 つの PayGo ライセンスを含むテーブルが表示されているスクリーンショット。各行には、名前、システムの種類、シリアル番号、パッケージ、ライセンスを管理するためのリンクが表示されます。</block>
+  <block id="cf03ba6c2dea0eb29457f99fdcd69b82" category="paragraph"><block ref="cf03ba6c2dea0eb29457f99fdcd69b82" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a45c9786e45613660f519d740b30671a" category="list-text">必要に応じて、「*PAYGO ライセンスの管理*」をクリックして、PAYGO ライセンスを変更するか、インスタンス タイプを変更します。</block>
+  <block id="00b61e8d20d055a6505bd5bc88e18aeb" category="section-title">BYOLライセンスの管理</block>
+  <block id="33375e3f722897194d509130054856dd" category="paragraph">システム ライセンスと追加容量ライセンスを追加および削除することで、 NetAppから直接購入したライセンスを管理します。</block>
+  <block id="6bcfb67e751fc7a3d8dba22f37cbb570" category="inline-link">Cloud Volumes ONTAPの BYOL ライセンスの利用制限</block>
+  <block id="ceb2294714463ec73c3bb76a991ef103" category="admonition">はBYOLライセンスの購入、延長、および更新を制限しています。<block ref="73dc1b5468c2405a47da63a28335f079" category="inline-link-rx"></block> 。</block>
+  <block id="4742f5b0c38f7c105542ecb15a214212" category="section-title">割り当てられていないライセンスを追加する</block>
+  <block id="d0052e7943aa77623453a3374803765d" category="paragraph">新しいCloud Volumes ONTAPシステムを作成するときにライセンスを選択できるように、ノードベースのライセンスをコンソールに追加します。コンソールはこれらのライセンスを「未割り当て」として識別します。</block>
+  <block id="9827486f8d28067db0a9918ee807f05e" category="list-text">*未割り当て*をクリックします。</block>
+  <block id="7fa863d81a4b4f5f46596207ce29dc50" category="list-text">*未割り当てのライセンスの追加*をクリックします。</block>
+  <block id="851df848340ac5c43d036a7c8ab531e8" category="list-text">ライセンスのシリアル番号を入力するか、ライセンス ファイルをアップロードします。</block>
+  <block id="bec033f0535da0f58c9f0a7ccd96e793" category="paragraph">ライセンス ファイルをまだお持ちでない場合は、以下のセクションを参照してください。</block>
+  <block id="ea9a2b9ac34c9aab133f21aa5b67976e" category="list-text">*ライセンスの追加*をクリックします。</block>
+  <block id="684d5df2e069e529d4a4c518d654dc44" category="paragraph">コンソールがライセンスを追加します。ライセンスは、新しいCloud Volumes ONTAPシステムに関連付けるまで、未割り当てとして識別されます。その後、ライセンスは *Licenses and subscriptions* の * BYOL * タブに移動します。</block>
+  <block id="df5b9d272738b4adaa43e7eb4949a0e5" category="section-title">Exchangeの未割り当てノードベースライセンス</block>
+  <block id="76a67f9205ca80ce535686592126df9d" category="paragraph">使用していないCloud Volumes ONTAPの未割り当てのノードベース ライセンスがある場合は、そのライセンスをNetApp Backup and Recoveryライセンス、 NetApp Data Classificationライセンス、またはNetApp Cloud Tieringライセンスに変換して交換できます。</block>
+  <block id="82330159ba1b86113008185841af38f9" category="paragraph">ライセンスを交換すると、 Cloud Volumes ONTAPライセンスが取り消され、サービスに対してドル相当のライセンスが作成されます。</block>
+  <block id="488b3f4a79a8819dabc209f2405c7ba7" category="list-text">Cloud Volumes ONTAP HAペアのライセンスは51 TiBの直接ライセンスに変換されます</block>
+  <block id="d8961eb56e3c50e0da29ec362dcb385a" category="list-text">Cloud Volumes ONTAPシングルノードのライセンスは 32 TiB の直接ライセンスに変換されます</block>
+  <block id="89f1c05b91f27a0ccc4736c51deee49f" category="paragraph">変換されたライセンスの有効期限は、 Cloud Volumes ONTAPライセンスと同じになります。</block>
+  <block id="e0225acc5a75bb0346dd94ed24206c81" category="inline-link-macro">ノードベースのライセンスを交換する方法のチュートリアルを表示します。</block>
+  <block id="d82de0388f091aa9d43371708eb95310" category="paragraph"><block ref="b4c22b5293d3ee433dee9c4b3632dbee" category="inline-link-macro-rx"></block></block>
+  <block id="fff69e388498c7da2216c0a49587cbc8" category="list-text">*ライセンスの交換*をクリックします。</block>
+  <block id="25abdaf706ab9bbfe1775de2626f958f" category="inline-image-macro">未割り当てライセンス ページに表示される Exchange ライセンス オプションのスクリーンショット。</block>
+  <block id="59069c86e2c388bcb56b4ec04ba7c1b1" category="paragraph"><block ref="59069c86e2c388bcb56b4ec04ba7c1b1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b2bcb667f1a3e2cd665dce56fa38946c" category="list-text">ライセンスを交換するサービスを選択します。</block>
+  <block id="d54ac11d311c4a7a85e11a557ee305e3" category="list-text">プロンプトが表示されたら、HA ペアの追加ライセンスを選択します。</block>
+  <block id="1e4109afcb540c886b450b6944b83567" category="list-text">法的同意書を読み、「同意する」をクリックします。</block>
+  <block id="f56693ead48da8f8372b53a387f22165" category="paragraph">コンソールは、割り当てられていないライセンスを選択したサービスに変換します。新しいライセンスは、[*データ サービス ライセンス*] タブで確認できます。</block>
+  <block id="bed8ee00b54ae810def15122c80a9dba" category="section-title">システムライセンスファイルを取得する</block>
+  <block id="022919ed552faad7f4de98d1abe88fc1" category="paragraph">ほとんどの場合、コンソールはNetAppサポート サイトのアカウントを使用してライセンス ファイルを自動的に取得できます。ただし、それができない場合は、ライセンス ファイルを手動でアップロードする必要があります。ライセンス ファイルがない場合は、netapp.com から取得できます。</block>
+  <block id="eeb818d6636d7675fb1108e834a0fed1" category="inline-link">NetApp License File Generator</block>
+  <block id="3eff90cc077e6c35c01b4fa2ce08352e" category="list-text">に行く<block ref="d4604fbd185a778fcb9e2d4bce6d880d" category="inline-link-rx"></block>NetAppサポート サイトの認証情報を使用してログインします。</block>
+  <block id="fd714c8e7c7967952f8eefe7a8c25c48" category="list-text">パスワードを入力し、製品を選択し、シリアル番号を入力し、プライバシー ポリシーを読んで同意したことを確認してから、[送信] をクリックします。</block>
+  <block id="938f1047c15f00fdd0cbfc8e4cfa15e1" category="paragraph">*例*</block>
+  <block id="7260bbc39295ef94e60be19b73affac6" category="inline-image-macro">スクリーン ショット: 利用可能な製品ラインを含むNetApp License Generator Web ページの例を示します。</block>
+  <block id="c7db6ec8c72cc25c90f19ebafe2ddfbd" category="paragraph"><block ref="c7db6ec8c72cc25c90f19ebafe2ddfbd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="74fd2dac6a51b8a94f6612bae65dcbdf" category="list-text">serialnumber.NLF JSON ファイルを電子メールで受け取るか、直接ダウンロードするかを選択します。</block>
+  <block id="58f676020d30c00d4b3fb18fc835e7ca" category="section-title">システムライセンスを更新する</block>
+  <block id="b0f33031496e38b99d72e702000365e8" category="paragraph">NetApp の担当者に連絡して BYOL サブスクリプションを更新すると、コンソールはNetAppから新しいライセンスを自動的に取得し、 Cloud Volumes ONTAPシステムにインストールします。コンソールが安全なインターネット接続を介してライセンス ファイルにアクセスできない場合は、自分でファイルを取得し、手動でファイルをアップロードすることができます。</block>
+  <block id="eda4b0f5ee71694deda064c01799f329" category="list-text">*BYOL* タブで、 Cloud Volumes ONTAPシステムの詳細を展開します。</block>
+  <block id="d91a847294f18b5d31d438a059c2532d" category="list-text">システム ライセンスの横にあるアクション メニューをクリックし、*ライセンスの更新*を選択します。</block>
+  <block id="98022931ad96bfc8db710666a48e0416" category="list-text">ライセンス ファイル (HA ペアがある場合は複数のファイル) をアップロードします。</block>
+  <block id="1c523ff18e24f3b5d4d5fa45c4410b01" category="list-text">*ライセンスの更新*をクリックします。</block>
+  <block id="825a0cb9a8312e85f3aa745487c0dbe9" category="paragraph">コンソールは、Cloud Volumes ONTAPシステムのライセンスを更新します。</block>
+  <block id="2c2e7695734e076306fc8ba50ca70c1b" category="section-title">追加容量ライセンスの管理</block>
+  <block id="d452bdec5cf94a61fe23690b513f4a71" category="paragraph">Cloud Volumes ONTAP BYOL システムの追加容量ライセンスを購入して、BYOL システム ライセンスで提供される 368 TiB を超える容量を割り当てることができます。たとえば、最大 736 TiB の容量をCloud Volumes ONTAPに割り当てるために、追加のライセンス容量を 1 つ購入することができます。または、最大 1.4 PiB を得るために、追加容量ライセンスを 3 つ購入することもできます。</block>
+  <block id="5e26587c8f074cc4f0455ff005cb744c" category="paragraph">単一ノードシステムまたはHAペアに対して購入できるライセンスの数に制限はありません。</block>
+  <block id="6e869ff6c9fd5eb76baa394c52e2ef18" category="section-title">容量ライセンスを追加する</block>
+  <block id="41a0a4fe38c3f00a9fae3056955c9f80" category="paragraph">コンソールの右下にあるチャット アイコンからお問い合わせいただき、追加容量ライセンスを購入してください。ライセンスを購入したら、それをCloud Volumes ONTAPシステムに適用できます。</block>
+  <block id="423cdc57679399d47229e2f74dfc102b" category="list-text">*容量ライセンスの追加*をクリックします。</block>
+  <block id="b0bfc70f0e7f3f10c4334bd53c2c2a27" category="list-text">シリアル番号を入力するか、ライセンス ファイル (HA ペアがある場合は複数のファイル) をアップロードします。</block>
+  <block id="c4e9cc48e592b9354b10b9d54e14525c" category="section-title">容量ライセンスの更新</block>
+  <block id="2526a0404b7268bca72e19dd834baa1e" category="paragraph">追加容量ライセンスの期間を延長した場合は、コンソールでライセンスを更新する必要があります。</block>
+  <block id="555efdea73381bcd8582646f75b68253" category="list-text">容量ライセンスの横にあるアクション メニューをクリックし、[ライセンスの更新] を選択します。</block>
+  <block id="df478b8a8dcb38cfbba69a02ff5cae20" category="section-title">容量ライセンスを削除する</block>
+  <block id="9906134ee224bc081497b19c4269cc34" category="paragraph">追加容量ライセンスの有効期限が切れて使用されなくなった場合は、いつでも削除できます。</block>
+  <block id="c320af21170d1ca43751b7580a1125f4" category="list-text">容量ライセンスの横にあるアクション メニューをクリックし、[ライセンスの削除] を選択します。</block>
+  <block id="03b194a23dcb353466fbfb7acff64363" category="list-text">*削除*をクリックします。</block>
+  <block id="594cb44c6500d8855ad820b0653e02c7" category="section-title">PAYGOとBYOL間の変更</block>
+  <block id="a704128156d562fe5860508e9584ee34" category="paragraph">システムを PAYGO ノード単位ライセンスから BYOL ノード単位ライセンス (およびその逆) に変換することはサポートされていません。従量課金制サブスクリプションと BYOL サブスクリプションを切り替える場合は、新しいシステムをデプロイし、既存のシステムから新しいシステムにデータを複製する必要があります。</block>
+  <block id="c019dbada10848ba4363bd4710a34f6b" category="list-text">新しいCloud Volumes ONTAPシステムを作成します。</block>
+  <block id="9bd20ffd5e91ec2bb61bc593be38bb13" category="list-text">複製する必要があるボリュームごとに、システム間で 1 回限りのデータ レプリケーションを設定します。</block>
+  <block id="95b10ad2ca24b4c8bd5673b7383531a2" category="inline-link">システム間でデータを複製する方法を学ぶ</block>
+  <block id="882d5f98206dd8157654127073c920f2" category="paragraph"><block ref="882d5f98206dd8157654127073c920f2" category="inline-link-rx"></block></block>
+  <block id="ebf88a96d90d43fcac8c0ab5a9fda0dd" category="list-text">元のシステムを削除して、不要になったCloud Volumes ONTAPシステムを終了します。</block>
+  <block id="f979ec1d84a4416797fae20cc61f839b" category="inline-link">Cloud Volumes ONTAPシステムを削除する方法を学ぶ</block>
+  <block id="0d0947c9b1ebe3ee650df057f8192855" category="paragraph"><block ref="87175a08736eca79154ad91c69792fcd" category="inline-link-rx"></block> 。</block>
+  <block id="f6bd0d7447ff66cc6b859603a88fbde9" category="paragraph-title">関連リンク</block>
+  <block id="90df487d076cd9295a7192268b4439ee" category="inline-link-macro">ノードベースライセンスの提供終了</block>
+  <block id="342dcce6bda294bb4b60fc9333bcafbe" category="inline-link-macro">ノードベースのライセンスを容量ベースのライセンスに変換する</block>
+  <block id="cb90b48918ed9cd8ea355c04c171177b" category="paragraph">リンク：<block ref="7f9a8649ca2d86db235ba56502d14f92" category="inline-link-macro-rx"></block> <block ref="431f655d5a9ac309b561fc62a4c619ea" category="inline-link-macro-rx"></block></block>
+  <block id="8d90649cbc48862e96a3f1f139e803fa" category="summary">オンプレミスの各ONTAPクラスターの契約詳細を表示します。コンソールでクラスターをまだ検出していない場合は、クラスターを検出することもできます。</block>
+  <block id="7b157739a85d3d5c67c903118518835e" category="doc">オンプレミスのONTAPのライセンスを管理する</block>
+  <block id="712aeceaab91f33fd5739a8bbd6738fd" category="paragraph">コンソールで、オンプレミスの各ONTAPクラスターの契約の詳細を表示できます。クラスターをまだ検出していない場合は、検出することもできます。</block>
+  <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">開始する前に</block>
+  <block id="857f422578a1e03dfc3a054866eabaeb" category="paragraph">コンソールには、システムとして検出されたオンプレミスのONTAPクラスターの詳細、またはコンソールに追加したNetAppサポート サイト アカウントに関連付けられているクラスターの詳細が表示されます。</block>
+  <block id="422bab6ebf30e7a3f981f61427aaba19" category="inline-link">オンプレミスのONTAPクラスターを検出する方法を学ぶ</block>
+  <block id="b23696557397783ca9c44bd2c80b335d" category="list-text"><block ref="b23696557397783ca9c44bd2c80b335d" category="inline-link-rx"></block></block>
+  <block id="c627ab41d97c61821845349a4880080b" category="inline-link">コンソール組織またはアカウントに関連付けられた NSS 認証情報を管理する方法を学びます</block>
+  <block id="f8969c7525255a4701b49192dd720200" category="list-text"><block ref="f8969c7525255a4701b49192dd720200" category="inline-link-rx"></block></block>
+  <block id="4bbcdd6338e8631576e63f1156b1c51d" category="section-title">クラスター情報と契約の詳細を表示する</block>
+  <block id="dfaa8df1d6444411a1429b0866742025" category="paragraph">オンプレミスのONTAPクラスターのハードウェアおよびソフトウェア契約のステータスを表示して、期限が切れる前に更新できるようにします。</block>
+  <block id="e65135bd79d15db91bec6c98a9f8dabe" category="list-text">*オンプレミスONTAP*を選択します。</block>
+  <block id="84c2c11254da9ee11c4482a60291186d" category="paragraph">ソフトウェア契約とハードウェア契約の有効期限は、各クラスターの行に表示されます。</block>
+  <block id="6723aa6a44348a3e74720156abb41f28" category="paragraph">最初にNetAppサポート サイト (NSS) アカウントの資格情報を入力するように求められた場合は、*NSS アカウントの追加* を選択します。アカウントを追加すると、その NSS アカウントに関連付けられているクラスターが表示されます。</block>
+  <block id="1c962c716cf9d1c072d4252a94056d5a" category="list-text">契約の有効期限が近い場合、または期限が切れている場合は、コンソールの右下にあるチャット アイコンを選択して、契約の延長をリクエストできます。</block>
+  <block id="2dc127a72bebec759447c53e48d44a81" category="inline-image-macro">下向きキャレットアイコン</block>
+  <block id="093ebe6e7f093a5d0ba33d387ce15bd0" category="list-text">詳細を表示するには、<block ref="88c68341c12fbc9f1bcf1c9927535845" category="inline-image-macro-rx" type="image"></block>クラスター情報を展開します。</block>
+  <block id="20dbb48f93e265cf5e1f55346fd44629" category="section-title">クラスターを発見する</block>
+  <block id="1cf9d33301fa4cb07a99ed5ba256d866" category="paragraph">オンプレミスのONTAPクラスターをシステムとして検出していない場合は、コンソールから検出できます。検出された後は、クラスターをシステムとして使用して管理できるようになります。</block>
+  <block id="92421df1db7978a6de6c77c10608c02a" category="paragraph">検出と管理のオプション (コンソール エージェントを使用した検出またはエージェントを使用しない直接検出) と検出要件を理解する必要があります。</block>
+  <block id="01b0421859ec2fed2ce4dff333e190ee" category="inline-link">検出オプションと要件について学ぶ</block>
+  <block id="da810fa51a2b9119147838a70412015f" category="paragraph"><block ref="a07feb0a336d59a2369adfa9ca88e728" category="inline-link-rx"></block> 。</block>
+  <block id="f6cecdb846b23a4aac2b02906d51d210" category="paragraph">ONTAPクラスタは、コンソールで検出されたかどうかのステータスとともに表示されます。</block>
+  <block id="49d43c2b09f782977f5c343a450651ae" category="list-text">コンソールを通じて管理するクラスターの *Discover* を選択します。</block>
+  <block id="65fd12713cafdbaee90c518b8e719b8a" category="list-text">[_Discover ONTAP Cluster_] ページで、管理者ユーザー アカウントのパスワードを入力し、[*Discover*] を選択します。</block>
+  <block id="b2d17e7f9f19a98eddebda3400555598" category="admonition">クラスタ管理 IP アドレスは、 NetAppサポート サイト アカウントの情報に基づいて入力されます。</block>
+  <block id="145be65ce972b71bb40e463e2bf3acbd" category="paragraph">コンソールはクラスターを検出し、それをシステムとして「システム」ページに追加します。 _On-Premises ONTAP_ ページで、クラスターのステータスが *Discovered* に変わります。システム名はクラスターの名前であることに注意してください。</block>
+  <block id="d123a6bdeb75e456b3adf0e79646234d" category="paragraph">これでクラスターの管理を開始できます。</block>
+  <block id="0453a9f0adad145b25cfdf23836cf986" category="inline-link">コンソールエージェントで検出されたクラスターを管理する方法を学びます</block>
+  <block id="43c3be2707abdedd2af74a90af5871ba" category="list-text"><block ref="43c3be2707abdedd2af74a90af5871ba" category="inline-link-rx"></block></block>
+  <block id="299867ed6070a6cda18ae92e5d434213" category="inline-link">直接検出されたクラスターを管理する方法を学ぶ</block>
+  <block id="e82c60430ac236acfc954acd22ea737d" category="list-text"><block ref="e82c60430ac236acfc954acd22ea737d" category="inline-link-rx"></block></block>
+  <block id="486c0e58304417d548694e3073643b23" category="summary">AWS、Azure、Google Cloud 向けの、一般的な、ハイパースケーラー固有の、エンドツーエンドのプライベート オファー プロセスと、 NetAppインテリジェント サービスの承認およびアクティベーション ガイドを管理します。</block>
+  <block id="9248cc8bc8852d71cca7f73f6d36eea5" category="doc">NetApp Consoleの AWS Marketplace プライベートオファーを承認して設定する</block>
+  <block id="ff13fa6d7bc903be5ecf4d041ce5aa5c" category="paragraph">AWS コンソールでNetApp Consoleの Marketplace プライベートオファーを受け入れ、コンソールで AWS 認証情報を設定します。</block>
+  <block id="e42fe00103b11c26a130efa909bb5a84" category="list-text">NetApp の営業担当者と協力してプライベート オファーを作成し、アクティベーション リンクを取得します。</block>
+  <block id="514210ca19d963f85ab4ed1d6e72df32" category="list-text">必要な AWS Marketplace 権限があることを確認します。</block>
+  <block id="9b0cad6850cfb6b3550c8a17e7be435b" category="inline-link-macro">プライベートオファーの表示と購読</block>
+  <block id="c3f1185d398ba0919b1e1de888c27261" category="list-text"><block ref="c3f1185d398ba0919b1e1de888c27261" category="inline-link-macro-rx"></block></block>
+  <block id="eddabc606d42f919a6957cf8c062b45b" category="inline-link-macro">購入者の権限の検証</block>
+  <block id="5669e814cce268752252c43ffbb097b9" category="list-text"><block ref="5669e814cce268752252c43ffbb097b9" category="inline-link-macro-rx"></block></block>
+  <block id="09d9df0afa016eba24d822b0fab07ad9" category="section-title">AWSコンソールでプライベートオファーを承認する</block>
+  <block id="01fe1bcb4f23578a5739afabaf15081c" category="paragraph">購入を有効にして割引価格を適用するには、コンソールでサブスクリプションの割り当てを完了する必要があります。</block>
+  <block id="5277c9848e0bbe319cb5f8129fe4c77b" category="paragraph">プライベートオファーを有効にするには、すべての手順を完了する必要があります。手順を省略すると請求エラーが発生する可能性があります。オファーを複数回承諾して有効化すると、二重に請求されます。</block>
+  <block id="69ab7cbfb20290fc5a153bd4d1e77e2d" category="list-text">NetAppセールス チームからのプライベート オファーのアクティベーション リンクをクリックします。リンクは次のようになります。<block ref="e8da69261a2e7defb7c8e446536dda38" prefix=" " category="inline-code"></block></block>
+  <block id="3aa206f6a7574e314eb4973a2b96b331" category="list-text">AWS 管理ポリシーを使用する: *AWSMarketplaceRead-only*、*AWSMarketplaceManageSubscriptions*、または *AWSMarketplaceFullAccess*</block>
+  <block id="bc5572c241330df8ef51ced4284b0bdf" category="list-text">カスタム IAM ポリシーの使用:<block ref="ff04429efaed7625c69c6d08008313b5" prefix=" " category="inline-code"></block>そして<block ref="326720e7bae8966d6ca9815f71034380" prefix=" " category="inline-code"></block></block>
+  <block id="e0d6be37107f0e0cac8ae690935c3953" category="list-text">プライベートオファーを表示するために AWS Marketplace にリダイレクトされます。</block>
+  <block id="ed531c62409749839128abc4ac3024b2" category="paragraph">プライベートオファーは公開リストの上に作成されます。*オファーの選択*ドロップダウンを使用して、公開オファーと非公開オファーを切り替えます。</block>
+  <block id="1052057eae38b60ef2718c5db26314fd" category="list-text">プライベートオファーの詳細を確認し、契約内容と一致していることを確認します。間違っている場合は受け入れないでください。NetAppアカウント チームにお問い合わせください。</block>
+  <block id="137e4e5a2d3b2312abe2fdc399f7a015" category="paragraph">プライベートオファーには次の 2 つの種類があります。</block>
+  <block id="b1f68330f38d69d3686f740e31c6d5b1" category="list-text">*オンデマンド利用*</block>
+  <block id="989c9d336b48f059c4d11f6a24942a33" category="list-text">価格情報</block>
+  <block id="b0f259fa317864ce24dbbe5ad867e3a4" category="list-text">法的用語</block>
+  <block id="38051ece51b996f233648f7f33667245" category="list-text">*契約*</block>
+  <block id="9a827e338cd6868f9e816f40ee21a2ad" category="list-text">期間と日付</block>
+  <block id="877816703aaff9a793d10b57c4f3d74b" category="list-text">更新設定</block>
+  <block id="3c2829dbb4c3ce0e6c77b1ca57204aac" category="list-text">契約オプション</block>
+  <block id="dde6c83692973edca761850557257be5" category="list-text">契約合計金額</block>
+  <block id="b43c2b4893351e438e51acfa55e878f2" category="paragraph">契約オファーの場合は、合意したユニット数を入力します。Cloud Volumes ONTAPの場合は、サブスクライブする前に正しいライセンスを選択してください。</block>
+  <block id="260570d179a259556c7bafc6eb55af17" category="list-text">プライベートオファーを承諾するには、次の手順を実行します。</block>
+  <block id="6e0d4ea20631710cd0475440fa61cba7" category="list-text">オンデマンドで使用する場合は、「*サブスクライブ*」をクリックします。</block>
+  <block id="2120ac26a0fb66eb1e68af4f82592f26" category="list-text">契約オファーの場合は、各サービスのユニット数を入力し、「契約を作成」をクリックします。</block>
+  <block id="20d4f676d944ace93b6fd5ea20a1cd60" category="list-text">承認されると、バナーでサブスクリプションが確認され、登録手順が示されます。</block>
+  <block id="9a964a2e84212b282e85422fa8a70544" category="list-text">*アカウントを設定*をクリックします。これにより、サブスクリプションを構成するためにNetApp Consoleにリダイレクトされます。</block>
+  <block id="45a07e7bbaedb6a22c302c7002488d2a" category="paragraph">オファーを承諾したが登録を完了していない場合は、製品ページに戻ります。契約リストの場合は、「*購入オプションを表示*」をクリックしてオファーを表示し、「*アカウントを設定*」を選択します。</block>
+  <block id="2e64edfe7c5204394d8441cd657b2892" category="list-text">Sign in<block ref="192e1e8ec4744462f8aaecd68949f9c6" category="inline-link-rx"></block>コンソールアカウントを使用します。</block>
+  <block id="5e1b8f033801f9e6066729a408b4da2f" category="list-text">ログイン後、<block ref="3be513e91609cdd85c59f75b8b9c5275" category="inline-link-rx"></block> 。次のプロンプトが表示されます:</block>
+  <block id="e6927100ca6999c8078a1524ea9d9039" category="list-text">マーケットプレイス サブスクリプションの *表示名* を入力します。</block>
+  <block id="2cd221344150a3626a43e90a5a658fe9" category="list-text">サブスクリプションにアクセスできるコンソール *アカウント* を選択します。</block>
+  <block id="0d44bad6f11273328ea95f1f049c4238" category="list-text">[オプション] *既存のサブスクリプションの置き換え* を有効にして、1 つのアカウントの既存のサブスクリプションを上書きします。</block>
+  <block id="75593b03eb6aef440911b04a96cd04dc" category="list-text">交換は 1 つのコンソール アカウントにのみ適用されます。</block>
+  <block id="3de849c536c7d2a1b083f7cc3a929f1e" category="list-text">複数のアカウントを同じサブスクリプションに関連付けるには、追加のアカウントを手動で構成します。</block>
+  <block id="ac15313b1dc2741a5095bcc225efa2d9" category="list-text">資格情報がサブスクリプションに関連付けられていない場合は、次のセクションの説明に従って手動で関連付けます。</block>
+  <block id="db4240b8b0057b7e98188fd2b9da80e5" category="list-text">*関連付け*をクリックし、*完了*をクリックします。</block>
+  <block id="20030a3656e288ae4a8515cef9b4bce1" category="paragraph">割引価格を適用するには、コンソールでサブスクリプションの割り当てを完了する必要があります。</block>
+  <block id="c0c0e5a70f02630ad210596fabf7c505" category="section-title">AWS認証情報を使用してサブスクリプションを設定する</block>
+  <block id="14c5fcb481153b273bbfcb2c619cfb34" category="list-text">コンソールで、*ガバナンス &gt;Licenses and subscriptions*に移動し、*マーケットプレイス サブスクリプション*タブを選択します。</block>
+  <block id="0a4a12ddfb9989eae12565966aa1759f" category="list-text">先ほど作成したサブスクリプションを見つけます。行を展開して、コンソール アカウントに関連付けられていることを確認します。</block>
+  <block id="31755614a692882f0fd1545120b934e4" category="paragraph">AWS Marketplace の制限により、プライベートオファーの一部の詳細は AWS コンソールの外部には公開されません。フィールドに<block ref="382b0f5185773fa0f67a8ed8056c7759" prefix=" " category="inline-code"></block>AWS コンソールで直接情報を確認してください。</block>
+  <block id="2cf5224bbe9daa91b23d4edc583a8e45" category="list-text">サブスクリプションの横にある 3 つのドットのメニューをクリックし、[構成] を選択します。</block>
+  <block id="8a8c90cee4f37eb6a5c4592bc73448b8" category="list-text">適切な*AWS アカウント認証情報*を選択し、*構成*をクリックします。</block>
+  <block id="231e32eb4ed511a6945d523370b753b4" category="paragraph">これらの資格情報に対するマーケットプレイスの料金は、マーケットプレイスのサブスクリプションを使用して請求されます。年間契約の場合、コストは契約使用量に加算されます。</block>
+  <block id="0704f5cf43f12c7f851c183b85e05c23" category="paragraph">サブスクリプションに関連付けるコンソールアカウントの各 AWS 認証情報に対して、手順 1 ～ 4 を繰り返します。</block>
+  <block id="f74e6250ad3a804ed3b29ea80addbf10" category="list-text">他のコンソール組織の資格情報については、[*組織*] ドロップダウンを使用して手順を繰り返します。</block>
+  <block id="4b9c0a07d54c4dbb9f63c21c34e71669" category="list-text">他のエージェントの資格情報については、「*エージェント*」ドロップダウンを使用して手順を繰り返します。</block>
+  <block id="2416b5ee6956fb393f9674655620082f" category="doc">NetApp Consoleの Azure プライベート オファーを承認してアクティブ化する</block>
+  <block id="226265d4efbcdb68ca9dca7a20dc4a59" category="paragraph">Azure ポータルで、 NetApp Consoleの Marketplace プライベート オファーを承諾してサブスクライブします。コンソールで Azure 資格情報を構成します。</block>
+  <block id="dc4e613e69e859f3be40de01f63ef1a2" category="list-text">NetApp の営業担当者と協力して、Azure 請求 ID のプライベート オファーを作成します。</block>
+  <block id="cbd25df866b9c26c2205191e25632c69" category="list-text">Azure Marketplace でプライベート オファーを受け入れるために必要なアクセス許可があります。</block>
+  <block id="3882306bc383e0907d92c44200b57542" category="list-text">エンタープライズ契約 (EA): *エンタープライズ管理者*</block>
+  <block id="5a17015c1797f9b3611d0d9767abd522" category="list-text">Microsoft 顧客契約 (MCA): *請求先アカウント所有者* または *請求先アカウント共同作成者*</block>
+  <block id="b7ecccb6d9814347f79dd394e0ce015d" category="list-text">Azure Marketplace でプライベート オファーを購入し、サブスクリプションを作成するには、必要なアクセス許可が必要です。</block>
+  <block id="0df5d9a9ae7c8623fef019f860f731c5" category="list-text">使用されている Azure サブスクリプションの *サブスクリプション所有者* または *サブスクリプション共同作成者*</block>
+  <block id="2e4c4ee48a5f2caac03de8943a1fdc43" category="list-text">必要な権限を持っている場合、個人がプライベートオファーを承諾して購入することもできます。</block>
+  <block id="cf76a106489c34d8d815ce8e836402f9" category="section-title">Azure ポータルでプライベート オファーを承認してサブスクライブする</block>
+  <block id="e52dafa1a46b15a6c93d8cc9b48c0590" category="paragraph">Azure サブスクリプションは、1 つの Marketplace サブスクリプションにのみ関連付けることができます。同じ Azure サブスクリプション内のワークロードに 2 つの異なる Marketplace サブスクリプションを使用する場合は、サブスクリプションごとに 1 つずつ、2 つの個別のコンソール アカウントを作成する必要があります。複数のCloud Volumes ONTAPインスタンスがあり、異なるサブスクリプション間で課金を分割する場合は、サブスクリプションごとに個別のコンソール アカウントを作成します。</block>
+  <block id="47f26de5d5f809041d484473468f9e1e" category="paragraph">プライベートオファーを承諾して有効にするには、すべての手順を完了する必要があります。手順を省略すると、アクティベーションの問題が発生したり、二重充電が発生したりする可能性があります。</block>
+  <block id="5b91f544615def8157e9739a509448c2" category="paragraph">オファーの条件、価格、詳細に矛盾が見られる場合、またはどのオファーを受け入れるべきかわからない場合は、オファーを受け入れないでください。NetAppの営業チームにお問い合わせください。</block>
+  <block id="8894c60d409fc720e1cb540f53b239d5" category="paragraph">オファーを複数回承諾して有効化すると、二重に請求されます。</block>
+  <block id="80fe6f318fd4a7ea6ad9a4a59226a8d4" category="list-text">NetAppの営業チームから提供されたプライベート オファー リンクをクリックしてサインインします。リンクが利用できない場合は、Azure ポータルに直接サインインします。</block>
+  <block id="b8d22f94e23c3841d89314fa73eee281" category="list-text">Azure サービスから *Marketplace* を検索または選択します。</block>
+  <block id="01d52254404cff7607242f7525a5d9b5" category="list-text">マーケットプレイス ページで、*管理* セクションの *プライベート オファー管理* をクリックします。</block>
+  <block id="0a0f4af873ce479f6cd264bdbc69c46a" category="list-text">プライベートオファーの詳細を確認するには、[表示 + 承認]* をクリックします。</block>
+  <block id="d6d5f4c87a78b99fabcaa4703996f9f1" category="list-text">*プランの詳細*、*期間*、*価格*が正しいことを確認します。</block>
+  <block id="2e875515d0c4ffc7b932a081dce75482" category="list-text">詳細が正しくない場合は、登録しないでください。オファーを修正するには、 NetAppの営業チームにお問い合わせください。</block>
+  <block id="75d15cf3a199a24423c04db8c6229fa7" category="list-text">確認して、「プライベートオファーを承諾」をクリックします。</block>
+  <block id="f6c5449120372658cd480801157add92" category="list-text">*購入*をクリックして購入プロセスを完了します。</block>
+  <block id="c835e219d7545abd5344ea09fe7ba5b9" category="paragraph">*購入*ボタンが利用できない場合は、必要な購入権限があることを確認してください。そうでない場合は、購入ウィンドウのリンクをコピーして、組織内の承認されたユーザーと共有してください。</block>
+  <block id="f5e55f8f93d46fa2e348730347e0114b" category="list-text">購入ワークフローでは、次のようになります。</block>
+  <block id="91a14b2790c4789bde6375a6c412e970" category="list-text">使用する*Azure サブスクリプション*を選択します。</block>
+  <block id="aa41804b7f278699a1900d8c288a14a3" category="list-text">サブスクリプションが作成される*リソース グループ*を選択します。</block>
+  <block id="8eca803eab6a65681b87d1ee4e176522" category="list-text">新しいサブスクリプションの*名前*を入力します。</block>
+  <block id="3460a7ac34077d5cddfc99b0f205478c" category="list-text">必要に応じて、*タグ* (製品、サイトの場所、ワークロード定義、または命名規則) を設定します。</block>
+  <block id="1a3a645cf42eafbdd06b4843afc9596f" category="list-text">*確認して登録*をクリックし、詳細を確認してから*登録*をクリックします。</block>
+  <block id="66e4d81fac45c89822d86dd90ffec210" category="list-text">サブスクリプションが正常に作成されたら、「*今すぐアカウントを構成*」をクリックします。これにより、 NetApp Consoleにリダイレクトされ、構成が完了します。</block>
+  <block id="9a563c483cf139d09ed5790b6644bd40" category="paragraph">Azure 側の自動化は完了するまでに 30 秒から 5 分かかる場合があります。*今すぐアカウントを構成する* をクリックする前にページが閉じられていた場合は、Azure ポータルのサービスに戻ります。サブスクリプションは「*保留中の構成*」として表示されます。選択して設定を続行します。</block>
+  <block id="28aeb99ad7fa714f50ee0dba31b74247" category="list-text">リダイレクトされます<block ref="192e1e8ec4744462f8aaecd68949f9c6" category="inline-link-rx"></block>サインインを求められます。</block>
+  <block id="f0456057cee7cc1dd8dba0eea97afb99" category="list-text">ログイン後、次のページにリダイレクトされます。<block ref="3be513e91609cdd85c59f75b8b9c5275" category="inline-link-rx"></block> 。次のプロンプトが表示されます:</block>
+  <block id="39adb4da3012b43be809229537dd4480" category="list-text">マーケットプレイス サブスクリプションの *表示名* を入力します。</block>
+  <block id="08203a12c0659c3a962694a2bedabdd2" category="list-text">このサブスクリプションにアクセスできるコンソール *アカウント* を選択します。</block>
+  <block id="c971675f678da35b74e0d7fcf448705b" category="list-text">オプションで、*既存のサブスクリプションの置き換え* を有効にして、1 つのコンソール アカウント内の既存のマーケットプレイス サブスクリプションを自動的に置き換えることができます。</block>
+  <block id="bdd177ac7c3a61f270d7d1424cc6bf1f" category="list-text">この置換オプションは、単一のコンソール アカウントに制限されます。</block>
+  <block id="d939375aaed073b9eac9e5beb4ba0a3b" category="list-text">複数のコンソール アカウントを同じマーケットプレイス サブスクリプションに関連付けるには、追加のアカウントを手動で構成します。</block>
+  <block id="b8e7f149b5ff2d9ffc6ecbc62e2350f1" category="paragraph">購入を有効にして割引価格を適用するには、コンソールでサブスクリプションの割り当てを完了する必要があります。</block>
+  <block id="901d81e7a9533af8349427e17f415710" category="section-title">Azure 資格情報を使用してサブスクリプションを構成する</block>
+  <block id="b341a3d298535291adc28f4788d6bda4" category="list-text">サブスクリプションの詳細を検証します。</block>
+  <block id="83c3810644be0d2dacba1e7e4c54862d" category="list-text">作成したマーケットプレイスサブスクリプションを見つけます。</block>
+  <block id="2a64fb30a899b7862fa6657ab067d63f" category="list-text">行を展開して詳細を確認し、サブスクリプションがコンソール アカウントに関連付けられていることを確認します。</block>
+  <block id="ae1a47c80571694a1b615759eb3b5cd8" category="list-text">サブスクリプションの横にある*3つのドットのメニュー*をクリックし、*構成*を選択します。</block>
+  <block id="ac76c135e0b2e37bb199dfccf3e593e0" category="list-text">適切な*Azure サブスクリプション*を選択し、*構成*をクリックします。</block>
+  <block id="af4e61dcda0487052f8f263523f3b339" category="paragraph">この Azure 資格情報に対する Marketplace 料金は、Marketplace サブスクリプションを通じて請求されるようになりました。年間契約の場合、この資格情報の使用は年間契約にカウントされます。</block>
+  <block id="9b6c167143b79b1e5610924ddea3deb3" category="paragraph">サブスクリプションに関連付けるコンソール アカウントの各 Azure 資格情報に対して、手順 1 ～ 4 を繰り返します。</block>
+  <block id="2cf6806ac517b317bcb834ad8600d8e3" category="list-text">別のコンソール組織の資格情報を関連付けるには、[*組織*] ドロップダウンを使用して組織を切り替え、手順を繰り返します。</block>
+  <block id="a27fd486ca02e23f4e210e49dd1d78d0" category="list-text">別のエージェントの資格情報を関連付けるには、[*エージェント*] ドロップダウンを使用して切り替え、手順を繰り返します。</block>
+  <block id="c9ca68f69753eaca0ec0228921c617fa" category="doc">NetApp Consoleの Google Cloud プライベート オファーを承認して構成する</block>
+  <block id="ffe15d142ef4f8262288c1f23dc731f7" category="paragraph">Google Cloud コンソールのNetApp Consoleリストに対する Marketplace のプライベート オファーを承認します。コンソールで Google Cloud 認証情報を設定します。</block>
+  <block id="51f02975d44e73cb2d235f25a2f0cef5" category="list-text">NetApp の営業担当者と協力してプライベート オファーを作成します。営業チームがオファー リンクを提供する必要があります。</block>
+  <block id="feeb32431af9e3e0a47bfb99af23c132" category="list-text">請求先アカウントは無料トライアル中であってはなりません。無料トライアルアカウントではプライベートオファーを受け入れることはできません。試用版の請求アカウントを使用しようとすると、エラーが発生し、 NetAppクラウド チームからのサポートが必要になります。</block>
+  <block id="60f5daee3203a778fb9602ff72136dca" category="list-text">オファーを承諾するには、次の Google Cloud 権限が必要です。</block>
+  <block id="1e0f04e311f715ce8ea177fbb1e72905" category="list-text"><block ref="31e027d96bb2f1edadd2510bb8aef75e" prefix="" category="inline-code"></block>対象となる Cloud Billing アカウントまたは Google Cloud 組織向け</block>
+  <block id="dd254233486ecf83785247cac06950fc" category="list-text"><block ref="9aaa5b08341c4d5f1dd465ffcfa419fd" prefix="" category="inline-code"></block>Cloud Billing アカウントに請求されるプロジェクトの</block>
+  <block id="3262a39e9cebdc3849200e49774587bd" category="section-title">Google Cloud でプライベート オファーを承諾する</block>
+  <block id="6215667fee10cd07541c98f73186c92c" category="paragraph">Google Cloud プロジェクトは、1 つの Marketplace サブスクリプションにのみ関連付けることができます。同じ Google Cloud プロジェクト内のワークロードに 2 つの異なるサブスクリプションを使用する場合は、サブスクリプションごとに 1 つずつ、2 つの個別のコンソール アカウントを作成する必要があります。</block>
+  <block id="54ea7f5728b4fe3047e1bed3564400bf" category="paragraph">プライベートオファーを有効にするには、すべての手順を完了する必要があります。手順を省略すると、二重請求などの問題が発生する可能性があります。</block>
+  <block id="0f42a5bd113a6793bdfb54ff1c208d97" category="paragraph">オファーの条件、価格、詳細に矛盾が見られる場合、またはどのオファーを受け入れるべきかわからない場合は、オファーを受け入れないでください。詳細については、 NetAppアカウント チームにお問い合わせください。</block>
+  <block id="9348292a72d4f417166e1fd8b106c7c8" category="paragraph">すでにアクティブな PAYGO サブスクリプションまたは修正されたプライベート オファーがある場合は、承認手順を実行するだけで済みます。このような場合、マーケットプレイスは同じリスト内のプランを更新し、同じサブスクリプション ID を保持するため、コンソールのサブスクリプションの関連付けはそのまま維持されます。</block>
+  <block id="290bbb83a89ab08e84b67b872e1882b9" category="list-text">NetApp の営業チームから提供されたプライベート オファーのアクティベーション リンクをクリックします。リンクは次のようになります。<block ref="7d9578c0f61bb46b3c15bbcf093caa47" prefix=" " category="inline-code"></block></block>
+  <block id="c06f390cc77930ad800760399f795901" category="list-text">Google Cloud Marketplace にリダイレクトされ、オファーの詳細を確認できます。</block>
+  <block id="6c3d8751216e46ce88977f0a36da3bcd" category="list-text">**請求先アカウント**</block>
+  <block id="6c3a16e063e7de47eb80c62e71151c2e" category="list-text">**製品**: NetApp Console</block>
+  <block id="a370fb40448c1a9cfd60035cbf486153" category="list-text">**オファーの詳細**</block>
+  <block id="d187556677277eb1fac2454e9173b115" category="list-text">**価格**</block>
+  <block id="dbafd25ecc4a1bd157a51b6df56ad0c4" category="paragraph">プランの詳細、期間、価格を慎重に確認してください。何か誤りがある場合は、オファーを受け入れないでください。修正については、 NetAppアカウント チームにお問い合わせください。</block>
+  <block id="c5cd3c98a99c425040223e4b93fa3292" category="list-text">情報が正確であることを確認し、利用規約に同意して、[**同意する**] をクリックします。</block>
+  <block id="85d9763d3791c88a822fb6f9a7689d51" category="list-text">サブスクリプションの作成中は、読み込みアイコンが表示されます。</block>
+  <block id="bd57a36b79c39cc2107f5d54656ea4e2" category="list-text">サブスクリプションが正常に作成されると、ポップアップ ウィンドウが表示されます: *注文リクエストがNetApp, Inc. に送信されました。*</block>
+  <block id="fedfe1dd578adf183aa0564e9868eb0a" category="list-text">**NETAPP, Inc. に登録** をクリックします。サブスクリプションの設定を完了するために、 NetApp Consoleにリダイレクトされます。プライベートオファーが組織内の別のユーザーによって承認された場合:</block>
+  <block id="4eb83948e70f96f003401374e672121a" category="list-text">Google Cloud Marketplace で、[**注文**] に移動します。</block>
+  <block id="988a06cb0560fd8ac30cad8db115da85" category="list-text">ステータスが **保留中** のオファーを見つけます。</block>
+  <block id="0418114406a14ea85606e27fbe1ee330" category="list-text">3 つのドットのメニューをクリックし、** NetApp, Inc. に登録** を選択します。</block>
+  <block id="e58b6bbe6eb23bea3dd1681ec6a9af11" category="list-text">リダイレクトされます<block ref="7c376aef5250afe71efcebf7a7a3f4b9" prefix=" " category="inline-code"></block>サインインを求められます。</block>
+  <block id="58fd0c4f67d67b5379d45ee8a3db553f" category="list-text">ログイン後、次のページにリダイレクトされます。<block ref="24d15e59be383cd22c6b17c55af710c1" prefix=" " category="inline-code"></block> 。次の操作を行う必要があるポップアップが表示されます。</block>
+  <block id="109deb83c524752969863db2154396e3" category="list-text">*SaaS マーケットプレイス サブスクリプション* の表示名を入力します。</block>
+  <block id="98a69ff93ac7f606e9ffc0f0ad3c2be6" category="list-text">サブスクリプションへのアクセス権を持つコンソール **アカウント** を選択します。</block>
+  <block id="f42189975a0067b88050cff9b07f38b3" category="list-text">オプションで、1 つのコンソール アカウント内の既存の Marketplace サブスクリプションを自動的に置き換える場合は、**既存のサブスクリプションを置き換える** を有効にできます。</block>
+  <block id="35a234d8ec57d77057c7e83dd833a391" category="list-text">複数のコンソール アカウントを同じ Marketplace サブスクリプションに関連付ける必要がある場合は、追加のアカウントを手動で構成する必要があります。</block>
+  <block id="5d80793259e7331456ddff3f91a5456b" category="list-text">**関連付け** をクリックし、**完了** をクリックします。</block>
+  <block id="a378083fbc7ec3f353dbe9d5b064d0f6" category="section-title">サブスクリプションを Google Cloud 認証情報に関連付ける</block>
+  <block id="056138e0e575aec0fc8b81b39d17b481" category="list-text">コンソールで、**ガバナンス &gt;Licenses and subscriptions** に移動し、**Marketplace サブスクリプション** タブを選択します。</block>
+  <block id="8fbe217ff0b9b7194904a0d5b0c3cb0d" category="list-text">承認プロセスで作成されたサブスクリプションを見つけます。</block>
+  <block id="099fe4ce960f301e1509b85f07456fec" category="list-text">正しいプランが表示されていることを確認します。</block>
+  <block id="a7dd4d4083c70bf36edc2215bcf1d392" category="list-text">行を展開して、プライベート オファーの関連付けを確認します。</block>
+  <block id="df5938543de3aeab258d6bb444cb19bb" category="paragraph">Google Cloud Marketplaceの制限により、一部のフィールドには<block ref="382b0f5185773fa0f67a8ed8056c7759" prefix=" " category="inline-code"></block>。この情報は Google Cloud コンソールでのみ利用できます。</block>
+  <block id="95672b9c651ec0ed6ec25a849f943b6d" category="list-text">[オプション] サブスクリプションの名前を変更するには:</block>
+  <block id="102533fc3349affbde8eed3f0119055a" category="list-text">サブスクリプションの横にある**3 つのドットのメニュー**をクリックします。</block>
+  <block id="bb9d726ae34d1dd317cb722b46752963" category="list-text">**サブスクリプションの名前を変更** を選択します。</block>
+  <block id="14652e6a008507211ad2e3f7ec7082c0" category="list-text">もう一度**3 つのドットのメニュー**をクリックし、**構成** を選択します。</block>
+  <block id="a2716289bc8357bf8ed654777881b95b" category="list-text">適切な Google Cloud アカウントの **認証情報** を選択し、[**構成**] をクリックします。</block>
+  <block id="84656ffcb4b3afd9fc277e779c534a20" category="paragraph">この Google Cloud 認証情報に対する Marketplace の料金は、Marketplace サブスクリプションを通じて請求されるようになりました。年間契約の場合、この資格情報の使用は年間契約にカウントされます。</block>
+  <block id="637051383e4daa671cb785abd12cb014" category="paragraph">Marketplace サブスクリプションに関連付ける Console アカウント内の Google Cloud 認証情報ごとに、手順 1～5 を繰り返します。</block>
+  <block id="c501484feb6b7b802af6d880ccfa4919" category="list-text">別のコンソール アカウントの資格情報を関連付けるには、[**アカウント**] ドロップダウンを使用してアカウントを切り替え、手順を繰り返します。</block>
+  <block id="6ff676ed2c5670a6a4ca2dcdf4e3b4be" category="list-text">別のエージェントの資格情報を関連付けるには、[**エージェント**] ドロップダウンを使用して手順を繰り返します。</block>
+  <block id="390eba2474f396f3e3c52f5eda09bd78" category="section-title">Google Cloud の使用状況を表示する</block>
+  <block id="b22fe978436068666bd5697ee5f14cf8" category="paragraph">Google Cloud のクレジット ステータスと使用状況を表示するには:</block>
+  <block id="1afb41bd6758d43e8e21093a19c57c09" category="list-text">Google Cloud コンソールで、**Cloud Marketplace** に移動します。</block>
+  <block id="4ff28d68fee060aaa1dc530e74b6dfd5" category="list-text">**[ご注文]** をクリックします。</block>
+  <block id="9bf1f05e9fbef21e2ad4a15f4f8f4069" category="list-text">**[請求先アカウントの選択]** ドロップダウンから、プライベート オファーに関連付けられている請求先アカウントを選択します。</block>
+  <block id="c33037b135d0f0c2a1ec0f24e1d17c91" category="list-text">表でプライベートオファーを見つけ、**3 つのドットのメニュー** をクリックして、[**クレジットを表示**] を選択します。</block>
+  <block id="c38a5b5bc8ce7c5e70620128d5b70df7" category="summary">クラウド プロバイダーのマーケットプレイスからNetAppデータ サービス ( Cloud Volumes ONTAPを含む) をサブスクライブします。</block>
+  <block id="b01b1be092b95233172f870dc729234b" category="doc">PAYGOサブスクリプションと契約を管理する</block>
+  <block id="67902908617b3450355aaa46279af065" category="paragraph">クラウド プロバイダーのマーケットプレイスからNetAppデータ サービス ( Cloud Volumes ONTAPを含む) をサブスクライブすると、コンソールの Web サイトにリダイレクトされ、そこでサブスクリプションを保存してコンソール組織に関連付けます。サブスクライブすると、各サブスクリプションをコンソールで管理できるようになります。</block>
+  <block id="8d667715a159d86d1b904662382ebd14" category="inline-link">NetAppデータ サービス (標準モード) をサブスクライブする方法を学びます</block>
+  <block id="2d1664e9c561a4d8448ca272b632b070" category="list-text"><block ref="2d1664e9c561a4d8448ca272b632b070" category="inline-link-rx"></block></block>
+  <block id="f2de349fa0961a04852f2d19e9ef3ef8" category="inline-link">NetAppデータ サービス (制限モード) をサブスクライブする方法を学びます</block>
+  <block id="857eda0579a011309e9d26f062d34f8d" category="list-text"><block ref="857eda0579a011309e9d26f062d34f8d" category="inline-link-rx"></block></block>
+  <block id="85bb8fe222d28237b7a61c8962355819" category="admonition">*マーケットプレイス サブスクリプション* ページにはすべてのライセンスがリストされます。特定のデータ サービスのライセンスの詳細については、*概要* ダッシュボードのデータ サービス タイルを使用します。<block ref="9a2921323c53c040741c05db9c27525e" category="inline-link-macro-rx"></block> 。</block>
+  <block id="aea9c467234db8f0360906cb49a2233c" category="section-title">新しいマーケットプレイスサブスクリプションを追加する</block>
+  <block id="2739fe5739941e5e38c954a74ec97f61" category="paragraph">コンソールから直接マーケットプレイス サブスクリプションをサブスクライブできます。</block>
+  <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="open-title">AWS</block>
+  <block id="41b6d60e8d41db820ad4cf8cf2c7c386" category="paragraph">次のビデオは、AWS Marketplace からNetApp Consoleをサブスクライブする手順を示しています。</block>
+  <block id="cdffc0d26bd5aa0e2753286066e04346" category="video-title">AWS MarketplaceからNetApp Consoleをサブスクライブする</block>
+  <block id="3a580f142203677f1f0bc30898f63f53" category="open-title">Azure</block>
+  <block id="e89fcc67b26f0b69a8d1e19c39ae032b" category="paragraph">次のビデオでは、Azure Marketplace からNetApp Consoleをサブスクライブする手順を示します。</block>
+  <block id="1a5380f621efd9053933198ae41492c5" category="video-title">Azure Marketplace からNetApp Consoleをサブスクライブする</block>
+  <block id="56ef2682280ac110060b881925a87b80" category="open-title">Google Cloud</block>
+  <block id="7eadeab2df6abb5312f9466d99e55ce9" category="paragraph">次の動画では、Google Cloud Marketplace からNetApp Consoleをサブスクライブする手順を示します。</block>
+  <block id="3516b78aeda2902a39d727952bf5db9a" category="video-title">Google Cloud Marketplace からNetApp Consoleをサブスクライブする</block>
+  <block id="2be16f237d558bd6b00788d28d21b37e" category="list-text">*マーケットプレイス サブスクリプション*を選択します。</block>
+  <block id="5aa066be2a651f3b22275be1f4cc2b4e" category="list-text">*サブスクリプション* テーブルの上にある *サブスクリプションの追加* を選択します。</block>
+  <block id="04a880965367eaf965a6ae341940ab0d" category="list-text">「サブスクリプションの追加」ダイアログで、クラウド プロバイダーを選択します。</block>
+  <block id="03863fd8ecb98c1d2286d087aaa70e52" category="list-text">AWS サブスクリプションを選択する場合は、年間契約か PAYGO サブスクリプションかを選択します。</block>
+  <block id="b3883d339b720269f1092a8f0dffcc59" category="list-text">*サブスクリプションの追加*を選択してプロバイダーのマーケットプレイスに移動し、提供されている手順を完了します。</block>
+  <block id="3b32a98dd42670af00af73ef3e4b0007" category="list-text">クラウド プロバイダー マーケットプレイスでの作業が完了したら、コンソールに戻ってプロセスを完了します。</block>
+  <block id="e858f445394700e621aa67dd8e3fe958" category="section-title">サブスクリプションを表示する</block>
+  <block id="5007494d42102b978c07ca3a177b922e" category="paragraph">コンソール組織またはアカウントに関連付けられている各 PAYGO サブスクリプションと年間契約の詳細を表示できます。</block>
+  <block id="bf62a531d6a478f50eedbb8552baa137" category="paragraph">Google Cloud では、プライベート オファーに関連付けられたマーケットプレイスのサブスクリプションを識別することもできます。これにより、オファーを正常に受け入れたことを確認できます。</block>
+  <block id="417d4df9df2a37df2d0cc6002d70267c" category="paragraph">現在表示している組織に関連付けられているサブスクリプションのみが表示されます。</block>
+  <block id="9522a31711d708f54807bf22724f9503" category="list-text">サブスクリプション情報を表示するときに、次のようにテーブルの詳細を操作できます。</block>
+  <block id="143796c8d7a2647d259f8e7dd3978b59" category="list-text">高度な検索とフィルタリングを使用して、テーブルに表示されるサブスクリプションを決定します。特定のサブスクリプション名で検索したり、タイプや構成などのさまざまなサブスクリプション パラメータでフィルターしたりできます。</block>
+  <block id="6a1de13d318f22872902849cd26467b4" category="list-text">詳細を表示するには行を展開します。</block>
+  <block id="33d90cc16eaedf37738a3faf06f00f36" category="list-text">選択<block ref="98b11313fea6c4106e5a3c018f0ffbc9" category="inline-image-macro-rx" type="image"></block>テーブルに表示する列を選択します。</block>
+  <block id="eac8d0af64c0a4995da5b7692c81b935" category="paragraph">期間と自動更新の列はデフォルトでは表示されません。「自動更新」列には、Azure 契約の更新情報のみが表示されます。</block>
+  <block id="9cbfac1c0c1dfe59da2da797a5a82d26" category="paragraph">テーブル情報については、次の点に注意してください。</block>
+  <block id="4d34f1097f6c8b9cee28bca8b78bbee9" category="list-text">開始日</block>
+  <block id="d1686d74b72c58f44c6fceaf3011df0b" category="list-text">開始日は、サブスクリプションがアカウントに正常に関連付けられ、課金が開始された日です。</block>
+  <block id="382b0f5185773fa0f67a8ed8056c7759" category="list-text">該当なし</block>
+  <block id="213d5ccdac27f697fc375ec6ab7c710a" category="list-text">表に N/A と表示されている場合、その情報は現在クラウド プロバイダーの API から入手できません。</block>
+  <block id="cf5f3091e30dee6597885d8c0e0c357f" category="list-text">期間</block>
+  <block id="e2f00c4d78bc3eacc3fb7745410be1d8" category="list-text">Google Cloud サブスクリプションが、作成および承認後に変更されたプライベート オファーに関連付けられている場合、用語には N/A と表示されます。このシナリオでは、Google Cloud Marketplace からの API レスポンスに用語関連の情報は含まれません。</block>
+  <block id="cd494d76449d5dfe0c0adfb2f3447761" category="list-text">契約</block>
+  <block id="7079272a1c7a44f03be2a0d0b3124b35" category="list-text">契約の詳細を展開すると、コンソールに現在のプランで利用可能な契約オプションと単位 (容量またはノード数) が表示されます。</block>
+  <block id="8b12bf014be3e062a16f26c7bef54b9e" category="list-text">コンソールは、終了日と、契約がまもなく更新されるか、まもなく終了するか、すでに終了しているかを識別します。</block>
+  <block id="96e38f1c6a4a0c08aa18da531b61d89b" category="list-text">AWS 契約があり、開始日後に契約オプションを変更した場合は、AWS Marketplace から契約オプションを検証してください。</block>
+  <block id="3b3f3f7253f4c57a7eb145d69d119e28" category="list-text">Google Cloud プライベート オファーをお持ちの場合は、契約オプションは利用できません。</block>
+  <block id="900feaf6f8a2d7d036666533c1550150" category="section-title">サブスクリプションの名前を変更する</block>
+  <block id="94a146aef6c9eb11c53b4ce9e78f582f" category="paragraph">組織でサブスクリプションをどのように使用しているかをより適切に識別できるように、サブスクリプションの名前を変更できます。</block>
+  <block id="2894ad7fa729f923f763a91ccd7ef757" category="list-text">管理するサブスクリプションに対応する行のアクション メニューを選択し、[名前の変更] を選択します。</block>
+  <block id="8c7ebaed40d327a704a96ce939d99c1c" category="section-title">プロバイダー資格情報を使用してサブスクリプションを構成する</block>
+  <block id="27539ca89abdac045936bccded4b5173" category="paragraph">通常、サブスクリプションは、サブスクライブ時に作成したプロバイダー資格情報を使用して構成されます。場合によっては、課金方法を変更するために、別の資格情報を使用するようにサブスクリプションを再構成する必要があります。サブスクリプションに関連付ける資格情報は、エージェントにも関連付ける必要があります。</block>
+  <block id="7c010cb37094c0d3e77e7cc0c7e2b4ff" category="paragraph">資格情報の形式は、使用しているマーケットプレイスによって異なります。たとえば、Azure マーケットプレイス サブスクリプションは Azure サブスクリプション名に関連付けられていますが、AWS マーケットプレイス サブスクリプションでは AWS アカウント ID が使用されます。利用可能な資格情報のリストは、「資格情報」ページから確認できます。</block>
+  <block id="f1988b9cd89140978002ed72faca6b53" category="paragraph">サブスクリプションを解除した場合、[構成] オプションはグレー表示されます。</block>
+  <block id="6ba982f758d275db5ab623bf88d95f26" category="list-text">設定するサブスクリプションに対応する行のアクション メニューを選択し、[設定] を選択します。</block>
+  <block id="256529ab75b0ec631391cea57e89eb11" category="list-text">[構成] ダイアログで、サブスクリプションで構成する資格情報を選択します。現在選択されているエージェントに関連付けられている資格情報からのみ選択できます。使用したい資格情報が表示されない場合は、別のエージェント ビューに切り替えてみてください。</block>
+  <block id="2436039191bf901b1eeef718fd0cf4e4" category="section-title">サブスクリプションをコンソール組織に関連付ける</block>
+  <block id="4fc5aba83426c92655253bdaac73b763" category="paragraph">サブスクリプションを組織に関連付けると、その組織のメンバーがそのサブスクリプションを課金に使用できるようになります。</block>
+  <block id="ca35b157a89bbc8ba6a6d0d4692fe2fb" category="paragraph">サブスクリプションの使用を特定の組織に制限したり、複数の組織間でサブスクリプションを共有したりできます。</block>
+  <block id="bda5c6e4132d7f1bfcaa387aa9bcb6ec" category="paragraph">サブスクリプションを組織に関連付けるには、組織管理者のロールが必要です。</block>
+  <block id="c53adc94271638b800aab67861b845fc" category="admonition">コンソールは、組織を使用してユーザーとリソースを管理する、標準モードの Identity and Access Management (IAM) をサポートしています。コンソールをプライベート モードまたは制限モードで使用している場合は、コンソール _アカウント_ を使用して、サブスクリプションなどのユーザーとリソースを管理します。</block>
+  <block id="b3170678c3c61ffc94af47ef973eeb35" category="list-text">関連付けるサブスクリプションの行で、アクション メニューを開き、[関連付け] を選択します。</block>
+  <block id="7d3a30fe2668092a63decc90304c25c5" category="list-text">*サブスクリプションの関連付け*ダイアログで、サブスクリプションに関連付ける 1 つ以上の組織を選択します。</block>
+  <block id="e43ddb0fd3dbaee9a42e954a181ab141" category="list-text">*関連付け*を選択します。</block>
+  <block id="3b446cd4e304253a8a5be3d76f1f7d85" category="section-title">サブスクリプションに関連付けられた資格情報を表示する</block>
+  <block id="002d431b6337f0842f2c8f341268a2ad" category="paragraph">*Marketplace サブスクリプション* ページから特定のサブスクリプションの資格情報を表示できます。これにより、サブスクリプションの課金方法を確認できます。資格情報は使用しているエージェントに関連付けられているため、表示するサブスクリプションに関連付けられているエージェントを選択する必要があります。</block>
+  <block id="305572f28aa8e98572395f6c22011dee" category="admonition">必要に応じて、上部のナビゲーション バーにあるエージェント ドロップダウンを使用してエージェントを切り替えます。</block>
+  <block id="54a532ed5b57b0751dc3bc4333f738c5" category="list-text">資格情報を表示するサブスクリプションが含まれている行で、[表示] を選択します。サブスクリプションに複数の資格情報が関連付けられている場合は、資格情報が表示されず、別のエージェントを選択するように指示される場合があります。</block>
+  <block id="5f2584f9079ec37953d08854e13410ab" category="section-title">サブスクリプションの設定を解除する</block>
+  <block id="3eeaae02c9959c91b45646bc49679ed8" category="paragraph">サブスクリプションを削除する前に、サブスクリプションを構成解除する必要があります。これにより、関連するすべてのデータと設定がクリアされます。</block>
+  <block id="459fb716cff28b2c01ce618e81f58770" category="list-text">NetApp Consoleメニューで、*ガバナンス &gt;Licenses and subscriptions*を選択します。</block>
+  <block id="8f401d09de150d1b370bd812c149ef02" category="list-text">構成を解除するサブスクリプションの行で、アクション メニューをクリックし、[構成解除] を選択します。</block>
+  <block id="25f9b23bd620e2b7744e0ee585d450c4" category="list-text">指示に従って、関連する設定やデータを削除またはリセットします。</block>
+  <block id="c967e7e2ec19dfbde4242e266c145df0" category="list-text">ステータスが「未構成」に更新されるまで待ちます。</block>
+  <block id="c9db549b3c47c258a77389c2a1310393" category="section-title">サブスクリプションを削除する</block>
+  <block id="78fa7824e76cd8274cf9d050c0ce8cc1" category="paragraph">クラウド プロバイダー (AWS、Google Cloud、または Azure) のサブスクリプションを解除すると、コンソールにサブスクリプションのステータスが *Unsubscribed* と表示されます。</block>
+  <block id="cd8d98e20f3508cb708db6a30ce5c9dc" category="paragraph">*登録解除済み*のサブスクリプションをコンソールから削除して、表示されなくすることができます。</block>
+  <block id="091ca7aa552eef4b6b760ed64babc1bc" category="paragraph">削除できるのは、「*登録解除済み*」かつ「*未構成*」のサブスクリプションのみです。削除する前に、関連するすべての設定、データ、および構成をクリアまたはリセットする必要があります。</block>
+  <block id="1cdf55c4f07b4e6c150fa4314c119aa5" category="paragraph">サブスクリプションがまだ構成されている場合、[*削除*] オプションは表示されません。オプションを使用できるようにするには、関連付けられている設定、サービス、またはデータをすべてクリアしてサブスクリプションを構成解除します。</block>
+  <block id="f718d4efc769e352af879333b97563c1" category="list-text">削除するサブスクリプションの行で、アクション メニューを開き、[削除] を選択します。</block>
+  <block id="d945569d4f85da82c21c1eedda61f245" category="paragraph">削除できるのは、ステータスが *Unsubscribed* および *Unconfigured* のサブスクリプションのみです。</block>
+  <block id="328bc94c6a18dd3a8b5eacb533435091" category="list-text">*サブスクリプションの削除*ダイアログで、サブスクリプションを削除することを確認します。</block>
+  <block id="6269943bbab503c57445a47b04897eaa" category="summary">NetAppテクニカル サポートでサポート ケースを開く前に、 NetAppサポート サイト アカウントをNetApp Consoleに追加し、サポートに登録する必要があります。</block>
+  <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">サポートに登録する</block>
+  <block id="776abbf4d80cbef17bd3c86ff37b2257" category="paragraph">NetApp Consoleとそのストレージ ソリューションおよびデータ サービスに固有のテクニカル サポートを受けるには、サポート登録が必要です。Cloud Volumes ONTAPシステムの主要なワークフローを有効にするには、サポート登録も必要です。</block>
+  <block id="ba4e23e03f4354a0f1ef2781272c8477" category="paragraph">サポートに登録しても、クラウド プロバイダー ファイル サービスに対するNetAppサポートは有効になりません。クラウド プロバイダーのファイル サービス、そのインフラストラクチャ、またはサービスを使用するソリューションに関連するテクニカル サポートについては、その製品のドキュメントの「ヘルプの取得」を参照してください。</block>
+  <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">サポート登録の概要</block>
+  <block id="192054ad7601240a3e8be54cc5cc548e" category="paragraph">サポート資格を有効にするには、次の 2 つの登録形式があります。</block>
+  <block id="869a868c87f6fb61410cfd773b4f1bab" category="list-text">NetApp Consoleアカウントのシリアル番号 (コンソールの [サポート リソース] ページにある 20 桁の 960xxxxxxxxx シリアル番号) を登録します。</block>
+  <block id="be0b51de4268d87101344aa0368b4403" category="paragraph">これは、コンソール内のすべてのサービスに対する単一のサポート サブスクリプション ID として機能します。各コンソール アカウントを登録する必要があります。</block>
+  <block id="55ff64467cd508971910145ab5d6b3b8" category="list-text">クラウド プロバイダーのマーケットプレイスで、サブスクリプションに関連付けられたCloud Volumes ONTAPシリアル番号を登録します (これらは 20 桁の 909201xxxxxxxx シリアル番号です)。</block>
+  <block id="3cf9fb70d6921dd90583621f028a395f" category="paragraph">これらのシリアル番号は一般に _PAYGO シリアル番号_ と呼ばれ、 Cloud Volumes ONTAP の導入時にNetApp Consoleによって生成されます。</block>
+  <block id="bf516b6498e37e816d29ae43ae132f74" category="paragraph">両方のタイプのシリアル番号を登録すると、サポート チケットの開設やケースの自動生成などの機能が有効になります。登録は、以下の説明に従ってNetAppサポート サイト (NSS) アカウントをコンソールに追加することで完了します。</block>
+  <block id="ba5983207e417797fefd5b9374ab4a97" category="section-title">NetAppサポートのためにNetApp Consoleを登録する</block>
+  <block id="dcb7105ba6e3d9411b05e726848feb80" category="paragraph">サポートに登録し、サポート資格を有効にするには、 NetApp Consoleアカウントの 1 人のユーザーがNetAppサポート サイト アカウントをコンソール ログインに関連付ける必要があります。NetAppサポートに登録する方法は、 NetAppサポート サイト (NSS) アカウントをすでにお持ちかどうかによって異なります。</block>
+  <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">NSSアカウントをお持ちの既存顧客</block>
+  <block id="ed5bddb699a442b85bc1bb8e1516fe57" category="paragraph">NSS アカウントをお持ちのNetApp のお客様の場合は、コンソールからサポートに登録するだけです。</block>
+  <block id="76bc427c3d9c4b81dc353078b942f991" category="list-text">*管理* &gt; *資格情報*を選択します。</block>
+  <block id="f19ab635e6d5f884a22ee4ce067fdbfd" category="list-text">*ユーザー資格情報*を選択します。</block>
+  <block id="e9451600769b4bf4b20ca941ba9e6d19" category="list-text">*NSS 資格情報の追加* を選択し、 NetAppサポート サイト (NSS) の認証プロンプトに従います。</block>
+  <block id="cfc5506589d5a4d055e721267d5f0732" category="list-text">登録プロセスが成功したことを確認するには、[ヘルプ] アイコンを選択し、[サポート] を選択します。</block>
+  <block id="1d4ea9fd10f6cfcd6f6fe1f861d354a4" category="paragraph">*リソース* ページには、コンソール アカウントがサポートに登録されていることが表示されます。</block>
+  <block id="afe8240ca62f4b72006980ff64d371b8" category="paragraph">他のコンソール ユーザーは、ログインにNetAppサポート サイト アカウントを関連づけていない場合、同じサポート登録ステータスを表示しないことに注意してください。ただし、これはあなたのアカウントがサポートに登録されていないことを意味するものではありません。組織内の 1 人のユーザーがこれらの手順を実行していれば、アカウントは登録済みになります。</block>
+  <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">既存の顧客だがNSSアカウントがない</block>
+  <block id="42eaca1e1c2d9e1f04e932eeaa6d129d" category="paragraph">既存のNetApp顧客であり、既存のライセンスとシリアル番号を持っているものの、NSS アカウントを持っていない場合は、NSS アカウントを作成し、それをコンソール ログインに関連付ける必要があります。</block>
+  <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">NetAppサポートサイト ユーザー登録フォーム</block>
+  <block id="0c4a8b62da9473fbd5401273c4f85ee0" category="list-text">NetAppサポートサイトのアカウントを作成するには、<block ref="041bcb6d9bdf91f7d6ac92ae3a196e12" category="inline-link-rx"></block></block>
+  <block id="d61c9f72493817776f392db42ac446a2" category="list-text">適切なユーザー レベル (通常は * NetApp顧客/エンド ユーザー*) を選択してください。</block>
+  <block id="bd33c4539c7d6985f6edafd4a4f2ba1d" category="list-text">上記で使用したコンソール アカウントのシリアル番号 (960xxxx) を必ずシリアル番号フィールドにコピーしてください。これにより、アカウント処理が高速化されます。</block>
+  <block id="9b1f48f88cd439b7a50fe3e76eb8a853" category="list-text">以下の手順を実行して、新しいNSSアカウントをコンソールログインに関連付けます。<block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block> 。</block>
+  <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">NetAppの新着情報</block>
+  <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">NetAppを初めて使用し、NSS アカウントをお持ちでない場合は、以下の手順に従ってください。</block>
+  <block id="e7e9f49f4584c68b9d97c578e73b7583" category="list-text">コンソールの右上にあるヘルプ アイコンを選択し、*サポート* を選択します。</block>
+  <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">サポート登録ページからアカウント ID シリアル番号を見つけます。</block>
+  <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">「サポート」が最初のオプションとしてリストされている「ヘルプ」メニューのスクリーンショット</block>
+  <block id="379f9cd57d97013f3f7fdd24f692a0b1" category="paragraph"><block ref="379f9cd57d97013f3f7fdd24f692a0b1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">NetAppのサポート登録サイト</block>
+  <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">移動先<block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block>*私は登録済みのNetApp顧客ではありません* を選択します。</block>
+  <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">必須フィールド（赤いアスタリスクが付いているフィールド）に入力します。</block>
+  <block id="1128fc8d5ec64880f4d49337ed798d31" category="list-text">*製品ライン* フィールドで、*Cloud Manager* を選択し、該当する請求プロバイダーを選択します。</block>
+  <block id="50a1dc01b7312307c34a888071586955" category="list-text">上記の手順 2 からアカウントのシリアル番号をコピーし、セキュリティ チェックを完了して、NetApp のグローバル データ プライバシー ポリシーを読んだことを確認します。</block>
+  <block id="3a24c87c9971d2011b4df223718f84b4" category="paragraph">この安全な取引を完了するために、指定されたメールボックスに電子メールが直ちに送信されます。検証メールが数分以内に届かない場合は、必ずスパム フォルダーを確認してください。</block>
+  <block id="03413baeca1ff7222737d8ce299bd4e8" category="list-text">メール内からアクションを確認します。</block>
+  <block id="201080500e946070a2e4873042507c77" category="paragraph">確認すると、リクエストがNetAppに送信され、 NetAppサポート サイトのアカウントを作成することが推奨されます。</block>
+  <block id="a2454703f88e5bf5b433ae850a87151b" category="list-text">上記で使用したアカウントのシリアル番号 (960xxxx) を必ずシリアル番号フィールドにコピーしてください。これにより処理速度が向上します。</block>
+  <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">このプロセス中に、 NetAppから連絡が来るはずです。これは、新規ユーザー向けの 1 回限りのオンボーディング演習です。</block>
+  <block id="629757336278be576456cf315303b178" category="paragraph">NetAppサポートサイトのアカウントを取得したら、以下の手順を実行して、アカウントをコンソールログインに関連付けます。<block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block> 。</block>
+  <block id="3e616bae81890a6c8fae17c9b45af152" category="section-title">Cloud Volumes ONTAPサポートに NSS 認証情報を関連付ける</block>
+  <block id="f22d1a855e255746a6b925a3b22f7838" category="paragraph">Cloud Volumes ONTAPの次の主要なワークフローを有効にするには、 NetAppサポート サイトの認証情報をコンソール アカウントに関連付ける必要があります。</block>
+  <block id="a0518a10626dc11fd00e2d20265ad240" category="list-text">従量課金制のCloud Volumes ONTAPシステムをサポート対象として登録する</block>
+  <block id="321aadf78ef73521712291b7aba6411f" category="paragraph">システムのサポートを有効にし、 NetAppテクニカル サポート リソースにアクセスするには、NSS アカウントを提供する必要があります。</block>
+  <block id="d51b2b497db445a16b1c9583c1abbb59" category="list-text">BYOL（個人ライセンス使用）時にCloud Volumes ONTAP を導入する</block>
+  <block id="f3cd224f9506684fa3b5e2b89b2a566c" category="paragraph">コンソールがライセンス キーをアップロードし、購入した期間のサブスクリプションを有効にするには、NSS アカウントを提供する必要があります。これには、期間更新の自動更新が含まれます。</block>
+  <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">Cloud Volumes ONTAPソフトウェアを最新リリースにアップグレードする</block>
+  <block id="daf104544b5203a46e1580e1b8583f1f" category="paragraph">NSS 資格情報をNetApp Consoleアカウントに関連付けることは、コンソール ユーザー ログインに関連付けられている NSS アカウントとは異なります。</block>
+  <block id="5bc1315a63455544e7a917a7cc968939" category="paragraph">これらの NSS 資格情報は、特定のコンソール アカウント ID に関連付けられています。コンソール組織に属するユーザーは、*サポート &gt; NSS 管理* からこれらの資格情報にアクセスできます。</block>
+  <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">顧客レベルのアカウントをお持ちの場合は、1 つ以上の NSS アカウントを追加できます。</block>
+  <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">パートナー アカウントまたは再販業者アカウントをお持ちの場合は、1 つ以上の NSS アカウントを追加できますが、顧客レベルのアカウントと一緒に追加することはできません。</block>
+  <block id="e8d4092baef6680c6a35d5228ae31de2" category="paragraph"><block ref="e8d4092baef6680c6a35d5228ae31de2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c0e0b7ff0de9558404e9b77ece42948a" category="list-text">*NSS管理 &gt; NSSアカウントの追加*を選択します。</block>
+  <block id="85b9386ed443776127e099931d73448a" category="list-text">プロンプトが表示されたら、[続行] を選択して、Microsoft ログイン ページにリダイレクトします。</block>
+  <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetApp は、サポートとライセンスに固有の認証サービスの ID プロバイダーとして Microsoft Entra ID を使用します。</block>
+  <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">ログイン ページで、 NetAppサポート サイトに登録した電子メール アドレスとパスワードを入力して、認証プロセスを実行します。</block>
+  <block id="7687b0a57d5cb728d9fb892dfc814715" category="paragraph">これらのアクションにより、コンソールはライセンスのダウンロード、ソフトウェア アップグレードの検証、将来のサポート登録などに NSS アカウントを使用できるようになります。</block>
+  <block id="ec084bb25ed5b934c09b361069c246b2" category="list-text">NSS アカウントは顧客レベルのアカウントである必要があります (ゲスト アカウントや一時アカウントではありません)。顧客レベルの NSS アカウントを複数持つことができます。</block>
+  <block id="27387009488fe78dcc7cb7e3e432792f" category="list-text">パートナー レベルのアカウントの場合、NSS アカウントは 1 つだけ存在できます。顧客レベルの NSS アカウントを追加しようとしたときに、パートナー レベルのアカウントが存在する場合は、次のエラー メッセージが表示されます。</block>
+  <block id="d926847e4634e19a1aa7358becc0fa27" category="paragraph">「異なるタイプの NSS ユーザーがすでに存在するため、このアカウントでは NSS 顧客タイプは許可されません。」</block>
+  <block id="a04a3a5322782e8c18d0d64be7e1ccbc" category="paragraph">既存の顧客レベルの NSS アカウントがあり、パートナー レベルのアカウントを追加しようとする場合も同様です。</block>
+  <block id="1afe8a81cfddc9fa9559e272bb6b9496" category="list-text">ログインが成功すると、 NetApp はNSS ユーザー名を保存します。</block>
+  <block id="1dcb63fd55c4d22e87cb32275b8cc808" category="inline-image-macro">3つの水平の点のアイコン</block>
+  <block id="0dfcbbbe02d3e96f8ad78782e8772587" category="paragraph">これは、メールにマッピングされるシステム生成の ID です。*NSS管理*ページでは、<block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block>メニュー。</block>
+  <block id="fc79de85a483938f72fbcb9822ec0ae3" category="list-text">ログイン認証トークンを更新する必要がある場合は、<block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block>メニュー。</block>
+  <block id="b14d512a3c64fb5df16f6721b0603c63" category="paragraph">このオプションを使用すると、再度ログインするよう求められます。これらのアカウントのトークンは 90 日後に期限切れになることに注意してください。これを知らせる通知が投稿されます。</block>
+  <block id="80f48cc4cb64860e960ab9e9145cc67e" category="paragraph">ライセンスを管理するには、サービス名に基づいてライセンスをグループ化できます。これにより、特定のサービスに関連するすべてのライセンスを確認できます。行を展開すると、サービスに関連する各ライセンスの詳細情報を表示できます。各サービスのルート行には、サービス名とそのサービスの使用容量が表示されます。ライセンスはサービス名ごとに自動的にグループ化されます。各サービスのルート行には、サービス名とそのサービスの使用容量が表示されます。</block>
+  <block id="7a31e490cd0c8ad68b05578ab24c91cb" category="list-text">BlueXPメニューから、*ガバナンス* &gt; *デジタル ウォレット* を選択し、*直接ライセンス* タブを選択します。</block>
+  <block id="f82297c58511adf82f03f07c94881e8b" category="list-text">サービス名の行をクリックして展開します。これにより、そのサービスに関連するすべてのライセンスが表示されます。展開された各行には、ライセンス ID、シリアル番号、容量、有効期限など、ライセンスに関する詳細情報が表示されます。</block>
+  <block id="bb7f3fec4d3c3aaa10956abf2960654c" category="summary">NetApp Consoleのライセンスとサブスクリプションの新機能について説明します。</block>
+  <block id="490414e0366b091220802d406e52c076" category="doc">新着情報</block>
+  <block id="a41dd7aa7d921f9f0881a705d3679e6c" category="section-title">2025年10月6日</block>
+  <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">2025年3月10日</block>
+  <block id="c523b074da0b63e607578686184d5981" category="section-title">2025年2月10日</block>
+  <block id="592997dde366d5775e7e052816854f74" category="section-title">2024年3月5日</block>
+  <block id="c94e28d852ce517312825c9ed339fc1d" category="section-title">2023年7月30日</block>
+  <block id="71bff2737bdd059023a4784358e71a64" category="section-title">2023年5月7日</block>
+  <block id="102787ed6297b34a7504b527e91d01d3" category="section-title">2023年4月3日</block>
+  <block id="a67ce68ccac082ad54a552bdbcb6ecd7" category="section-title">メール通知</block>
+  <block id="d128bda2634e1051cc984231da065144" category="paragraph">BlueXP digital walletで電子メール通知がサポートされるようになりました。</block>
+  <block id="380d0a0b2cec998dcd9f52b91b24304c" category="paragraph">通知設定を構成すると、BYOL ライセンスの有効期限が近づいたとき (「警告」通知)、またはすでに有効期限が切れたとき (「エラー」通知) に電子メール通知を受け取ることができます。</block>
+  <block id="335e7f21f0fdfecbe9c04540dcb8cdd6" category="inline-link">メール通知の設定方法を学ぶ</block>
+  <block id="9af2177d45256182d52759c9d5b918a6" category="paragraph"><block ref="9af2177d45256182d52759c9d5b918a6" category="inline-link-rx"></block></block>
+  <block id="164bf9dea8d8396a2e7501258b908616" category="section-title">マーケットプレイスサブスクリプションのライセンス容量</block>
+  <block id="016c818ed3128119f94a31cbec32bf1f" category="paragraph">Cloud Volumes ONTAPの容量ベースのライセンスを表示すると、 BlueXP digital walletに、マーケットプレイスのプライベート オファーで購入したライセンス容量が表示されるようになりました。</block>
+  <block id="207aaa44f72ba634c18fcc9bae44d655" category="inline-link">アカウントで消費された容量を確認する方法を学びます</block>
+  <block id="1e9f781ad3dabc2f942313854ce94883" category="paragraph"><block ref="bcd8bf14da5e102dbc4b48dd0870869e" category="inline-link-rx"></block> 。</block>
+  <block id="5a4346a01828d72104a6540080377b25" category="section-title">2022年11月6日</block>
+  <block id="36e33f823d687cad39366d44fd0b326d" category="section-title">サブスクリプションと年間契約</block>
+  <block id="b3e680bd6b6b80e2fd4f5bd19f3ad015" category="paragraph">BlueXPの PAYGO サブスクリプションと年間契約を、BlueXP digital walletから表示および管理できるようになりました。</block>
+  <block id="949b19dd7e9f6496c1125f7166270450" category="inline-link">サブスクリプションの管理方法を学ぶ</block>
+  <block id="02a7eedc354fe91b04b9ff906dc9c760" category="paragraph"><block ref="dcb08a7187e62f8d5d6c3eba08ea6b8f" category="inline-link-rx"></block> 。</block>
+  <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">2022年9月18日</block>
+  <block id="b269d65b4fd592fc59288f3c9c3917b9" category="section-title">最適化されたI/OとWORM容量</block>
+  <block id="dfc3d3012360c41f119ce032ebb3ed8b" category="paragraph">BlueXP digital walletには、最適化された I/O ライセンス パッケージの概要と、アカウント全体のCloud Volumes ONTAPシステムにプロビジョニングされた WORM 容量が表示されるようになりました。</block>
+  <block id="c3304f9cf1f523f219fc4a936bde8242" category="paragraph">これらの詳細は、料金がどのように請求されるか、追加の容量を購入する必要があるかどうかをよりよく理解するのに役立ちます。</block>
+  <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">2022年7月31日</block>
+  <block id="b69737a8aa6d54e160fd215ef53825b5" category="section-title">充電方法を変更する</block>
+  <block id="f999ecec0a946b40cdd04ca71d0ac5e0" category="paragraph">容量ベースのライセンスを使用するCloud Volumes ONTAPシステムの課金方法を変更できるようになりました。たとえば、Essentials パッケージを使用してCloud Volumes ONTAPシステムを導入した場合、ビジネス ニーズの変化に応じて Professional パッケージに変更できます。</block>
+  <block id="63b54c0d3b4fb8e35270bfdf7b2bdcbb" category="inline-link">充電方法の変更方法を学ぶ</block>
+  <block id="8c8503ff8c21813561363b608190163e" category="paragraph"><block ref="24cab88ee4e7cc87558a54f6745deabe" category="inline-link-rx"></block> 。</block>
+  <block id="1511b856d0328cfba458b8f83c2e94e3" category="section-title">2022年7月3日</block>
+  <block id="dd83b22a815febb6c6547eab078bbf30" category="section-title">消費容量</block>
+  <block id="290fbe7a9d91cd4191566b8d26837eb2" category="paragraph">アカウント内の消費済み容量の合計とライセンス パッケージ別の消費済み容量が表示されるようになりました。これにより、料金がどのように請求されるか、追加の容量を購入する必要があるかどうかを把握できます。</block>
+  <block id="61589f40a840f6f60d0d36160690dc0e" category="inline-image-macro">容量ベースのライセンスのページを示すスクリーンショット。このページには、アカウントで消費された容量の概要が表示され、ライセンス パッケージごとに消費された容量の内訳が表示されます。</block>
+  <block id="4b661d618c68b40651187ff1169d6947" category="paragraph"><block ref="4b661d618c68b40651187ff1169d6947" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ba26e4556a0f160834687982b0479336" category="section-title">2022年2月27日</block>
+  <block id="ad542dc76a1c13d716648648c7052561" category="section-title">オンプレミスのONTAPクラスタのライセンス</block>
+  <block id="cc6992a66b9fc6bd5f23a20beff49e2a" category="paragraph">オンプレミスのONTAPクラスターのインベントリと、そのハードウェアおよびサービス契約の有効期限を表示できるようになりました。クラスターに関する追加の詳細も利用できます。</block>
+  <block id="af7d9848ad6bc871344453ac12a13027" category="inline-link">オンプレミスのONTAPクラスタのライセンスを管理する方法を学びます</block>
+  <block id="770294ba582707dbf5d21f7add8b531e" category="paragraph"><block ref="d28003d0743d6fc8a920f6982b9bd603" category="inline-link-rx"></block> 。</block>
+  <block id="586301717819197e24001cac47efdaaa" category="section-title">2022年1月2日</block>
+  <block id="d5ce756f503ae6211b9ef6c827e757be" category="section-title">ライセンス条件は自動的に更新されます</block>
+  <block id="ccb04438d71ca79f2a97704ba47b5adf" category="paragraph">ライセンスの容量または期間を変更すると、ライセンス条件が で自動的に更新されるようになりました。ライセンスを自分で手動で更新する必要はありません。</block>
+  <block id="b2d68f8e07e0e6ca8d81ba9d15e96e7e" category="paragraph">自動ライセンス更新は、すべてのタイプのCloud Volumes ONTAPライセンスとデータ サービスのすべてのライセンスで機能します。</block>
+  <block id="a146b21fc1601ef799629d7c85b849b9" category="sidebar">NetApp Consoleでライセンスとサブスクリプションを管理および監視します。</block>
+  <block id="34d74eac914313be8abc81cd59f94d4d" category="sidebar">Licenses and subscriptionsドキュメント</block>
+  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">始めましょう</block>
+  <block id="25b1fde564bb1fc860069167d8668df6" category="sidebar">ライセンスを管理する</block>
+  <block id="7cbe4872773ca07492a76acf7d557fef" category="sidebar">Cloud Volumes ONTAPの容量ベースのライセンスを管理する</block>
+  <block id="6942b724002d90bb0f705f478cdd6bf3" category="sidebar">サブスクリプションを管理する</block>
+  <block id="e74b98af0a0d10cc27c402c02fac1fda" category="sidebar">マーケットプレイスのサブスクリプションと契約を管理する</block>
+  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">ブログとコミュニティ</block>
+  <block id="3c031b939f6ec312ee601d021e7a6644" category="sidebar">NetApp Console</block>
+  <block id="cc58d3a9b2264c4fd8cb1d3f61b90bdc" category="sidebar">NetApp Data Services</block>
+  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetAppコミュニティ</block>
+  <block id="c19e034a7ae60fb90287c5050a076d5a" category="sidebar">Licenses and subscriptionsのドキュメント</block>
+  <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">リリース ノート</block>
+  <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新機能</block>
+  <block id="0ff3fcd44035e3f54a2216140f6b51ae" category="sidebar">詳細はこちら</block>
+  <block id="104ab36dc0e3605e2bfc5fac87bee923" category="sidebar">ライセンスとサブスクリプションを使用する</block>
+  <block id="a35e94495c93c5d785f8b1240c15be6a" category="sidebar">概要ダッシュボードを使用する</block>
+  <block id="9f0562c731b8981f21e8a7ac75bd947f" category="sidebar">ライセンスを管理します。</block>
+  <block id="22a93e112ce29f0d1e8dfc0ede83e119" category="sidebar">直接ライセンスの管理</block>
+  <block id="fbf5bb26f6374732410ccc529ef29ffa" category="sidebar">Cloud Volumes ONTAPのライセンスを管理する</block>
+  <block id="c7031958abe0c6bca3058548b703b37f" category="sidebar">Cloud Volumes ONTAPの容量ベースのライセンス</block>
+  <block id="f34953a70b4a66823b7c335bccdd1df4" category="sidebar">Cloud Volumes ONTAPのノードベースのライセンス</block>
+  <block id="03d8ffc661918290fbea573239c62f5a" category="sidebar">プライベートオファーを管理する</block>
+  <block id="21677e75a8fa5c435a73182243b106bf" category="sidebar">AWSプライベートオファーを管理する</block>
+  <block id="b3f0b3ed456c94edb01f453c1e1cdf1f" category="sidebar">Azure プライベート オファーを管理する</block>
+  <block id="7088a1a0a9ded3e2d3db863329dd5edd" category="sidebar">Google Cloud のプライベート オファーを管理する</block>
+  <block id="b7dddfb63fd700204e12dba0c2972cb4" category="sidebar">マーケットプレイスのサブスクリプションを管理する</block>
+  <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識とサポート</block>
+</blocks>

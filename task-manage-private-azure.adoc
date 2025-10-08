@@ -4,7 +4,7 @@ permalink: task-manage-private-azure.html
 keywords: activate, license, licensing, install, request capacity, link subscription, keystone flex, bluexp, netapp console, marketplace, azure 
 summary: AWS、Azure、Google Cloud 向けの、一般的な、ハイパースケーラー固有の、エンドツーエンドのプライベート オファー プロセスと、 NetAppインテリジェント サービスの承認およびアクティベーション ガイドを管理します。 
 ---
-= NetAppコンソールの Azure プライベート オファーを承認してアクティブ化する
+= NetApp Consoleの Azure プライベート オファーを承認してアクティブ化する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: AWS、Azure、Google Cloud 向けの、一般的な、ハイパース�
 
 
 [role="lead"]
-Azure ポータルで、 NetAppコンソールの Marketplace プライベート オファーを承諾してサブスクライブします。コンソールで Azure 資格情報を構成します。
+Azure ポータルで、 NetApp Consoleの Marketplace プライベート オファーを承諾してサブスクライブします。コンソールで Azure 資格情報を構成します。
 
 .開始する前に
 * NetApp の営業担当者と協力して、Azure 請求 ID のプライベート オファーを作成します。
@@ -74,7 +74,7 @@ Azure サブスクリプションは、1 つの Marketplace サブスクリプ�
 
 . 必要に応じて、*タグ* (製品、サイトの場所、ワークロード定義、または命名規則) を設定します。
 . *確認して登録*をクリックし、詳細を確認してから*登録*をクリックします。
-. サブスクリプションが正常に作成されたら、「*今すぐアカウントを構成*」をクリックします。これにより、 NetAppコンソールにリダイレクトされ、構成が完了します。
+. サブスクリプションが正常に作成されたら、「*今すぐアカウントを構成*」をクリックします。これにより、 NetApp Consoleにリダイレクトされ、構成が完了します。
 +
 [NOTE]
 ====
@@ -109,7 +109,7 @@ Azure 側の自動化は完了するまでに 30 秒から 5 分かかる場合�
 
 == Azure 資格情報を使用してサブスクリプションを構成する
 
-. コンソールで、*ガバナンス > ライセンスとサブスクリプション* に移動し、*マーケットプレイス サブスクリプション* タブを選択します。
+. コンソールで、*ガバナンス >Licenses and subscriptions*に移動し、*マーケットプレイス サブスクリプション*タブを選択します。
 . サブスクリプションの詳細を検証します。
 +
 .. 作成したマーケットプレイスサブスクリプションを見つけます。

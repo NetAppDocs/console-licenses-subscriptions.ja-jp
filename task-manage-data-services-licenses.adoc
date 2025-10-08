@@ -21,7 +21,7 @@ NOTE: *直接ライセンス* ページにはすべてのライセンスがリ�
 
 このページの説明には、各サービスに適用される情報が記載されています。これらのサービスのライセンスに関する詳細については、次のページを参照してください。
 
-* https://docs.netapp.com/us-en/console-backup-recovery/br-start-licensing.html["NetAppバックアップおよびリカバリのライセンスを設定する"^]
+* https://docs.netapp.com/us-en/console-backup-recovery/br-start-licensing.html["NetApp Backup and Recoveryのライセンスを設定する"^]
 * https://docs.netapp.com/us-en/console-disaster-recovery/get-started/dr-licensing.html["NetApp Disaster Recoveryのライセンスを設定する"^]
 * https://docs.netapp.com/us-en/console-ransomware-resilience/rp-start-licenses.html["NetApp Ransomware Resilienceのライセンスを設定する"^]
 * https://docs.netapp.com/us-en/console-tiering/task-licensing-cloud-tiering.html["NetApp Cloud Tieringのライセンスを設定する"^]
@@ -68,7 +68,7 @@ ea10e1c6-80cc-4219-8e99-3c3e6b161ba5
 
 == ライセンスの追加
 
-ライセンスに関連付けられたNetAppコンソール アカウントがNetAppサポート サイト アカウントでもあり、インターネットにアクセスできる場合、ライセンス情報は **ライセンスとサブスクリプション** セクションに自動的に表示されます。  NSS アカウントに関連付けられていないコンソール アカウントを使用した場合は、ライセンスを手動で追加する必要があります。
+ライセンスに関連付けられたNetApp ConsoleアカウントがNetAppサポート サイト アカウントでもあり、インターネットにアクセスできる場合、ライセンス情報は **Licenses and subscriptions** セクションに自動的に表示されます。  NSS アカウントに関連付けられていないコンソール アカウントを使用した場合は、ライセンスを手動で追加する必要があります。
 
 シリアル番号と関連付けられた NSS アカウントを入力するか、 NetAppライセンス ファイル (NLF) をアップロードすることで、コンソールにライセンスを追加できます。コンソールがインターネットにアクセスできない場合 (プライベート モードのインストール)、アップロードするNetAppライセンス ファイルを取得する必要があります。
 
@@ -78,7 +78,7 @@ NetApp の営業担当者からライセンスを購入すると、 NetAppシリ
 NOTE: シリアル番号を入力するには、まず https://docs.netapp.com/us-en/console-setup-admin/task-adding-nss-accounts.html["NetAppサポートサイトのアカウントをコンソールに追加する"^]。これは、シリアル番号にアクセスする権限を持つNetAppサポート サイトのアカウントです。
 
 .手順
-. NetAppコンソール メニューから、*ガバナンス > ライセンスとサブスクリプション* を選択し、*直接ライセンス* タブを選択します。
+. NetApp Consoleメニューから、*ガバナンス >Licenses and subscriptions* を選択し、*直接ライセンス* タブを選択します。
 . *ライセンスの追加*を選択します。
 . *ライセンスの追加*ダイアログで、ライセンス情報を入力し、*ライセンスの追加*を選択します。
 +
@@ -89,7 +89,7 @@ NOTE: シリアル番号を入力するには、まず https://docs.netapp.com/u
 +
 NetAppサポートサイトのアカウントがドロップダウンリストから選択できない場合は、 https://docs.netapp.com/us-en/console-setup-admin/task-adding-nss-accounts.html["NSSアカウントをコンソールに追加する"^]
 
-** ライセンス ファイルがある場合 ( NetAppコンソールをプライベート モードで使用する場合に必要)、[ライセンス ファイルのアップロード] オプションを選択し、プロンプトに従ってファイルを添付します。
+** ライセンス ファイルがある場合 ( NetApp Consoleをプライベート モードで使用する場合に必要)、[ライセンス ファイルのアップロード] オプションを選択し、プロンプトに従ってファイルを添付します。
 
 
 

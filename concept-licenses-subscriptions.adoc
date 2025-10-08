@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-licenses-subscriptions.html 
 keywords: license, licensing, licenses, subscriptions, 
-summary: ライセンスとサブスクリプションを使用すると、 NetAppコンソール ライセンス、 NetAppマーケットプレイス サブスクリプション、およびNetApp Keystone を管理および監視できます。 
+summary: ライセンスとサブスクリプションを使用すると、 NetApp Consoleライセンス、 NetAppマーケットプレイス サブスクリプション、およびNetApp Keystone を管理および監視できます。 
 ---
 = ライセンスとサブスクリプションについて学ぶ
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: ライセンスとサブスクリプションを使用すると、 NetA
 
 
 [role="lead"]
-NetAppから購入したライセンス (BYOL)、 NetAppデータ サービスのマーケットプレイス サブスクリプション ( Cloud Volumes ONTAPを含む)、およびNetApp KeystoneサブスクリプションをNetAppコンソールで管理および監視できます。
+NetAppから購入したライセンス (BYOL)、 NetAppデータ サービスのマーケットプレイス サブスクリプション ( Cloud Volumes ONTAPを含む)、およびNetApp KeystoneサブスクリプションをNetApp Consoleで管理および監視できます。
 
 
 

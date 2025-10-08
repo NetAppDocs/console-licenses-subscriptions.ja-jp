@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, release notes, enhancements, fixes, licenses, subscriptions' 
-summary: NetAppコンソールのライセンスとサブスクリプションの新機能について説明します。 
+summary: NetApp Consoleのライセンスとサブスクリプションの新機能について説明します。 
 ---
 = 新着情報
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: NetAppコンソールのライセンスとサブスクリプション�
 
 
 [role="lead"]
-NetAppコンソールのライセンスとサブスクリプションの新機能について説明します。
+NetApp Consoleのライセンスとサブスクリプションの新機能について説明します。
 
 
 
@@ -22,11 +22,11 @@ NetAppコンソールのライセンスとサブスクリプションの新機�
 
 
 
-=== BlueXPはNetAppコンソールになりました
+=== BlueXPはNetApp Consoleになりました
 
-NetAppコンソールは、強化され再構築されたBlueXP基盤上に構築され、オンプレミスとクラウド環境全体にわたるエンタープライズ グレードのNetAppストレージとNetAppデータ サービスの集中管理を提供し、リアルタイムの分析情報、ワークフローの高速化、および高度なセキュリティとコンプライアンスを備えた簡素化された管理を実現します。
+NetApp Consoleは、強化され再構築されたBlueXP基盤上に構築され、オンプレミスとクラウド環境全体にわたるエンタープライズ グレードのNetAppストレージとNetApp Data Servicesの集中管理を提供し、リアルタイムの分析情報、より高速なワークフロー、および高度なセキュリティとコンプライアンスを備えた簡素化された管理を実現します。
 
-変更内容の詳細については、link:https://docs.netapp.com/us-en/bluexp-relnotes/index.html["NetAppコンソールのリリースノート"] 。
+変更内容の詳細については、link:https://docs.netapp.com/us-en/bluexp-relnotes/index.html["NetApp Consoleのリリースノート"] 。
 
 
 
@@ -88,7 +88,7 @@ https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-li
 
 
 
-== 30 2023年7月
+== 2023年7月30日
 
 
 
@@ -180,7 +180,7 @@ https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-license
 
 
 
-== 31 2022年7月
+== 2022年7月31日
 
 
 
@@ -192,7 +192,7 @@ https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-license
 
 
 
-== 3 2022年7月
+== 2022年7月3日
 
 
 

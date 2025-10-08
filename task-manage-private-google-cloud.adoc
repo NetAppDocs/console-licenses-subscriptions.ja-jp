@@ -4,7 +4,7 @@ permalink: task-manage-private-google-cloud.html
 keywords: activate, license, licensing, install, request capacity, link subscription, keystone flex, bluexp, netapp console, marketplace, google cloud 
 summary: AWS、Azure、Google Cloud 向けの、一般的な、ハイパースケーラー固有の、エンドツーエンドのプライベート オファー プロセスと、 NetAppインテリジェント サービスの承認およびアクティベーション ガイドを管理します。 
 ---
-= NetAppコンソールの Google Cloud プライベート オファーを承認して構成する
+= NetApp Consoleの Google Cloud プライベート オファーを承認して構成する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -13,7 +13,7 @@ summary: AWS、Azure、Google Cloud 向けの、一般的な、ハイパース�
 
 
 [role="lead"]
-Google Cloud コンソールのNetAppコンソール リストに対する Marketplace のプライベート オファーを承認します。コンソールで Google Cloud 認証情報を設定します。
+Google Cloud コンソールのNetApp Consoleリストに対する Marketplace のプライベート オファーを承認します。コンソールで Google Cloud 認証情報を設定します。
 
 .開始する前に
 * NetApp の営業担当者と協力してプライベート オファーを作成します。営業チームがオファー リンクを提供する必要があります。
@@ -50,7 +50,7 @@ Google Cloud プロジェクトは、1 つの Marketplace サブスクリプシ�
 . Google Cloud Marketplace にリダイレクトされ、オファーの詳細を確認できます。
 +
 .. **請求先アカウント**
-.. **製品**: NetAppコンソール
+.. **製品**: NetApp Console
 .. **オファーの詳細**
 .. **価格**
 +
@@ -64,7 +64,7 @@ Google Cloud プロジェクトは、1 つの Marketplace サブスクリプシ�
 . 情報が正確であることを確認し、利用規約に同意して、[**同意する**] をクリックします。
 . サブスクリプションの作成中は、読み込みアイコンが表示されます。
 . サブスクリプションが正常に作成されると、ポップアップ ウィンドウが表示されます: *注文リクエストがNetApp, Inc. に送信されました。*
-. **NETAPP, Inc. に登録** をクリックします。サブスクリプションの設定を完了するために、 NetAppコンソールにリダイレクトされます。プライベートオファーが組織内の別のユーザーによって承認された場合:
+. **NETAPP, Inc. に登録** をクリックします。サブスクリプションの設定を完了するために、 NetApp Consoleにリダイレクトされます。プライベートオファーが組織内の別のユーザーによって承認された場合:
 +
 .. Google Cloud Marketplace で、[**注文**] に移動します。
 .. ステータスが **保留中** のオファーを見つけます。
@@ -94,7 +94,7 @@ Google Cloud プロジェクトは、1 つの Marketplace サブスクリプシ�
 
 == サブスクリプションを Google Cloud 認証情報に関連付ける
 
-. コンソールで、**ガバナンス > ライセンスとサブスクリプション** に移動し、**Marketplace サブスクリプション** タブを選択します。
+. コンソールで、**ガバナンス >Licenses and subscriptions** に移動し、**Marketplace サブスクリプション** タブを選択します。
 . サブスクリプションの詳細を検証します。
 +
 .. 承認プロセスで作成されたサブスクリプションを見つけます。
