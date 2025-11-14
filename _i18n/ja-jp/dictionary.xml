@@ -7,7 +7,6 @@
   <block id="64c3bf191a7a3aa11f89d25d0284c2a4" category="inline-link">NetAppサポートサイトのアカウントをコンソールに追加する</block>
   <block id="c0d26ee72011a383155a1ac972516b07" category="admonition">シリアル番号を入力するには、まず<block ref="cd0ca1d0032a534b9da0eebdd3e962e6" category="inline-link-rx"></block>。これは、シリアル番号にアクセスする権限を持つNetAppサポート サイトのアカウントです。</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">手順</block>
-  <block id="1e287a793773a0dc0c78e536804c43e1" category="list-text">NetApp Consoleメニューから、*ガバナンス &gt;Licenses and subscriptions* を選択し、*直接ライセンス* タブを選択します。</block>
   <block id="37fcb8e7d30cc5903f7318cd979d8ae4" category="list-text">*ライセンスの追加*を選択します。</block>
   <block id="5b0603de038451942370226099e5125d" category="list-text">*ライセンスの追加*ダイアログで、ライセンス情報を入力し、*ライセンスの追加*を選択します。</block>
   <block id="b20365c7ce019b6e1f4c2c98af493327" category="list-text">シリアル番号があり、NSS アカウントがわかっている場合は、「*シリアル番号を入力*」を選択してその情報を入力します。</block>
@@ -218,7 +217,6 @@
   <block id="5e61525870b8ecb7cda0015f4b7208db" category="inline-link-macro">ライセンスの管理について詳しくはこちら</block>
   <block id="0bfbd2ad670f16ca87b68145ca0b64cf" category="inline-link-macro">サブスクリプションの管理について詳しくはこちら</block>
   <block id="483b8e46eb21b512550083b13a6ba1de" category="paragraph"><block ref="f5d9875e96b8ed7153bab8f22c840330" category="inline-link-macro-rx"></block> 。<block ref="f050330f0428b7d1c9a33b47b1e41be1" category="inline-link-macro-rx"></block> 。</block>
-  <block id="0aa8bceb217782b5e4390aefe60d271f" category="list-text">NetApp Consoleメニューから、*ガバナンス &gt;Licenses and subscriptions*を選択します。</block>
   <block id="32790cf377a1a575eece70f624d64118" category="list-text">*概要*を選択します。</block>
   <block id="de9c819c70af50797f21116704502cee" category="list-text">各データ サービス ( Cloud Volumes ONTAPを含む) の [*表示*] を選択して、詳細を表示し、ライセンスとサブスクリプションを管理します。</block>
   <block id="77f5141787aa2cd1e98caca9f5ff20ed" category="paragraph">各タイルには、容量の概要がグラフィカルに表示されます。詳細ページを表示して、その容量の支払い方法を確認し、管理することができます。</block>
@@ -612,9 +610,7 @@
   <block id="b01b1be092b95233172f870dc729234b" category="doc">PAYGOサブスクリプションと契約を管理する</block>
   <block id="67902908617b3450355aaa46279af065" category="paragraph">クラウド プロバイダーのマーケットプレイスからNetAppデータ サービス ( Cloud Volumes ONTAPを含む) をサブスクライブすると、コンソールの Web サイトにリダイレクトされ、そこでサブスクリプションを保存してコンソール組織に関連付けます。サブスクライブすると、各サブスクリプションをコンソールで管理できるようになります。</block>
   <block id="8d667715a159d86d1b904662382ebd14" category="inline-link">NetAppデータ サービス (標準モード) をサブスクライブする方法を学びます</block>
-  <block id="2d1664e9c561a4d8448ca272b632b070" category="list-text"><block ref="2d1664e9c561a4d8448ca272b632b070" category="inline-link-rx"></block></block>
   <block id="f2de349fa0961a04852f2d19e9ef3ef8" category="inline-link">NetAppデータ サービス (制限モード) をサブスクライブする方法を学びます</block>
-  <block id="857eda0579a011309e9d26f062d34f8d" category="list-text"><block ref="857eda0579a011309e9d26f062d34f8d" category="inline-link-rx"></block></block>
   <block id="85bb8fe222d28237b7a61c8962355819" category="admonition">*マーケットプレイス サブスクリプション* ページにはすべてのライセンスがリストされます。特定のデータ サービスのライセンスの詳細については、*概要* ダッシュボードのデータ サービス タイルを使用します。<block ref="9a2921323c53c040741c05db9c27525e" category="inline-link-macro-rx"></block> 。</block>
   <block id="aea9c467234db8f0360906cb49a2233c" category="section-title">新しいマーケットプレイスサブスクリプションを追加する</block>
   <block id="2739fe5739941e5e38c954a74ec97f61" category="paragraph">コンソールから直接マーケットプレイス サブスクリプションをサブスクライブできます。</block>
@@ -668,7 +664,6 @@
   <block id="54a532ed5b57b0751dc3bc4333f738c5" category="list-text">資格情報を表示するサブスクリプションが含まれている行で、[表示] を選択します。サブスクリプションに複数の資格情報が関連付けられている場合は、資格情報が表示されず、別のエージェントを選択するように指示される場合があります。</block>
   <block id="5f2584f9079ec37953d08854e13410ab" category="section-title">サブスクリプションの設定を解除する</block>
   <block id="3eeaae02c9959c91b45646bc49679ed8" category="paragraph">サブスクリプションを削除する前に、サブスクリプションを構成解除する必要があります。これにより、関連するすべてのデータと設定がクリアされます。</block>
-  <block id="459fb716cff28b2c01ce618e81f58770" category="list-text">NetApp Consoleメニューで、*ガバナンス &gt;Licenses and subscriptions*を選択します。</block>
   <block id="8f401d09de150d1b370bd812c149ef02" category="list-text">構成を解除するサブスクリプションの行で、アクション メニューをクリックし、[構成解除] を選択します。</block>
   <block id="25f9b23bd620e2b7744e0ee585d450c4" category="list-text">指示に従って、関連する設定やデータを削除またはリセットします。</block>
   <block id="c967e7e2ec19dfbde4242e266c145df0" category="list-text">ステータスが「未構成」に更新されるまで待ちます。</block>
@@ -830,7 +825,6 @@
   <block id="d2b3a1dfe9d4c19f9ff2f788f74f9779" category="doc">請求設定を管理する</block>
   <block id="8a13dbdb4fcf25f5e0cb0926b8af890f" category="paragraph">NetApp Console内で直接 *課金設定* を設定および管理できるようになりました。この機能強化により、管理者は、直接のNetAppライセンス、クラウド マーケットプレイスのサブスクリプション、およびKeystone契約全体で容量の使用状況、更新、およびコストの請求方法を定義および表示できるようになります。</block>
   <block id="4b7bb7f3cdde9d3c96c7125f6fc305e3" category="inline-link-macro">請求設定に関するドキュメント</block>
-  <block id="2b2febbc6e70870b1335116227b6f5da" category="paragraph">詳細については、<block ref="a04f7fc8553e4925fecf791dbfbbad42" category="inline-link-macro-rx"></block> 。</block>
   <block id="ece16d101819a0a984bc19dd31e93766" category="paragraph">サイドバー: サイドバー パーマリンク: concept-billing-preferences-terms.html キーワード: ライセンス、ライセンス付与、サブスクリプション、概要: 「ライセンスとサブスクリプションを使用すると、 NetApp Consoleライセンス、 NetAppマーケットプレイス サブスクリプション、およびNetApp Keystone を管理および監視できます。」---</block>
   <block id="5b64210d3d0fdd140a4a300b82341072" category="paragraph">= 用語と定義 :hardbreaks: :nofooter: :icons: フォント :linkattrs: :imagesdir: ./media/</block>
   <block id="4b843d9eef057518b9ed64591ad8cc70" category="paragraph">課金設定は、 NetApp Consoleがライセンスとサブスクリプションの支払い、請求書、更新動作を処理する方法を制御します。設定は 2 つのレベルのいずれかで行います。</block>
@@ -853,7 +847,6 @@
   <block id="599c9b0b724ff40d712e8b1a323b8f8d" category="paragraph">課金設定により、組織のアクティブなライセンスとサブスクリプションの支払い、請求書、更新の動作をどのように処理するかが決まります。これらの設定はグローバルに適用して、組織内のすべての課金関係に反映させることもできますし、特定の契約に独自の構成が必要な場合は個別のサブスクリプション レベルで反映させることもできます。</block>
   <block id="8dc8efc61c3e8d351d2761bd0cd8d331" category="list-text">*マーケットプレイス サブスクリプション* は、使用料がハイパースケーラー アカウントを通じて請求されるクラウド マーケットプレイス契約 (AWS、Azure、または Google Cloud) に対応します。</block>
   <block id="1e7c5007c8aa004a99074c2a438cd957" category="list-text">*直接ライセンス* は、 NetAppから直接購入され、ライセンス キー、請求書の受取人、および更新オプションを通じてNetApp Consoleで管理されるライセンスを表します。</block>
-  <block id="4deefbe09cfc76181afc6762b7b6d4c4" category="list-text">* Keystoneサブスクリプション* はKeystone契約に基づいて管理され、請求書の受信者とコスト センター タグは同じインターフェースを通じて処理されます。</block>
   <block id="40ed87604c1cdf10c1530d65c122c3f4" category="paragraph">調達モデルに応じて、組織がサービスを割り当て、支払う方法を設定できます。</block>
   <block id="d08ccf52b4cdd08e41cfb99ec42e0b29" category="section-title">権限</block>
   <block id="6e70716fedade61a999818a444a40c58" category="paragraph">*アカウント管理者* または *請求管理者* の役割を持つユーザーのみが請求設定を変更できます。これらのロールにより、組織の請求データに影響する請求書の連絡先、コスト センター、または更新設定を変更できるのは承認されたユーザーのみになります。  *オペレーター* ロールを持つユーザーは既存の設定を表示することはできますが、編集する権限はありません。</block>
@@ -885,7 +878,6 @@
   <block id="33208471678e93cf28f2247670d0909f" category="list-text">*年間契約* — 定義されたサブスクリプション期間を固定します。</block>
   <block id="ad877409cd2ed77740e023a10d0724cd" category="list-text">*自動更新* — ライセンスまたはマーケットプレイス契約の有効期限が切れたときに自動的に継続できるようにします。このオプションを無効にすると、サービスの中断を防ぐために手動で更新する必要があります。</block>
   <block id="2cac16fed84c2d4fd5dd6777759dfad7" category="list-text">*カスタム CVO 構成* — 複数のマーケットプレイス サブスクリプションを単一のハイパースケーラーにマッピングできます。これは、同じクラウド環境内で異なるビジネス ユニットまたはプロジェクトに個別の課金アカウントが必要な場合に役立ちます。</block>
-  <block id="9309fae135034fbc99491b93dd395820" category="list-text">*変更の確認ダイアログ* — 請求の更新を適用する前に表示され、管理者が変更内容を確認して確認できます。この安全対策により、誤ったアカウントに料金がリダイレクトされる可能性のある誤った構成変更を防ぐことができます。</block>
   <block id="6ed4edc7faa33c9719cd01e4b40f2483" category="section-title">一般的な構成パス</block>
   <block id="ad3f68cadbc36ae20d3c338318c7e9c0" category="paragraph">次の例は、さまざまな課金設定が一般的なケースとどのように一致するかを示しています。</block>
   <block id="54861efdd06fc309e1c9a420feff98eb" category="cell">シナリオ</block>
@@ -901,13 +893,11 @@
   <block id="5435d0c2ab2affaf5e146abe5dcdf92d" category="paragraph">たとえば、直接のNetAppライセンスとマーケットプレイスのサブスクリプションの両方を組み合わせた組織を考えてみましょう。一般的な構成では、マーケットプレイスの課金前にプリペイド容量を使用するために、デフォルトの課金モードとして * NetAppライセンスを優先* に設定します。次に、*カスタム CVO 構成* で、各ハイパースケーラー (AWS、Azure、Google Cloud) に対応するサブスクリプション ID が割り当てられます。</block>
   <block id="a3bc016aa80a8b7ecc67c3ff4f3f16a7" category="paragraph">これらの設定を保存した後、管理者は *Licenses and subscriptions* の下のマッピングを確認し、各サービスが正しいアカウントを指していることを確認できます。さらに検証するには、 NetApp Consoleの使用状況データをクラウド課金ダッシュボードと比較し、必要に応じてコスト センターのタグや連絡先を調整して、レポートの一貫性を維持できます。</block>
   <block id="e6f95da84fc231235869778f84686fab" category="summary">NetApp Consoleで課金設定を構成して、ライセンス、マーケットプレイス サブスクリプション、およびKeystone契約の課金および更新方法を制御します。</block>
-  <block id="a06290c2e517b18ed98c41f83e5896b1" category="paragraph">NetApp Consoleで課金設定を構成して管理し、組織のアカウントに容量使用量、更新、請求書を適用する方法を制御できます。課金設定により、使用料がNetAppライセンス、クラウド マーケットプレイス契約、またはKeystone契約のいずれから発生するかが決まります。</block>
   <block id="531f703ee6ea7df16c5a41c3d86dbca1" category="list-text">*請求管理者*または*組織管理者*の役割を持っています。</block>
   <block id="9b5b2baaae7db459fd9d75d10938da0d" category="list-text">関連するすべてのマーケットプレイス サブスクリプションが組織にリンクされます。</block>
   <block id="501d44233b9d81f23f07411ed57f5152" category="list-text">*Licenses and subscriptions* の既存の構成を確認しました。</block>
   <block id="0b2612372a98d97a0ca0b61bdbdea261" category="section-title">請求設定を行う</block>
   <block id="142c2c7e22727e1a1c35317131d3de9b" category="paragraph">コンソールが課金ソース全体に使用料金を適用する方法を選択できます。これにより、どのアカウントに最初に請求されるか、および更新がどのように処理されるかが決まります。</block>
-  <block id="6e0519d84190875b19782474cade4a6d" category="list-text">NetApp Consoleで、*ガバナンス &gt;Licenses and subscriptions*を選択します。</block>
   <block id="f40ec4f154501ac20f03c9cbaae03f9e" category="list-text">*請求設定*を選択します。</block>
   <block id="0a6726bc9108e08ebb13bc6fe5a55e5b" category="list-text">次のいずれかの課金モードを選択します。</block>
   <block id="18dd1fddbff47223752aa7cbe0ce2d30" category="list-text">* 最初にNetAppライセンスを使用* – 最初にNetAppライセンスを使用し、その後、追加の使用にはマーケットプレイス サブスクリプションを使用します。</block>
@@ -931,7 +921,6 @@
   <block id="5d4b73c76a591653e1df0169162ac88d" category="list-text">*Licenses and subscriptions*を開きます。</block>
   <block id="019059e6fc62772ce7ae07627cfdaf67" category="list-text">次のビューを選択します。</block>
   <block id="0d5509b5bd172a3b0a7f80b76ebd40e6" category="list-text">*マーケットプレイスのサブスクリプション名*</block>
-  <block id="66f86ba858d315676f13c08fec98b41c" category="list-text">*クラウド プロジェクト* (Google Cloud のみ)</block>
   <block id="b32c11687b0957c71696f4c5be82f283" category="list-text">*サブスクリプションタイプ* (年間またはPAYGO)</block>
   <block id="cf5991e7f4b5f0e6a9f125d69ae38f54" category="paragraph">新しい構成はすぐに有効になり、課金データがクラウド プロバイダーと同期されます。</block>
   <block id="8b2a47a9c8b0859b03b33fc6110b32ae" category="admonition">1 つのサブスクリプションを複数のクラウド プロジェクトにマップするには、まず *カスタム CVO 構成* が有効になっていることを確認します。</block>
@@ -946,14 +935,23 @@
   <block id="f8947715618c321a3794e787f7aecd94" category="list-text">*カスタム CVO 構成* を無効にします。</block>
   <block id="f44a159781425e53cf2e7e568e18930f" category="list-text">プロンプトが表示されたら、標準構成に戻すことを確認します。</block>
   <block id="5b6bd15b73cadb42962618d3ebd1dc68" category="paragraph">CVO インスタンスは、他のデータ サービスに使用されるデフォルトの標準課金方法に戻ります。</block>
-  <block id="56504a2ccf6872b888cb88cdba810cce" category="list-text">コンソール メニューから、*ガバナンス* &gt; *デジタル ウォレット* を選択し、*直接ライセンス* タブを選択します。</block>
   <block id="a56efbb0b90cd4068ca8a8992f33400e" category="list-text">**関連付け**をクリックします。</block>
   <block id="cd674dd3286e68276bf76f6117b9d5be" category="list-text">フォームに入力して、サブスクリプションをコンソール組織に関連付けます。次に、[**関連付け**] をクリックします。</block>
   <block id="07b5c65992e18ea1f96d4431ed697e21" category="list-text">サブスクリプションを関連付けた後、[**課金設定**] タブに移動して選択します。</block>
   <block id="c405cb4ee0a4475b96f30fb0962daa3e" category="list-text">マーケットプレイスのサブスクリプション オプションを確認します。</block>
   <block id="c0ab08cc5546a8c99ef8010e4cb766a0" category="list-text">請求するマーケットプレイスのサブスクリプションを選択します。これは、オプションが複数ある場合にのみ適用されます。</block>
-  <block id="1fa9daf5fe59e57211e856c6726cfadd" category="list-text">複数のハイパースケーラーに複数のサブスクリプションがある場合は、必要に応じてこれらの手順を繰り返します。</block>
   <block id="77750efa6f5ff153acdc42067058017f" category="section-title">2025年11月10日</block>
   <block id="8db289a22d511fb89896cd05e3039ca2" category="sidebar">請求設定について</block>
-  <block id="bd37aa06c2029c58b0902884ca934e5e" category="sidebar">用語と定義</block>
+  <block id="0b4efcd7fda8e806d38bca8ddb9e57b9" category="list-text">NetApp Consoleメニューから、*管理 &gt;Licenses and subscriptions* を選択し、*直接ライセンス* タブを選択します。</block>
+  <block id="9c279367f9689e87b3033ad9104199ca" category="paragraph">詳細については、 を参照してください。<block ref="74f075c5e4ddd6fb6defcdaf2c161bf1" category="inline-link-macro-rx"></block></block>
+  <block id="9ef810f213faea9695f8494f68387049" category="list-text">NetApp Consoleメニューから、*管理 &gt;Licenses and subscriptions*を選択します。</block>
+  <block id="bb6a3f5790fd10ced1f6845ea4d3ba04" category="paragraph">NetApp Consoleで課金設定を構成して管理し、組織のアカウントに容量使用量、更新、請求書を適用する方法を制御できます。課金設定により、使用料がNetAppライセンス、クラウド マーケットプレイス契約、またはKeystone契約のいずれから発生するかが決まります。</block>
+  <block id="9b2143cc5779100e7a55ef93f5906f84" category="list-text">NetApp Consoleで、*管理 &gt;Licenses and subscriptions*を選択します。</block>
+  <block id="42855d09afacbcf14c2e402fe229af93" category="list-text">*クラウドプロジェクト*</block>
+  <block id="7122970c90188deca8583df3506aa39c" category="list-text">コンソール メニューから、[管理] &gt; [Licenses and subscriptions] を選択し、[直接ライセンス] タブを選択します。</block>
+  <block id="13ad11ec7b9bd0fe7c52fc12e83f93d4" category="list-text">複数のハイパースケーラーに複数のサブスクリプションがある場合は、必要に応じてこれらの手順を繰り返します。</block>
+  <block id="652e4824afa6b50187425c72ff981fe6" category="paragraph">マーケットプレイスサブスクリプションと直接ライセンスの請求の詳細については、<block ref="74f075c5e4ddd6fb6defcdaf2c161bf1" category="inline-link-macro-rx"></block> 。</block>
+  <block id="dce3a4835fb0cd80cf119820cc31f008" category="list-text"><block ref="dce3a4835fb0cd80cf119820cc31f008" category="inline-link-rx"></block></block>
+  <block id="ba181f9b0a33d0306573d0de387efad4" category="list-text"><block ref="ba181f9b0a33d0306573d0de387efad4" category="inline-link-rx"></block></block>
+  <block id="7effa26776dad56a362038eae76fd1d8" category="list-text">NetApp Consoleメニューで、*管理 &gt;Licenses and subscriptions*を選択します。</block>
 </blocks>

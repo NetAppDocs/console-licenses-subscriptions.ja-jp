@@ -12,7 +12,7 @@ NetApp の営業担当者からライセンスを購入すると、 NetAppシリ
 NOTE: シリアル番号を入力するには、まず https://docs.netapp.com/us-en/console-setup-admin/task-adding-nss-accounts.html["NetAppサポートサイトのアカウントをコンソールに追加する"^]。これは、シリアル番号にアクセスする権限を持つNetAppサポート サイトのアカウントです。
 
 .手順
-. NetApp Consoleメニューから、*ガバナンス >Licenses and subscriptions* を選択し、*直接ライセンス* タブを選択します。
+. NetApp Consoleメニューから、*管理 >Licenses and subscriptions* を選択し、*直接ライセンス* タブを選択します。
 . *ライセンスの追加*を選択します。
 . *ライセンスの追加*ダイアログで、ライセンス情報を入力し、*ライセンスの追加*を選択します。
 +
