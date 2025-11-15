@@ -119,4 +119,4 @@ AWS コンソールでNetApp Consoleの Marketplace プライベートオファ�
 . 複数のハイパースケーラーに複数のサブスクリプションがある場合は、必要に応じてこれらの手順を繰り返します。
 
 
-マーケットプレイスサブスクリプションと直接ライセンスの請求の詳細については、link:https://docs.netapp.com/us-en/console-licenses-subscriptions/concept-billing-preferences.html["請求設定に関するドキュメント"] 。
+マーケットプレイスサブスクリプションと直接ライセンスの請求の詳細については、 link:https://docs.netapp.com/us-en/console-licenses-subscriptions/concept-billing-preferences.html["請求設定に関するドキュメント"]。
