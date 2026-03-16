@@ -47,9 +47,9 @@ https://docs.netapp.com/us-en/console-setup-admin/task-adding-nss-accounts.html[
 
 コンソールでは、次のサービスのライセンスとサブスクリプションを管理できます。
 
-* https://docs.netapp.com/us-en/console-backup-recovery/index.html["バックアップとリカバリ"^]
-* https://docs.netapp.com/us-en/console-cloud-volumes-ontap/index.html["Cloud Volumes ONTAP"^]
-* https://docs.netapp.com/us-en/console-disaster-recovery/index.html["ディザスタ リカバリ"^](BYOLのみ)
-* https://docs.netapp.com/us-en/console-ransomware-protection/index.html["ランサムウェア耐性"^]
-* https://docs.netapp.com/us-en/console-tiering/index.html["クラウド階層化"^]
+* https://docs.netapp.com/us-en/data-services-backup-recovery/index.html["バックアップとリカバリ"^]
+* https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/index.html["Cloud Volumes ONTAP"^]
+* https://docs.netapp.com/us-en/data-services-disaster-recovery/index.html["ディザスタ リカバリ"^] （BYOL のみ）
+* https://docs.netapp.com/us-en/data-services-ransomware-resilience/index.html["ランサムウェア耐性"^]
+* https://docs.netapp.com/us-en/data-services-cloud-tiering/index.html["クラウド階層化"^]
 
