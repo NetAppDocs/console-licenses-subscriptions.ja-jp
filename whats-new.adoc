@@ -210,9 +210,7 @@ https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-license
 
 === 消費容量
 
-アカウント内の消費済み容量の合計とライセンス パッケージ別の消費済み容量が表示されるようになりました。これにより、料金がどのように請求されるか、追加の容量を購入する必要があるかどうかを把握できます。
-
-image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/main/media/screenshot-digital-wallet-summary.png["容量ベースのライセンスのページを示すスクリーンショット。このページには、アカウントで消費された容量の概要が表示され、ライセンス パッケージごとに消費された容量の内訳が表示されます。"]
+デジタルウォレットでは、アカウント全体の消費容量と、ライセンスパッケージごとの消費容量が表示されるようになりました。これは、料金がどのように請求されているか、また追加容量を購入する必要があるかどうかを理解するのに役立ちます。
 
 
 
