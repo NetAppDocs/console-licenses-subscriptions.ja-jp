@@ -1,0 +1,5 @@
+= 
+:allow-uri-read: 
+
+
+*必要なコンソールロール* このタスクを実行するには、Licenses and subscriptions管理者ロールが必要ですlink:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-licenses-subscriptions.html["NetApp Console の Licenses and subscriptions ロールについて学ぶ"^]。

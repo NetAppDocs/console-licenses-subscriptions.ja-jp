@@ -32,16 +32,17 @@ AWS Marketplace ポータルで NetApp Console のマーケットプレイスプ
 
 購入を有効にして割引価格を適用するには、コンソールでサブスクリプションの割り当てを完了する必要があります。
 
-[NOTE]
-====
-プライベートオファーを有効にするには、すべての手順を完了する必要があります。手順を省略すると請求エラーが発生する可能性があります。オファーを複数回承諾して有効化すると、二重に請求されます。
 
-====
+NOTE: プライベートオファーを有効にするには、すべての手順を完了する必要があります。手順を省略すると、請求エラーが発生する可能性があります。オファーを複数回承諾して有効化すると、二重請求が発生する可能性があります。
+
 .手順
-. NetApp 営業チームからプライベート オファーのアクティベーション リンクを選択します。リンクは次のようになります：
-`https://aws.amazon.com/marketplace/saas/ordering?productId=aaa&offerId=offer-aaa`
+. NetApp 営業チームからプライベート オファーのアクティベーション リンクを選択します。
 +
- If you did not receive the link, view private offers in the AWS Marketplace console. The following permissions are required:
+リンクは以下のようになります： `https://aws.amazon.com/marketplace/saas/ordering?productId=aaa&offerId=offer-aaa`
+
++
+リンクが届いていない場合は、AWS Marketplaceコンソールでプライベートオファーをご確認ください。以下の権限が必要です：
+
 +
 ** AWS 管理ポリシーを使用する: *AWSMarketplaceRead-only*、*AWSMarketplaceManageSubscriptions*、または *AWSMarketplaceFullAccess*
 ** カスタム IAM ポリシーの使用: `aws-marketplace:ListPrivateListings`そして `aws-marketplace:ViewSubscriptions`
@@ -49,11 +50,9 @@ AWS Marketplace ポータルで NetApp Console のマーケットプレイスプ
 
 . プライベートオファーを表示するために AWS Marketplace にリダイレクトされます。
 +
-[NOTE]
-====
-プライベートオファーは公開リストの上に作成されます。*オファーの選択*ドロップダウンを使用して、公開オファーと非公開オファーを切り替えます。
 
-====
+NOTE: プライベートオファーは公開リストの上に作成されます。*オファーの選択*ドロップダウンを使用して、公開オファーと非公開オファーを切り替えます。
+
 . プライベートオファーの詳細を確認し、契約内容と一致していることを確認します。間違っている場合は受け入れないでください。NetAppアカウント チームにお問い合わせください。
 +
 [NOTE]
@@ -112,7 +111,7 @@ AWS Marketplace ポータルで NetApp Console のマーケットプレイスプ
 
 . **Associate** を選択します。
 . フォームに必要事項を入力して、サブスクリプションをコンソール組織に関連付けます。**Associate** を選択します。
-. サブスクリプションを関連付けた後、[**課金設定**] タブに移動して選択します。
+. サブスクリプションを関連付けた後、**請求設定**タブを選択してください。
 . マーケットプレイスのサブスクリプション オプションを確認します。
 . 請求するマーケットプレイスのサブスクリプションを選択します。これは、オプションが複数ある場合にのみ適用されます。
 . **変更を保存**を選択します。

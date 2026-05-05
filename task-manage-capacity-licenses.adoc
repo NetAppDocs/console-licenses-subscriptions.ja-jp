@@ -4,7 +4,7 @@ permalink: task-manage-capacity-licenses.html
 keywords: license, licensing, capacity license, capacity based license, add license, install license, digital wallet, bluexp digital wallet, cloud volumes ontap license, cloud volumes ontap 
 summary: コンソールから容量ベースのライセンスを管理して、 NetAppアカウントにCloud Volumes ONTAPシステムに十分な容量があることを確認します。 
 ---
-= 容量ベースの Cloud Volume ONTAPライセンスを管理する
+= 容量ベースのCloud Volumes ONTAPライセンスを管理
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

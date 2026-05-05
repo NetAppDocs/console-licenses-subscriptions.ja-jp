@@ -2,7 +2,7 @@
 :allow-uri-read: 
 
 
-ライセンスに関連付けられたNetApp ConsoleアカウントがNetAppサポート サイト アカウントでもあり、インターネットにアクセスできる場合、ライセンス情報は **Licenses and subscriptions** セクションに自動的に表示されます。NSS アカウントに関連付けられていないコンソール アカウントを使用した場合は、ライセンスを手動で追加する必要があります。
+ライセンスに関連付けられているNetApp ConsoleアカウントがNetApp Support Siteアカウントでもある場合、ライセンス情報は**Licenses and subscriptions**セクションに自動的に表示されます。NSSアカウントに関連付けられていないConsoleアカウントを使用した場合は、ライセンスを手動で追加する必要があります。
 
 シリアル番号と関連付けられた NSS アカウントを入力するか、 NetAppライセンス ファイル (NLF) をアップロードすることで、コンソールにライセンスを追加できます。コンソールがインターネットにアクセスできない場合 (プライベート モードのインストール)、アップロードするNetAppライセンス ファイルを取得する必要があります。
 
@@ -12,7 +12,8 @@ NetApp の営業担当者からライセンスを購入すると、 NetAppシリ
 NOTE: シリアル番号を入力するには、まず https://docs.netapp.com/us-en/console-setup-admin/task-adding-nss-accounts.html["NetAppサポートサイトのアカウントをコンソールに追加する"^]。これは、シリアル番号にアクセスする権限を持つNetAppサポート サイトのアカウントです。
 
 .手順
-. NetApp Consoleメニューから、*管理 >Licenses and subscriptions* を選択し、*直接ライセンス* タブを選択します。
+. NetApp Consoleメニューから、*管理 >Licenses and subscriptions*を選択します。
+. *Direct licenses* タブを選択します。
 . *ライセンスの追加*を選択します。
 . *ライセンスの追加*ダイアログで、ライセンス情報を入力し、*ライセンスの追加*を選択します。
 +

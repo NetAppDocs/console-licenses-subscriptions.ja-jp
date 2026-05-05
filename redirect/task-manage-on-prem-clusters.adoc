@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-manage-on-prem-clusters.html 
 keywords: cluster, on-prem ontap cluster, onprem cluster, contract, licensing, ontap licensing, ontap contract, bluexp, netapp console 
-summary: オンプレミスの各ONTAPクラスターの契約詳細を表示します。コンソールでクラスターをまだ検出していない場合は、クラスターを検出することもできます。 
+summary: オンプレミスの各 ONTAP クラスタの契約の詳細を表示します。 
 ---
 = オンプレミスのONTAPのライセンスを管理する
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: オンプレミスの各ONTAPクラスターの契約詳細を表示し
 
 
 [role="lead"]
-コンソールで、オンプレミスの各ONTAPクラスターの契約の詳細を表示できます。クラスターをまだ検出していない場合は、検出することもできます。
+NetApp コンソールでは、ONTAP クラスタを検出し、検出した各オンプレミス ONTAP クラスタの契約の詳細を表示できます。
 
 .開始する前に
 コンソールには、システムとして検出されたオンプレミスのONTAPクラスターの詳細、またはコンソールに追加したNetAppサポート サイト アカウントに関連付けられているクラスターの詳細が表示されます。
