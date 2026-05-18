@@ -594,10 +594,6 @@
   <block id="3b446cd4e304253a8a5be3d76f1f7d85" category="section-title">サブスクリプションに関連付けられた資格情報を表示する</block>
   <block id="002d431b6337f0842f2c8f341268a2ad" category="paragraph">*Marketplace サブスクリプション* ページから特定のサブスクリプションの資格情報を表示できます。これにより、サブスクリプションの課金方法を確認できます。資格情報は使用しているエージェントに関連付けられているため、表示するサブスクリプションに関連付けられているエージェントを選択する必要があります。</block>
   <block id="305572f28aa8e98572395f6c22011dee" category="admonition">必要に応じて、上部のナビゲーション バーにあるエージェント ドロップダウンを使用してエージェントを切り替えます。</block>
-  <block id="5f2584f9079ec37953d08854e13410ab" category="section-title">サブスクリプションの設定を解除する</block>
-  <block id="3eeaae02c9959c91b45646bc49679ed8" category="paragraph">サブスクリプションを削除する前に、サブスクリプションを構成解除する必要があります。これにより、関連するすべてのデータと設定がクリアされます。</block>
-  <block id="25f9b23bd620e2b7744e0ee585d450c4" category="list-text">指示に従って、関連する設定やデータを削除またはリセットします。</block>
-  <block id="c967e7e2ec19dfbde4242e266c145df0" category="list-text">ステータスが「未構成」に更新されるまで待ちます。</block>
   <block id="c9db549b3c47c258a77389c2a1310393" category="section-title">サブスクリプションを削除する</block>
   <block id="f718d4efc769e352af879333b97563c1" category="list-text">削除するサブスクリプションの行で、アクション メニューを開き、[削除] を選択します。</block>
   <block id="6269943bbab503c57445a47b04897eaa" category="summary">NetAppテクニカル サポートでサポート ケースを開く前に、 NetAppサポート サイト アカウントをNetApp Consoleに追加し、サポートに登録する必要があります。</block>
@@ -745,7 +741,6 @@
   <block id="fc7df403728dc99ac0c868da1b409680" category="list-text">*マーケットプレイス サブスクリプション* — 課金は AWS Marketplace、Azure Marketplace、または Google Cloud Marketplace を通じて行われます。クラウド マーケットプレイスが提供する請求アカウント、リージョン、更新オプションを選択できます。</block>
   <block id="f9e1a1e0db42fa8cf2bef3c509a09c09" category="list-text">*直接ライセンス* — 課金はNetAppを通じて行われます。ライセンス キー、請求書の連絡先、自動更新はNetApp Consoleで管理します。</block>
   <block id="bc27ccb754d1eb812e4d84c6aa69941b" category="list-text">* Keystoneサブスクリプション* — 課金はKeystone契約を通じて行われます。請求書の受取人とコスト センター タグは、NetApp Consoleで管理します。</block>
-  <block id="6cf13260cfd390e66379c0ccf1393abc" category="paragraph">課金設定により、次のことが可能になります。- サービス全体で単一の請求書連絡先リストを適用する、- 使用状況をコスト センターに合わせる、- 自動更新と有効期限の通知を管理する、- 新しいCloud Volumes ONTAP (CVO) システムが正しい課金アカウントを継承するようにする。</block>
   <block id="9881eb87c4c1f6e3415d4a31b78cc0b8" category="summary">ライセンスとサブスクリプションによって、 NetApp Consoleが直接ライセンス、クラウド マーケットプレイス契約、およびNetApp Keystone全体の使用状況、課金、更新を管理する方法がどのように定義されるかについて説明します。</block>
   <block id="f94c83bcf4a8ed377dfb56f9bda7f82c" category="doc">ライセンスとサブスクリプションの課金設定について</block>
   <block id="1e7c5007c8aa004a99074c2a438cd957" category="list-text">*直接ライセンス* は、 NetAppから直接購入され、ライセンス キー、請求書の受取人、および更新オプションを通じてNetApp Consoleで管理されるライセンスを表します。</block>
@@ -795,10 +790,7 @@
   <block id="0a6726bc9108e08ebb13bc6fe5a55e5b" category="list-text">次のいずれかの課金モードを選択します。</block>
   <block id="18dd1fddbff47223752aa7cbe0ce2d30" category="list-text">* 最初にNetAppライセンスを使用* – 最初にNetAppライセンスを使用し、その後、追加の使用にはマーケットプレイス サブスクリプションを使用します。</block>
   <block id="d25910c477ea028d9255a48945715553" category="list-text">*マーケットプレイス サブスクリプションのみ* – すべての使用量をマーケットプレイス サブスクリプションを通じて直接請求します。</block>
-  <block id="529449d891dd58043109a5fd2c03e18e" category="list-text">(オプション) *請求書連絡先*と*通知連絡先*を更新します。</block>
-  <block id="645717e077f5e3230fa79efe02fcea05" category="list-text">(オプション) 請求を内部会計コードに関連付けるには、*コスト センター タグ* を入力します。</block>
   <block id="302ef561e28f7d7cd13d1042cece78e1" category="list-text">*変更を保存*を選択します。</block>
-  <block id="108c7e8f13bbc93814f67368581b2ce0" category="list-text">プロンプトが表示されたら、確認ダイアログを確認し、「確認」を選択します。</block>
   <block id="17741aaf0ce5304ce281496e14f3c373" category="paragraph">NetApp Consoleは課金マッピングを更新します。今後のサービス料金と更新では、選択した構成が使用されます。</block>
   <block id="77e323811c3d488cfff7cab6c2087d26" category="list-text">**変更を保存**を選択します。</block>
   <block id="c81a2ae0cc1277c522901ce2c6a4e502" category="section-title">マーケットプレイスの設定を編集する</block>
@@ -847,7 +839,6 @@
   <block id="cd2f258cff7669557a87899fd098b8d4" category="list-text">ライセンスを削除するか、サブスクリプションの関連付けを解除します。</block>
   <block id="db4280836d027a94bc5834b179386124" category="cell">*視聴者*</block>
   <block id="1d2f900fae86a6b1fedf8da639320914" category="paragraph">このロールを持つユーザーには読み取り専用アクセス権があります。閲覧ユーザーは次のことができます。</block>
-  <block id="eecec32a54a34e2a72e8e5f9f7f4f254" category="list-text">*管理者* ロールにアクセスできます。</block>
   <block id="0d598f94fd99fabd7c4e6f69c91456f9" category="list-text">*ライセンスとサブスクリプション*の既存の構成を確認しました。</block>
   <block id="f1396f3668b9ac6ec69042ebd868ed35" category="list-text">更新を適用するには「*保存*」を選択し、更新を破棄するには「*キャンセル*」を選択します。</block>
   <block id="800c173937521899b70a4ab5d735d3d7" category="paragraph">変更点の詳細については、<block ref="b78e17cf58c4e309929c8d6a69594c7d" category="inline-link-macro-rx"></block>を参照してください。</block>
@@ -940,11 +931,9 @@
   <block id="57f1a9c697c3336df2c3c56d7ed47d29" category="list-text">**REGISTER WITH NETAPP, Inc.**を選択します。NetApp Consoleにリダイレクトされ、サブスクリプションの設定を完了します。プライベートオファーが組織内の別のユーザによって承認された場合：</block>
   <block id="ff7bbf6dcffb4b3f08c291a764f18dfe" category="list-text">3点メニューを選択し、**NetApp、Inc.に登録**を選択します。</block>
   <block id="69c9db700e88e13fa6be2001b38dfd08" category="list-text">関連付けるサブスクリプションの行で、アクション メニューを開き、*関連付け*を選択します。</block>
-  <block id="b3cdc96c2b7de37edaa1cdfe112925ae" category="list-text">設定を解除するサブスクリプションの行で、アクション メニューを選択し、*設定解除*を選択します。</block>
   <block id="b36ceccfff88f5d9c684c4fec0f54c19" category="paragraph">デジタルウォレットでは、アカウント全体の消費容量と、ライセンスパッケージごとの消費容量が表示されるようになりました。これは、料金がどのように請求されているか、また追加容量を購入する必要があるかどうかを理解するのに役立ちます。</block>
   <block id="8af1ad3469dad38ef46da37595e3b758" category="inline-link-macro">NetApp Console の Licenses and subscriptions ロールについて学ぶ</block>
   <block id="1ccb85040042290f711464fbb5e06609" category="paragraph">*必要なコンソールロール* このタスクを実行するには、Licenses and subscriptions管理者ロールが必要です<block ref="f7bfd1d1e66654a9d76ee2fffeede42a" category="inline-link-macro-rx"></block>。</block>
-  <block id="458dbbe908598c035d40c809863c56e8" category="paragraph">ライセンスに関連付けられているNetApp ConsoleアカウントがNetApp Support Siteアカウントでもある場合、ライセンス情報は**Licenses and subscriptions**セクションに自動的に表示されます。NSSアカウントに関連付けられていないConsoleアカウントを使用した場合は、ライセンスを手動で追加する必要があります。</block>
   <block id="e8287c7448cfd8625359581b1cb6deb2" category="list-text">*Direct licenses* タブを選択します。</block>
   <block id="9c3e0ea557f19f47fe25dfd585312f43" category="list-text">コンソールのナビゲーションメニューで、*Administration* ＞ *Identity and access* を選択します。</block>
   <block id="b33d71b64d47a9f0ce606e73ae1e07dd" category="section-title">Cloud Volumes ONTAPライセンスの管理</block>
@@ -983,4 +972,15 @@
   <block id="9475bf1acf4a7e43280f6718d685e866" category="list-text">削除できるのは、ステータスが*購読解除済み*のサブスクリプションのみです。削除する前に、関連するすべての設定、データ、および構成をクリアまたはリセットする必要があります。</block>
   <block id="c4a1705a6991448825c6ef6ad86fa41a" category="paragraph">サブスクリプションがまだ設定されている場合は、*削除*オプションは利用できません。</block>
   <block id="792b1ad41ebb8947d008af5826897289" category="list-text">*サブスクリプションの削除*ダイアログで、*削除*を選択して、サブスクリプションを削除することを確認します。</block>
+  <block id="e1173ed8259895238ff1719be2f592d9" category="paragraph">ライセンスに関連付けられているNetApp ConsoleアカウントがNetApp Support Siteアカウントでもあり、インターネットにアクセスできる場合、ライセンス情報は**Licenses and subscriptions**セクションに自動的に表示されます。NSSアカウントに関連付けられていないConsoleアカウントを使用した場合は、ライセンスを手動で追加する必要があります。</block>
+  <block id="0b4c468a31ec1cc5bcf0295ee7207fbe" category="paragraph">請求設定では、以下のことが可能です：</block>
+  <block id="646cb6fbd19fdc7e05aa499e55fae69f" category="list-text">サービス全体で単一の請求書連絡先リストを適用する</block>
+  <block id="0c2e72ed135dc2fc54e1e457add77dd3" category="list-text">使用状況をコストセンターに合わせる、</block>
+  <block id="22524c2dd89ad7b3b2a7bbcfe12be88f" category="list-text">自動更新と有効期限通知を管理し、</block>
+  <block id="99036810fbb5c064007679128c501df5" category="list-text">新しい Cloud Volumes ONTAP （CVO）システムが正しい請求アカウントを継承するようにします。</block>
+  <block id="343b348d71ccb62dd010813fc2a13a5e" category="list-text"><block ref="6002f1f030715bc59708cf8f1b924fe3" category="inline-link-macro-rx"></block>。</block>
+  <block id="259a94c9a9a486a09c1bd02fe5b547df" category="list-text"><block ref="9d10c472e1675ca6fce5c4e74a4b8028" category="inline-link-macro-rx"></block>。</block>
+  <block id="57f2b91dd5d64f1e869c7510450457ba" category="list-text">必要に応じて、*請求書連絡先*と*通知連絡先*を更新してください。</block>
+  <block id="c574b540cd92e579d0adb2549eb5e6ad" category="list-text">必要に応じて、請求を内部会計コードに関連付けるために、*Cost center tag*を入力します。</block>
+  <block id="d1aa6173b8b0f269bcc23f11e54d8e9f" category="list-text">プロンプトが表示されたら、確認ダイアログを確認してから*Confirm*を選択します。</block>
 </blocks>

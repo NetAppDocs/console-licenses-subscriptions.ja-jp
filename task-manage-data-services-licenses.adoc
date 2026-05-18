@@ -28,6 +28,8 @@ NOTE: *直接ライセンス* ページにはすべてのライセンスがリ�
 * https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/concept-licensing.html["Cloud Volumes ONTAPのライセンスを設定する"^]
 
 
+*必要なコンソールロール* このタスクを実行するには、Licenses and subscriptions管理者ロールが必要ですlink:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-licenses-subscriptions.html["NetApp Console の Licenses and subscriptions ロールについて学ぶ"^]。
+
 
 
 == ライセンスファイルを取得する
@@ -68,7 +70,7 @@ ea10e1c6-80cc-4219-8e99-3c3e6b161ba5
 
 == ライセンスの追加
 
-ライセンスに関連付けられているNetApp ConsoleアカウントがNetApp Support Siteアカウントでもある場合、ライセンス情報は**Licenses and subscriptions**セクションに自動的に表示されます。NSSアカウントに関連付けられていないConsoleアカウントを使用した場合は、ライセンスを手動で追加する必要があります。
+ライセンスに関連付けられているNetApp ConsoleアカウントがNetApp Support Siteアカウントでもあり、インターネットにアクセスできる場合、ライセンス情報は**Licenses and subscriptions**セクションに自動的に表示されます。NSSアカウントに関連付けられていないConsoleアカウントを使用した場合は、ライセンスを手動で追加する必要があります。
 
 シリアル番号と関連付けられた NSS アカウントを入力するか、 NetAppライセンス ファイル (NLF) をアップロードすることで、コンソールにライセンスを追加できます。コンソールがインターネットにアクセスできない場合 (プライベート モードのインストール)、アップロードするNetAppライセンス ファイルを取得する必要があります。
 

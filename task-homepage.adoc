@@ -71,6 +71,8 @@ link:task-manage-data-services-licenses.html["ライセンスの管理につい�
 . *アクションが必要* ページで、*ライセンス* タブまたは *サブスクリプション* タブを選択します。
 . アクション メニューを使用して問題を解決します。
 +
-link:task-manage-data-services-licenses.html["ライセンスの管理について詳しくはこちら"]。link:task-manage-subscriptions.html["サブスクリプションの管理について詳しくはこちら"]。
+** link:task-manage-data-services-licenses.html["ライセンスの管理について詳しくはこちら"]。
+** link:task-manage-subscriptions.html["サブスクリプションの管理について詳しくはこちら"]。
+
 
 
