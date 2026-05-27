@@ -51,14 +51,14 @@ sidebar:
         url: "/concept-billing-preferences.html"
       - title: 請求設定を管理する
         url: "/task-manage-billing-preferences.html"
-    - title: 知識とサポート
-      entries:
-      - title: サポートに登録する
-        url: "/task-support-registration.html"
-      - title: ヘルプを受ける
-        url: "/task-get-help.html"
-    - title: 法律上の表示
-      url: "/legal-notices.html"
+  - title: 知識とサポート
+    entries:
+    - title: サポートに登録する
+      url: "/task-support-registration.html"
+    - title: ヘルプを受ける
+      url: "/task-get-help.html"
+  - title: 法律上の表示
+    url: "/legal-notices.html"
 product-family:
   name: NetApp Console
   repo: console-family
