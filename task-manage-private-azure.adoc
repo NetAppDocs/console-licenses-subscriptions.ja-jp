@@ -34,6 +34,7 @@ Azure ポータルで、 NetApp Consoleの Marketplace プライベート オフ
 
 
 
+[[accept-and-subscribe-to-the-private-offer-in-the-azure-portal]]
 == Azure ポータルでプライベート オファーを承認してサブスクライブする
 
 Azure サブスクリプションは、1 つの Marketplace サブスクリプションにのみ関連付けることができます。同じ Azure サブスクリプション内のワークロードに 2 つの異なる Marketplace サブスクリプションを使用する場合は、サブスクリプションごとに 1 つずつ、2 つの個別のコンソール アカウントを作成する必要があります。複数のCloud Volumes ONTAPインスタンスがあり、異なるサブスクリプション間で課金を分割する場合は、サブスクリプションごとに個別のコンソール アカウントを作成します。

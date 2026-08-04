@@ -29,6 +29,7 @@ Google Cloud コンソールのNetApp Consoleリストに対する Marketplace �
 
 
 
+[[accept-the-private-offer-in-google-cloud]]
 == Google Cloud でプライベート オファーを承諾する
 
 Google Cloud プロジェクトは、1 つの Marketplace サブスクリプションにのみ関連付けることができます。同じ Google Cloud プロジェクト内のワークロードに 2 つの異なるサブスクリプションを使用する場合は、サブスクリプションごとに 1 つずつ、2 つの個別のコンソール アカウントを作成する必要があります。

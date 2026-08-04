@@ -28,6 +28,7 @@ AWS Marketplace ポータルで NetApp Console のマーケットプレイスプ
 
 
 
+[[accept-the-private-offer-in-the-aws-marketplace-portal]]
 == AWS Marketplaceポータルでプライベートオファーを承認する
 
 購入を有効にして割引価格を適用するには、コンソールでサブスクリプションの割り当てを完了する必要があります。

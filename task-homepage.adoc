@@ -10,6 +10,8 @@ summary: コンソールの概要ダッシュボードで、組織のすべて�
 
 
 
+[[use-the-dashboard-overview]]
+[[overview-page]]
 == ダッシュボードの概要を使用する
 
 [role="lead"]
@@ -21,6 +23,7 @@ Licenses and subscriptionsダッシュボードは、間近に迫った容量制
 
 
 
+[[view-details-about-a-specific-data-service]]
 === 特定のデータ サービスの詳細を表示する
 
 *Overview* ダッシュボードには、以下のサービスに関する詳細情報が表示されます：
@@ -61,6 +64,7 @@ link:task-manage-data-services-licenses.html["ライセンスの管理につい�
 
 
 
+[[resolve-license-or-subscription-issues]]
 === ライセンスまたはサブスクリプションの問題を解決する
 
 概要ダッシュボードでは、解決が必要なライセンスおよびサブスクリプションの問題を確認できます。問題には、有効期限が切れるライセンスとサブスクリプション、または容量に達しているライセンスとサブスクリプションが含まれます。

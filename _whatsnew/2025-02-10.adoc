@@ -6,24 +6,28 @@ BlueXP digital walletは使いやすさを考慮して再設計され、追加�
 
 
 
+[[new-overview-dashboard]]
 === 新しい概要ダッシュボード
 
 デジタル ウォレットのホームページには、 NetAppライセンスと Marketplace サブスクリプションの更新されたダッシュボードがあり、特定のサービス、ライセンスの種類、必要なアクションをドリルダウンできます。
 
 
 
+[[configuring-subscriptions-to-credentials]]
 === 資格情報へのサブスクリプションの構成
 
 BlueXP digital walletでは、プロバイダー資格情報へのサブスクリプションを設定できるようになりました。通常、これはマーケットプレイスのサブスクリプションまたは年間契約に初めて加入するときに行います。以前は、サブスクリプションの資格情報の変更は、「資格情報」ページでのみ実行できました。
 
 
 
+[[associating-subscriptions-with-organizations]]
 === サブスクリプションを組織に関連付ける
 
 サブスクリプションが関連付けられている組織をデジタル ウォレットから直接更新できるようになりました。
 
 
 
+[[managing-cloud-volumes-ontap-licenses]]
 === Cloud Volumes ONTAPライセンスの管理
 
 Cloud Volumes ONTAP ライセンスは、ホームページまたは *Direct licenses* タブで管理できるようになりました。*Marketplace subscriptions* タブを使用して、サブスクリプション情報を表示します。
