@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-manage-capacity-licenses.html 
-keywords: license, licensing, capacity license, capacity based license, add license, install license, digital wallet 
+keywords: license, licenses, licensing, capacity license, capacity based license, add license, install license, digital wallet 
 summary: NetApp Consoleから容量ベースのライセンスを管理して、 NetAppアカウントにCloud Volumes ONTAPシステムに十分な容量があることを確認します。 
 ---
 = Cloud Volumes ONTAP の容量ベースのライセンスを管理する
@@ -106,6 +106,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html[
 コンソールは常に最初にライセンスに対して課金を試みます。ライセンスが利用できない場合は、マーケットプレイスのサブスクリプションに対して料金が請求されます。BYOL サブスクリプションをマーケットプレイス サブスクリプションに変換したり、その逆を行ったりする必要はありません。
 
 * クラウド プロバイダーのマーケットプレイスからプライベート オファーまたは契約を結んでいる場合、契約に含まれていない課金方法に変更すると、BYOL ( NetAppからライセンスを購入した場合) または PAYGO に対して課金されることになります。
+* AWS マーケットプレイスのスタンドアロン Cloud Volumes ONTAP サブスクリプションを通じて Cloud Volumes ONTAP の容量を課金する予定がある場合、Cloud Volumes ONTAP システムはサポートされている容量ベースのパッケージ（Essentials または Freemium）を使用する必要があります。Professional パッケージはスタンドアロンリストには対応しておらず、引き続き NIS サブスクリプションを通じて課金されます。希望するパッケージを選択した後、NetApp Console の *請求設定* を使用して、Cloud Volumes ONTAP の課金に使用するマーケットプレイスのサブスクリプションを選択してください。
 
 
 .手順

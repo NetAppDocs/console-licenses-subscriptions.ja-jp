@@ -73,6 +73,34 @@ NetApp Console内のライセンスとサブスクリプションの管理は、
 
 
 
+[[flexible-billing-for-cloud-volumes-ontap-and-data-services-in-aws]]
+== AWS における Cloud Volumes ONTAP とデータサービスの柔軟な請求
+
+AWSでは、Cloud Volumes ONTAP容量とNetAppデータサービスは、さまざまなAWSマーケットプレイスのサブスクリプションを通じて課金されます。AWS Enterprise Discount Program (EDP) の変更点と推奨事項の詳細については、link:https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/whats-new.html#flexible-billing-for-cloud-volumes-ontap-and-data-services-in-aws["Cloud Volumes ONTAPリリースノート"]を参照してください。
+
+スタンドアロンの Cloud Volumes ONTAP サブスクリプションと NetApp Intelligent Services （NIS） サブスクリプションの両方が AWS アカウントで利用可能な場合、*請求設定* を使用して、Cloud Volumes ONTAP の容量課金に使用するサブスクリプションを選択できます。
+
+
+NOTE: 請求方法は、既存の Cloud Volumes ONTAP システムがすでに NIS を通じて稼働・課金されているかどうか、またはスタンドアロンの Cloud Volumes ONTAP サブスクリプションを追加した後に新しいシステムを展開するかどうかによって異なります。既存のシステムの場合、スタンドアロンのサブスクリプションを追加しても、*請求設定*を更新しない限り、請求内容は変更されません。スタンドアロン サブスクリプションが利用可能になった後に作成される新しいデプロイメントでは、*請求設定*で上書きしない限り、デフォルトで Cloud Volumes ONTAP の容量課金（Essentials/Freemium）にスタンドアロン サブスクリプションが使用されます。
+
+* スタンドアロン Cloud Volumes ONTAP サブスクリプション（推奨）：Cloud Volumes ONTAP 容量（Essentials/Freemium）
+* NetApp Intelligent Services（NIS）サブスクリプション：NetApp データサービス（および Cloud Volumes ONTAP Professional）
+
+
+スタンドアロンCloud Volumes ONTAPサブスクリプションは、容量ベースのEssentialsパッケージとFreemiumパッケージのみをサポートしています。Professionalパッケージはサポート対象外となり、引き続きNISを通じて請求されます。スタンドアロンサブスクリプションのみが関連付けられている場合は、EssentialsパッケージでCloud Volumes ONTAPをデプロイできますが、バックアップとリカバリの設定には別のサブスクリプションが必要です。
+
+
+
+[[where-to-configure-it]]
+=== どこで設定するか
+
+AWS Marketplace サブスクリプションは、*管理 > Licenses and subscriptions > マーケットプレイスのサブスクリプション* で関連付け、Cloud Volumes ONTAP の容量課金に使用するマーケットプレイスのサブスクリプションは *管理 > Licenses and subscriptions > Billing preferences* で選択します。課金の詳細は、Cloud Volumes ONTAP の使用状況レポートで確認できます。
+
+
+NOTE: 複数のサブスクリプションタイプを使用したり、リスティング間を移行したりしても、重複した計測は発生しません。
+
+
+
 [[fields]]
 == フィールド
 
@@ -85,7 +113,7 @@ NetApp Console内のライセンスとサブスクリプションの管理は、
 
 マーケットプレイスのフィールドは、AWS、Azure、Google Cloudなどのクラウド プロバイダから発生する契約について説明します。これらのフィールドは、NetApp Consoleがサブスクリプションをプロバイダのマーケットプレイスに保存されている請求情報と接続する方法を定義します。また、更新、リージョンの割り当て、および請求アカウントの管理方法も制御します。
 
-* *マーケットプレイス プロバイダー* — 課金が処理されるクラウド プラットフォームを識別します。サポートされる機能、契約タイプ、更新ルールはプロバイダーによって決定されます。たとえば、AWS Marketplace サブスクリプションではアカウントベースの課金が使用されますが、Azure ではアカウントベースとテナントベースの両方のモデルがサポートされる場合があります。
+* *マーケットプレイスプロバイダー* — 課金処理が行われるクラウドプラットフォームを識別します。プロバイダーは、サポートする機能、契約の種類、および更新ルールを決定します。例えば、AWS マーケットプレイスのサブスクリプションはアカウントベースの課金方式を採用していますが、Azure はアカウントベースとテナントベースの両方のモデルをサポートしている場合があります。
 * *請求アカウントまたはサブスクリプション ID* - 料金の処理に使用されるアカウントの一意の識別子を指定します。これにより、使用状況データが正しいクラウド課金プロファイルに課金されるようになります。
 * *契約期間* — サブスクリプションの期間と更新設定を定義します。
 
