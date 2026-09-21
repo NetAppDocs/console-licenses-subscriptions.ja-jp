@@ -85,7 +85,6 @@
   <block id="095a6074d8cac073313583b5aec86563" category="paragraph">NetAppから購入したライセンス (BYOL)、 NetAppデータ サービスのマーケットプレイス サブスクリプション ( Cloud Volumes ONTAPを含む)、およびNetApp KeystoneサブスクリプションをNetApp Consoleで管理および監視できます。</block>
   <block id="a555aeea3ec67a6c83d73b1bfdefb4ab" category="section-title">コンソールでのライセンスとサブスクリプションの表示方法</block>
   <block id="de7d3dd9b9cde1be1ad6f0d2b933e1a2" category="paragraph">コンソール アカウントがNetAppサポート サイト (NSS) アカウントにも関連付けられている場合、ライセンスとサブスクリプションの情報がコンソールに自動的に表示されます。コンソール アカウントが NSS アカウントに関連付けられていない場合は、ライセンスを手動で追加する必要があります。ライセンスを手動で追加すると、使用量、容量、その他の詳細は自動的に更新されません。</block>
-  <block id="0ce8098d87732b7ddaff9494e1959f72" category="admonition">サブスクリプション情報を表示するには、コンソール エージェントを展開する必要があります。Cloud Volumes ONTAPのノード ライセンスを表示するにはエージェントも必要です。</block>
   <block id="92d0f4057dd78c03677b13a3df9a24f0" category="section-title">自動ライセンス検出</block>
   <block id="d4c8d0b101189503f6888a4d0e84fec5" category="paragraph">コンソールはNetAppライセンス サービスに自動的にクエリを実行し、 NetAppサポート サイト アカウントに関連付けられているライセンスの詳細を取得します。クエリが成功すると、コンソールはライセンスを自動的に追加します。</block>
   <block id="6fc732417eef67838e6035198387d225" category="section-title">手動ライセンス追加</block>
@@ -241,7 +240,6 @@
   <block id="24456dcfa7781b6f3a972b5f11ed0d88" category="list-text">サブスクリプションに関する情報を表示しながら、テーブル内の詳細を操作できます。詳細を表示するには行を展開します。</block>
   <block id="56594b7222b35921f9fe676eadf6bbdf" category="inline-image-macro">表のヘッダーの末尾にあるプラスアイコン</block>
   <block id="2eab7ff26639a8d2e45cece515ff781f" category="list-text">選択<block ref="98b11313fea6c4106e5a3c018f0ffbc9" category="inline-image-macro-rx" type="image"></block>テーブルに表示する列を選択します。期間と自動更新の列はデフォルトでは表示されないことに注意してください。「自動更新」列には、Azure 契約の更新情報のみが表示されます。</block>
-  <block id="8ac1ecc7ceb7a49d071b4f1b71f0e176" category="section-title">パッケージの詳細を表示する</block>
   <block id="f88e8fee4b6b78cbc9779b73098653b5" category="paragraph">Cloud Volumes ONTAPページでレガシー モードに切り替えると、パッケージごとに使用されている容量の詳細を表示できます。</block>
   <block id="4a95292c803539c8cf72591c54db0644" category="list-text">各ライセンス パッケージのプロビジョニングされた容量を確認するには、[表示] を選択します。</block>
   <block id="40d1f3228e91a00383279859612f7ba5" category="list-text">*詳細表示に切り替える*を選択します。</block>
@@ -338,39 +336,21 @@
   <block id="e29343f0ee1c0051a367e02b49c1c5ff" category="paragraph">コンソールでKeystoneサブスクリプションを使用したくなくなった場合は、サブスクリプションのリンクを解除できます。既存のCloud Volumes ONTAPサブスクリプションに接続されていないサブスクリプションのみをリンク解除できることに注意してください。</block>
   <block id="492847bcbc9ec0bd3075b612aa43e4a7" category="list-text">* Keystone*を選択します。</block>
   <block id="0e1096776546966fb22c4752766d55a9" category="paragraph">サブスクリプションはコンソール組織またはアカウントからリンク解除され、 Cloud Volumes ONTAP作業環境を作成するときに選択できなくなります。</block>
-  <block id="63e5ea33dc9b9a10458ac73abae91075" category="paragraph">NetApp Consoleでノードベースのライセンスを管理して、各Cloud Volumes ONTAPシステムに必要な容量を持つ有効なライセンスがあることを確認します。</block>
-  <block id="4627bd080634e9380c75a1cc04a09486" category="paragraph">_ノードベースのライセンス_ は、以前の世代のライセンス モデルです (新規顧客には利用できません)。</block>
-  <block id="0d4e36aae457a1001b3373de2fd510f1" category="list-text">NetAppから購入したライセンスを持参 (BYOL)</block>
-  <block id="17ac9e85cf5b6f7b77acf61fb7721242" category="list-text">クラウド プロバイダーのマーケットプレイスから時間単位の従量課金制 (PAYGO) サブスクリプションを購入する</block>
-  <block id="3501754bb69f70ed8f72d23562bab97c" category="paragraph">NetApp ConsoleからノードベースのCloud Volumes ONTAPライセンスを管理できます。</block>
-  <block id="9426b05d2fc423b761e34f9d75b4066d" category="section-title">PAYGOライセンスの管理</block>
-  <block id="fcd2026c30c1b902d032e35337e8888c" category="paragraph">「Licenses and subscriptions」メニューでは、シリアル番号や PAYGO ライセンスの種類など、各 PAYGO Cloud Volumes ONTAPシステムの詳細を表示できます。</block>
-  <block id="343c7ed77049523f4d99e8d4c436a330" category="list-text">ドロップダウンから*ノードベースのライセンス*を選択します。</block>
-  <block id="87089bacab591352ad6ad6579e34d93e" category="list-text">[PAYGO]をクリックします。</block>
-  <block id="82be8e06ac169a3de0fce42cd01f5760" category="list-text">各 PAYGO ライセンスの詳細を表で表示します。</block>
-  <block id="bbfa86a1d5f6c6f85f7a434a983b34e1" category="inline-image-macro">Licenses and subscriptionsページに 3 つの PayGo ライセンスを含むテーブルが表示されているスクリーンショット。各行には、名前、システムの種類、シリアル番号、パッケージ、ライセンスを管理するためのリンクが表示されます。</block>
-  <block id="cf03ba6c2dea0eb29457f99fdcd69b82" category="paragraph"><block ref="cf03ba6c2dea0eb29457f99fdcd69b82" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a45c9786e45613660f519d740b30671a" category="list-text">必要に応じて、「*PAYGO ライセンスの管理*」をクリックして、PAYGO ライセンスを変更するか、インスタンス タイプを変更します。</block>
   <block id="00b61e8d20d055a6505bd5bc88e18aeb" category="section-title">BYOLライセンスの管理</block>
   <block id="33375e3f722897194d509130054856dd" category="paragraph">システム ライセンスと追加容量ライセンスを追加および削除することで、 NetAppから直接購入したライセンスを管理します。</block>
   <block id="6bcfb67e751fc7a3d8dba22f37cbb570" category="inline-link">Cloud Volumes ONTAPの BYOL ライセンスの利用制限</block>
   <block id="ceb2294714463ec73c3bb76a991ef103" category="admonition">はBYOLライセンスの購入、延長、および更新を制限しています。<block ref="73dc1b5468c2405a47da63a28335f079" category="inline-link-rx"></block> 。</block>
   <block id="4742f5b0c38f7c105542ecb15a214212" category="section-title">割り当てられていないライセンスを追加する</block>
-  <block id="d0052e7943aa77623453a3374803765d" category="paragraph">新しいCloud Volumes ONTAPシステムを作成するときにライセンスを選択できるように、ノードベースのライセンスをコンソールに追加します。コンソールはこれらのライセンスを「未割り当て」として識別します。</block>
   <block id="9827486f8d28067db0a9918ee807f05e" category="list-text">*未割り当て*をクリックします。</block>
   <block id="7fa863d81a4b4f5f46596207ce29dc50" category="list-text">*未割り当てのライセンスの追加*をクリックします。</block>
   <block id="851df848340ac5c43d036a7c8ab531e8" category="list-text">ライセンスのシリアル番号を入力するか、ライセンス ファイルをアップロードします。</block>
   <block id="bec033f0535da0f58c9f0a7ccd96e793" category="paragraph">ライセンス ファイルをまだお持ちでない場合は、以下のセクションを参照してください。</block>
   <block id="ea9a2b9ac34c9aab133f21aa5b67976e" category="list-text">*ライセンスの追加*をクリックします。</block>
   <block id="684d5df2e069e529d4a4c518d654dc44" category="paragraph">コンソールがライセンスを追加します。ライセンスは、新しいCloud Volumes ONTAPシステムに関連付けるまで、未割り当てとして識別されます。その後、ライセンスは *Licenses and subscriptions* の * BYOL * タブに移動します。</block>
-  <block id="df5b9d272738b4adaa43e7eb4949a0e5" category="section-title">Exchangeの未割り当てノードベースライセンス</block>
-  <block id="76a67f9205ca80ce535686592126df9d" category="paragraph">使用していないCloud Volumes ONTAPの未割り当てのノードベース ライセンスがある場合は、そのライセンスをNetApp Backup and Recoveryライセンス、 NetApp Data Classificationライセンス、またはNetApp Cloud Tieringライセンスに変換して交換できます。</block>
   <block id="82330159ba1b86113008185841af38f9" category="paragraph">ライセンスを交換すると、 Cloud Volumes ONTAPライセンスが取り消され、サービスに対してドル相当のライセンスが作成されます。</block>
   <block id="488b3f4a79a8819dabc209f2405c7ba7" category="list-text">Cloud Volumes ONTAP HAペアのライセンスは51 TiBの直接ライセンスに変換されます</block>
   <block id="d8961eb56e3c50e0da29ec362dcb385a" category="list-text">Cloud Volumes ONTAPシングルノードのライセンスは 32 TiB の直接ライセンスに変換されます</block>
   <block id="89f1c05b91f27a0ccc4736c51deee49f" category="paragraph">変換されたライセンスの有効期限は、 Cloud Volumes ONTAPライセンスと同じになります。</block>
-  <block id="e0225acc5a75bb0346dd94ed24206c81" category="inline-link-macro">ノードベースのライセンスを交換する方法のチュートリアルを表示します。</block>
-  <block id="d82de0388f091aa9d43371708eb95310" category="paragraph"><block ref="b4c22b5293d3ee433dee9c4b3632dbee" category="inline-link-macro-rx"></block></block>
   <block id="fff69e388498c7da2216c0a49587cbc8" category="list-text">*ライセンスの交換*をクリックします。</block>
   <block id="25abdaf706ab9bbfe1775de2626f958f" category="inline-image-macro">未割り当てライセンス ページに表示される Exchange ライセンス オプションのスクリーンショット。</block>
   <block id="59069c86e2c388bcb56b4ec04ba7c1b1" category="paragraph"><block ref="59069c86e2c388bcb56b4ec04ba7c1b1" category="inline-image-macro-rx" type="image"></block></block>
@@ -394,10 +374,7 @@
   <block id="98022931ad96bfc8db710666a48e0416" category="list-text">ライセンス ファイル (HA ペアがある場合は複数のファイル) をアップロードします。</block>
   <block id="1c523ff18e24f3b5d4d5fa45c4410b01" category="list-text">*ライセンスの更新*をクリックします。</block>
   <block id="825a0cb9a8312e85f3aa745487c0dbe9" category="paragraph">コンソールは、Cloud Volumes ONTAPシステムのライセンスを更新します。</block>
-  <block id="2c2e7695734e076306fc8ba50ca70c1b" category="section-title">追加容量ライセンスの管理</block>
-  <block id="d452bdec5cf94a61fe23690b513f4a71" category="paragraph">Cloud Volumes ONTAP BYOL システムの追加容量ライセンスを購入して、BYOL システム ライセンスで提供される 368 TiB を超える容量を割り当てることができます。たとえば、最大 736 TiB の容量をCloud Volumes ONTAPに割り当てるために、追加のライセンス容量を 1 つ購入することができます。または、最大 1.4 PiB を得るために、追加容量ライセンスを 3 つ購入することもできます。</block>
   <block id="6e869ff6c9fd5eb76baa394c52e2ef18" category="section-title">容量ライセンスを追加する</block>
-  <block id="41a0a4fe38c3f00a9fae3056955c9f80" category="paragraph">コンソールの右下にあるチャット アイコンからお問い合わせいただき、追加容量ライセンスを購入してください。ライセンスを購入したら、それをCloud Volumes ONTAPシステムに適用できます。</block>
   <block id="423cdc57679399d47229e2f74dfc102b" category="list-text">*容量ライセンスの追加*をクリックします。</block>
   <block id="b0bfc70f0e7f3f10c4334bd53c2c2a27" category="list-text">シリアル番号を入力するか、ライセンス ファイル (HA ペアがある場合は複数のファイル) をアップロードします。</block>
   <block id="c4e9cc48e592b9354b10b9d54e14525c" category="section-title">容量ライセンスの更新</block>
@@ -408,7 +385,6 @@
   <block id="c320af21170d1ca43751b7580a1125f4" category="list-text">容量ライセンスの横にあるアクション メニューをクリックし、[ライセンスの削除] を選択します。</block>
   <block id="03b194a23dcb353466fbfb7acff64363" category="list-text">*削除*をクリックします。</block>
   <block id="594cb44c6500d8855ad820b0653e02c7" category="section-title">PAYGOとBYOL間の変更</block>
-  <block id="a704128156d562fe5860508e9584ee34" category="paragraph">システムを PAYGO ノード単位ライセンスから BYOL ノード単位ライセンス (およびその逆) に変換することはサポートされていません。従量課金制サブスクリプションと BYOL サブスクリプションを切り替える場合は、新しいシステムをデプロイし、既存のシステムから新しいシステムにデータを複製する必要があります。</block>
   <block id="c019dbada10848ba4363bd4710a34f6b" category="list-text">新しいCloud Volumes ONTAPシステムを作成します。</block>
   <block id="9bd20ffd5e91ec2bb61bc593be38bb13" category="list-text">複製する必要があるボリュームごとに、システム間で 1 回限りのデータ レプリケーションを設定します。</block>
   <block id="95b10ad2ca24b4c8bd5673b7383531a2" category="inline-link">システム間でデータを複製する方法を学ぶ</block>
@@ -716,7 +692,6 @@
   <block id="22a93e112ce29f0d1e8dfc0ede83e119" category="sidebar">直接ライセンスの管理</block>
   <block id="fbf5bb26f6374732410ccc529ef29ffa" category="sidebar">Cloud Volumes ONTAPのライセンスを管理する</block>
   <block id="c7031958abe0c6bca3058548b703b37f" category="sidebar">Cloud Volumes ONTAPの容量ベースのライセンス</block>
-  <block id="f34953a70b4a66823b7c335bccdd1df4" category="sidebar">Cloud Volumes ONTAPのノードベースのライセンス</block>
   <block id="03d8ffc661918290fbea573239c62f5a" category="sidebar">プライベートオファーを管理する</block>
   <block id="21677e75a8fa5c435a73182243b106bf" category="sidebar">AWSプライベートオファーを管理する</block>
   <block id="b3f0b3ed456c94edb01f453c1e1cdf1f" category="sidebar">Azure プライベート オファーを管理する</block>
@@ -928,7 +903,6 @@
   <block id="b33d71b64d47a9f0ce606e73ae1e07dd" category="section-title">Cloud Volumes ONTAPライセンスの管理</block>
   <block id="9429e7a2e486548a79c3122d6c6e17e5" category="paragraph">Cloud Volumes ONTAP ライセンスは、ホームページまたは *Direct licenses* タブで管理できるようになりました。*Marketplace subscriptions* タブを使用して、サブスクリプション情報を表示します。</block>
   <block id="26d95a9677f28d9a6e340c69085c4cdb" category="paragraph">NetApp Console内で*請求設定*を直接構成および管理できるようになりました。この機能強化により、管理者は、NetAppの直接ライセンス、クラウド マーケットプレイスのサブスクリプション、およびKeystone契約全体で、容量使用量、更新、およびコストの請求方法を定義および表示できるようになります。</block>
-  <block id="994c93e3e8dbb5133d0b3a075bdac953" category="summary">Licenses and subscriptionsを使用すると、NetApp Consoleライセンス、NetAppマーケットプレイスのサブスクリプション、およびNetApp Keystoneを管理および監視できます。</block>
   <block id="abcc786cf14d5e9fe478edfb4649ff58" category="paragraph">請求元は次のとおりです：</block>
   <block id="4034ad2bb1e8e26399eef6531403fda6" category="cell">購入したNetApp容量の使用</block>
   <block id="3c214db1e9b5df7d24325803b44aa5aa" category="cell">NetApp ライセンスを最初に取得</block>
@@ -938,7 +912,6 @@
   <block id="4684cf5eed11e2cbe98bbf41e64baab1" category="cell">カスタムCVO設定を有効にする</block>
   <block id="8231c7512d38624b6c73e0353c9b018c" category="cell">デフォルトの請求方法に戻す</block>
   <block id="75b55a88e71b87a8f2223b882c8fdb60" category="cell">カスタムCVO設定を無効にする</block>
-  <block id="64b2682858b322421bcf1271f43d5958" category="summary">オンプレミスの各 ONTAP クラスタの契約の詳細を表示します。</block>
   <block id="3c0e7e5eacb6d93fc4a6e237d9dc57c5" category="paragraph">NetApp コンソールでは、ONTAP クラスタを検出し、検出した各オンプレミス ONTAP クラスタの契約の詳細を表示できます。</block>
   <block id="c874b53d36cb039f81fc4117963fe03f" category="paragraph">NetApp コンソールの*概要*ダッシュボードを使用すると、ライセンスとサブスクリプションのステータスを監視し、サブスクリプションの有効期限や容量制限に達した場合でも、コストを管理し、サービスを維持できます。</block>
   <block id="bda8ae7ab8a8500998773e4eb67456f7" category="paragraph">特定のサービスについて、*概要*ページから新しいライセンスやサブスクリプションを追加することはできません。ライセンスは*直接ライセンス*タブからのみ追加でき、サブスクリプションは*マーケットプレイスサブスクリプション*タブからのみ追加できます。</block>
@@ -1005,8 +978,6 @@
   <block id="e7a38d895cb4f8d8f3a338217e14a339" category="cell">ボリュームの固有識別子。</block>
   <block id="7860112ba253041aab5726c5a5f6777c" category="cell">ボリュームの種類（例：読み取り / 書き込みまたはデータ保護）。</block>
   <block id="b41f9ba0b51c7f3d54a31c655a83017f" category="cell">ボリュームに対してプロビジョニングされた総容量。</block>
-  <block id="6e1a9790b199742bec95dea2070e2f3f" category="summary">ノードベースのライセンスを NetApp Console で管理し、各 Cloud Volumes ONTAP システムに必要な容量を備えた有効なライセンスが付与されていることを確認してください。</block>
-  <block id="160221c1e99e53b72af8a65c2440852b" category="doc">Cloud Volumes ONTAP のノードベースライセンスを管理する</block>
   <block id="ffc60ab0361bc3c2ef3b3728cce5a231" category="paragraph"><block ref="ac0e83bff3dad475c8103a64904a607a" category="inline-link-rx"></block>。</block>
   <block id="66f0f207e553b92ff141bcd4fe27ad0f" category="section-title">AWS における Cloud Volumes ONTAP とデータサービスの柔軟な請求</block>
   <block id="3d44d36eec8c18ebcfe6e7df6a18f232" category="inline-link-macro">Cloud Volumes ONTAPリリースノート</block>
@@ -1022,4 +993,36 @@
   <block id="24c5718a7b37767099a36f2e0a1ef086" category="list-text">*マーケットプレイスプロバイダー* — 課金処理が行われるクラウドプラットフォームを識別します。プロバイダーは、サポートする機能、契約の種類、および更新ルールを決定します。例えば、AWS マーケットプレイスのサブスクリプションはアカウントベースの課金方式を採用していますが、Azure はアカウントベースとテナントベースの両方のモデルをサポートしている場合があります。</block>
   <block id="dbf314f960a580dec77c3328f5a7dcfe" category="list-text">AWS マーケットプレイスのスタンドアロン Cloud Volumes ONTAP サブスクリプションを通じて Cloud Volumes ONTAP の容量を課金する予定がある場合、Cloud Volumes ONTAP システムはサポートされている容量ベースのパッケージ（Essentials または Freemium）を使用する必要があります。Professional パッケージはスタンドアロンリストには対応しておらず、引き続き NIS サブスクリプションを通じて課金されます。希望するパッケージを選択した後、NetApp Console の *請求設定* を使用して、Cloud Volumes ONTAP の課金に使用するマーケットプレイスのサブスクリプションを選択してください。</block>
   <block id="3919d4b9a6b0d4b602f5cdf529c0ed29" category="admonition">AWSの場合、アカウントには複数のNetAppマーケットプレイスサブスクリプションが存在する可能性があります。スタンドアロンのCloud Volumes ONTAPサブスクリプションのみを関連付けた場合、Essentialsを使用してCloud Volumes ONTAPをデプロイできますが、バックアップとリカバリの設定には別のサブスクリプションが必要です。Cloud Volumes ONTAP容量課金に使用するサブスクリプションを選択するには（既存システムの課金変更を含む）、*管理 &gt; Licenses and subscriptions &gt; 請求設定*に移動してください。</block>
+  <block id="9c4eec228f427828235463d59daed219" category="admonition">サブスクリプション情報を表示するには、コンソールエージェントをデプロイする必要があります。Cloud Volumes ONTAP の BYOL ライセンスを表示するにも、エージェントが必要です。</block>
+  <block id="f7eccb32f78ffcc556a6e33ab837a577" category="section-title">パッケージの詳細を表示する</block>
+  <block id="57ad4bfee5bc61eaf0dd46379c75ae34" category="summary">BYOL ライセンスを NetApp Console で管理して、Cloud Volumes ONTAP システムに必要な容量を備えた有効なライセンスが付与されていることを確認してください。</block>
+  <block id="50911d76d8db3cc40925f943f1ca7efb" category="doc">Cloud Volumes ONTAP の BYOL ライセンスの管理</block>
+  <block id="be02aeef4770b69cefbe40935aba2797" category="inline-link">Cloud Volumes ONTAP のライセンス</block>
+  <block id="e2c28fe1b1e987a06f636ae7c3482bae" category="paragraph">BYOL（Bring-Your-Own License）は、Cloud Volumes ONTAP における課金モデルの一つで、マーケットプレイスのサブスクリプションではなく、NetApp から直接購入したライセンスを通じて容量消費に対して料金を支払う方式です。Cloud Volumes ONTAP システムに必要な容量を備えた有効なライセンスが付与されていることを確認するために、NetApp Console で BYOL ライセンスを管理してください。詳細については、<block ref="d9d28f09a38154804862cc0742f76db1" category="inline-link-rx"></block>を参照してください。</block>
+  <block id="d7541fdf3e0094adec62a7042b5512d9" category="inline-link">Cloud Volumes ONTAP のノードベースライセンスを容量ベースライセンスに変換する</block>
+  <block id="847e45a642e11ad647bc1b931aa93b6f" category="paragraph">NetApp は、新規導入にはすべて容量ベースのライセンスを推奨します。旧世代のノードベースモデルを使用した既存のライセンスをお持ちの場合は、容量ベースのライセンスに移行する必要があります。手順については、<block ref="6c9714235e53a411b3b31b5a9d910769" category="inline-link-rx"></block>を参照してください。</block>
+  <block id="6eb61ba1a2f61db4d9f72f3888890463" category="admonition">クラウド プロバイダのマーケットプレイスからの PAYGO （従量課金制）サブスクリプションは、プライベートモード展開では利用できません。プライベートモードでは、NetApp が BYOL ライセンスを直接提供します。ノードベースのライセンスは、既存のプライベートモード展開でのみ利用可能であり、新規展開はできません。NetApp は、2025年6月25日以降、プライベートモードでのノードベースライセンスの購入、延長、および更新を制限しています。既存のノードベースライセンスをお持ちの場合は、容量ベースライセンスに変換する必要があります。</block>
+  <block id="0814f25d2fb19660c0f5a17f5faecd5b" category="inline-link">プライベートモードでCloud Volumes ONTAPを導入する</block>
+  <block id="993fca3d74b4e0c45a0b63335fff4fc2" category="paragraph">新規のプライベートモード展開には、容量ベースのライセンスを使用してください。参照<block ref="a830c5764652e2ca74bb3dce260e01c7" category="inline-link-rx"></block>。</block>
+  <block id="63a4063cbdde53629f056f26faa6a46b" category="section-title">PAYGOサブスクリプションの管理</block>
+  <block id="27d6a6ca8e88ba1cb467019b29f60d17" category="paragraph">Licenses and subscriptions メニューでは、各 PAYGO Cloud Volumes ONTAP システムの詳細（シリアル番号および PAYGO サブスクリプションタイプを含む）を表示できます。クラウド プロバイダのマーケットプレイスからの PAYGO サブスクリプションは、容量ベースのライセンスのみに対応しています。</block>
+  <block id="13cd5e1a4f18ae48c4acaf913e719713" category="list-text">左側のナビゲーション ペインから、*管理 &gt; Licenses and subscriptions* を選択します。</block>
+  <block id="aa59cb2e56f1983339b4f7a3a9f01781" category="list-text">「Subscriptions」タブでは、各PAYGO サブスクリプションの詳細を表形式で確認できます。</block>
+  <block id="ecb37f6560fedafb92676fdb1b5f9987" category="paragraph">Cloud Volumes ONTAP のBYOLライセンスには、NetApp から直接購入したノードベースのライセンスと容量ベースのライセンスの両方が含まれるようになりました。</block>
+  <block id="3201bf04f8e8f798a4aa98d5503f6ae2" category="paragraph">*容量ベースのBYOLライセンス*の場合、ライセンスは単一のCloud Volumes ONTAPシステムではなく、NetApp Consoleアカウントに関連付けられます。各システムには固有のシリアル番号が割り当てられますが、同一アカウントに属する複数のシステムは、同じ共有容量プールから利用し、基盤となるライセンスを共有することができます。</block>
+  <block id="54597fdff28ec33f0b57629ca64201e0" category="inline-link">Cloud Volumes ONTAP ノードベース BYOL について</block>
+  <block id="2cf18338edb89cdd61b1af6d69b2b37c" category="paragraph">ノードベースのBYOLライセンスの場合、このプーリングは適用されません。それぞれのCloud Volumes ONTAPシステムには専用のシステムライセンスが必要であり、ライセンスはシステム間で共有されません。ただし、システムを削除した場合は、新しいシステムに移行することができます。詳細については、<block ref="96c6fa7eefafc39f185da52ed0224caf" category="inline-link-rx"></block>を参照してください。</block>
+  <block id="4d112c35ca4b3b14458313a7ae735587" category="paragraph">BYOLライセンスを NetApp Console に追加して、新しい Cloud Volumes ONTAP システムを作成する際にライセンスを選択できるようにします。NetApp Console では、これらのライセンスは「未割り当て」として識別されます。</block>
+  <block id="e210f93d019d79eb717a736686141edf" category="list-text">「ライセンス」タブを選択します。</block>
+  <block id="7a28e503d810a66b902935d7d7416c68" category="section-title">未割り当てのライセンスを交換する</block>
+  <block id="54f3d74d05e04928c274bd8727b58f79" category="paragraph">使用していないCloud Volumes ONTAPの割り当てられていないライセンスがある場合は、それをNetApp Backup and Recoveryライセンス、NetApp Data Classificationライセンス、またはNetApp Cloud Tieringライセンスに変換して交換できます。</block>
+  <block id="85a4fe62e8772cbd7af6d80cfd2b0f66" category="inline-link-macro">未割り当てライセンスの交換方法に関する手順をご覧ください。</block>
+  <block id="c4a0587d1b95ae7ebd5d636f1e37a7f4" category="paragraph"><block ref="73eee52ffb6a033c9932b0beadef086a" category="inline-link-macro-rx"></block></block>
+  <block id="f872488b1ef144f7365b71552b153b14" category="section-title">追加容量ライセンスの管理（ノードベースライセンスのみ）</block>
+  <block id="a7990e086d58662834289acdf9e8b96f" category="paragraph">この手順は、ノードベースのライセンスにのみ適用されます。容量ベースのライセンスは共有容量プールから利用されるため、別途追加の容量ライセンスは必要ありません。</block>
+  <block id="26e6ad1e0111d589d3b8569da89a6cb8" category="paragraph">追加容量ライセンスを購入することで、Cloud Volumes ONTAP ノードベースの BYOL システムに、システムライセンスで提供される 368 TiB を超える容量を割り当てることができます。たとえば、追加ライセンスを 1 つ購入することで、Cloud Volumes ONTAP に最大 736 TiB の容量を割り当てることができます。または、容量ライセンスを 3 つ追加購入することで、最大 1.4 PiB の容量を確保することもできます。</block>
+  <block id="3067eec78cda68abb45f1950f5b7de68" category="paragraph">NetApp の担当者に連絡して、追加容量ライセンスを購入してください。ライセンスを購入したら、Cloud Volumes ONTAP システムに適用できます。</block>
+  <block id="9013cda65f4f0c57c44bcdefc6feb154" category="admonition">これは標準モードの展開にのみ適用されます。PAYGO はプライベートモードでは利用できないためです。</block>
+  <block id="5eb5d5752efd31fd46b0201cfca01e77" category="paragraph">システムを PAYGO ライセンスから BYOL ライセンスに変換すること（およびその逆）はサポートされていません。PAYGO サブスクリプションと BYOL サブスクリプションを切り替える場合は、新しいシステムを導入し、既存のシステムから新しいシステムにデータをレプリケートする必要があります。</block>
+  <block id="8c7bfac6e491e33091d317e6d08f0751" category="sidebar">Cloud Volumes ONTAP の BYOL ライセンス</block>
 </blocks>

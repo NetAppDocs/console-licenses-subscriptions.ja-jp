@@ -31,7 +31,7 @@ sidebar:
         entries:
         - title: Cloud Volumes ONTAPの容量ベースのライセンス
           url: "/task-manage-capacity-licenses.html"
-        - title: Cloud Volumes ONTAPのノードベースのライセンス
+        - title: Cloud Volumes ONTAP の BYOL ライセンス
           url: "/task-manage-node-based-licenses.html"
     - title: プライベートオファーを管理する
       entries:
