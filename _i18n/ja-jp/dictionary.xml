@@ -1003,7 +1003,6 @@
   <block id="847e45a642e11ad647bc1b931aa93b6f" category="paragraph">NetApp は、新規導入にはすべて容量ベースのライセンスを推奨します。旧世代のノードベースモデルを使用した既存のライセンスをお持ちの場合は、容量ベースのライセンスに移行する必要があります。手順については、<block ref="6c9714235e53a411b3b31b5a9d910769" category="inline-link-rx"></block>を参照してください。</block>
   <block id="6eb61ba1a2f61db4d9f72f3888890463" category="admonition">クラウド プロバイダのマーケットプレイスからの PAYGO （従量課金制）サブスクリプションは、プライベートモード展開では利用できません。プライベートモードでは、NetApp が BYOL ライセンスを直接提供します。ノードベースのライセンスは、既存のプライベートモード展開でのみ利用可能であり、新規展開はできません。NetApp は、2025年6月25日以降、プライベートモードでのノードベースライセンスの購入、延長、および更新を制限しています。既存のノードベースライセンスをお持ちの場合は、容量ベースライセンスに変換する必要があります。</block>
   <block id="0814f25d2fb19660c0f5a17f5faecd5b" category="inline-link">プライベートモードでCloud Volumes ONTAPを導入する</block>
-  <block id="993fca3d74b4e0c45a0b63335fff4fc2" category="paragraph">新規のプライベートモード展開には、容量ベースのライセンスを使用してください。参照<block ref="a830c5764652e2ca74bb3dce260e01c7" category="inline-link-rx"></block>。</block>
   <block id="63a4063cbdde53629f056f26faa6a46b" category="section-title">PAYGOサブスクリプションの管理</block>
   <block id="27d6a6ca8e88ba1cb467019b29f60d17" category="paragraph">Licenses and subscriptions メニューでは、各 PAYGO Cloud Volumes ONTAP システムの詳細（シリアル番号および PAYGO サブスクリプションタイプを含む）を表示できます。クラウド プロバイダのマーケットプレイスからの PAYGO サブスクリプションは、容量ベースのライセンスのみに対応しています。</block>
   <block id="13cd5e1a4f18ae48c4acaf913e719713" category="list-text">左側のナビゲーション ペインから、*管理 &gt; Licenses and subscriptions* を選択します。</block>
@@ -1025,4 +1024,5 @@
   <block id="9013cda65f4f0c57c44bcdefc6feb154" category="admonition">これは標準モードの展開にのみ適用されます。PAYGO はプライベートモードでは利用できないためです。</block>
   <block id="5eb5d5752efd31fd46b0201cfca01e77" category="paragraph">システムを PAYGO ライセンスから BYOL ライセンスに変換すること（およびその逆）はサポートされていません。PAYGO サブスクリプションと BYOL サブスクリプションを切り替える場合は、新しいシステムを導入し、既存のシステムから新しいシステムにデータをレプリケートする必要があります。</block>
   <block id="8c7bfac6e491e33091d317e6d08f0751" category="sidebar">Cloud Volumes ONTAP の BYOL ライセンス</block>
+  <block id="c04205f36d58d2d1ec62c2899d062abf" category="paragraph">新規のプライベートモード展開には、容量ベースのライセンスを使用してください。参照<block ref="e18a894e162de115535720d8609168d7" category="inline-link-rx"></block>。</block>
 </blocks>
