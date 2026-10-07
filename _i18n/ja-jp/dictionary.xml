@@ -1025,4 +1025,86 @@
   <block id="5eb5d5752efd31fd46b0201cfca01e77" category="paragraph">システムを PAYGO ライセンスから BYOL ライセンスに変換すること（およびその逆）はサポートされていません。PAYGO サブスクリプションと BYOL サブスクリプションを切り替える場合は、新しいシステムを導入し、既存のシステムから新しいシステムにデータをレプリケートする必要があります。</block>
   <block id="8c7bfac6e491e33091d317e6d08f0751" category="sidebar">Cloud Volumes ONTAP の BYOL ライセンス</block>
   <block id="c04205f36d58d2d1ec62c2899d062abf" category="paragraph">新規のプライベートモード展開には、容量ベースのライセンスを使用してください。参照<block ref="e18a894e162de115535720d8609168d7" category="inline-link-rx"></block>。</block>
+  <block id="c94428bb3046fd91680400484ec8c2c2" category="summary">NetApp ConsoleのLicenses and subscriptionsに関するよくある質問。</block>
+  <block id="e39296410a50d9564db54d62c735ace8" category="doc">Licenses and subscriptionsに関するよくある質問</block>
+  <block id="fca1552e54aafb03817332403cc25be2" category="paragraph">このページでは、NetApp ConsoleのLicenses and subscriptionsに関するよくある質問への回答を提供しています。直接ライセンス、Marketplaceサブスクリプション、プライベートオファー、Keystoneサブスクリプション、および請求に関する設定を管理する際に役立つ概念、決定事項、および制約について説明します。</block>
+  <block id="95b63cfa66fbe939afaa56fb263790be" category="section-title">概要とアクセス</block>
+  <block id="91ba5c879d87d8a3393b194c6d180bcf" category="list-title">NetApp Consoleにおける直接ライセンス、Marketplaceサブスクリプション、およびKeystoneサブスクリプションの違いは何ですか？</block>
+  <block id="15757781995964d7beff8f186804e435" category="list-text">*直接ライセンス*はNetAppから購入し、通常はライセンスファイル、シリアル番号、または容量のエンタイトルメントを使用して管理します。一般的にBring Your Own License（BYOL）と呼ばれます。</block>
+  <block id="98eda3e5bd29aa5ea47544d5bd2448f8" category="list-text">*マーケットプレイスサブスクリプション*は、AWS Marketplace、Azure Marketplace、またはGoogle Cloud Marketplaceを通じて購入または有効化されます。料金はクラウド プロバイダを通じて請求されます。</block>
+  <block id="7c9b1ba75dc2c146109c9ad8370d8a9f" category="list-text">*Keystoneサブスクリプション*は、NetAppの従量課金契約です。NetAppがお客様のConsoleアカウントを承認すると、対象となるCloud Volumes ONTAPのデプロイで、課金方法としてKeystoneを使用できるようになります。</block>
+  <block id="97bc8230771ed4fb4237964d5f13f463" category="paragraph-title">NetApp ConsoleにLicenses and subscriptionsが自動的に表示されないのはなぜですか？</block>
+  <block id="5800153968c3897b3c766be08c28d5c6" category="paragraph">ライセンスとサブスクリプション情報は、ConsoleアカウントがNetApp Support Site（NSS）アカウントにも関連付けられている場合にのみ自動的に表示されます。ConsoleアカウントがNSSアカウントに関連付けられていない場合は、ライセンスを手動で追加する必要があります。使用状況、容量、その他の詳細情報も自動的に更新されません。<block ref="d91c407ebd602e3da49f4a9118ef9c8a" category="inline-link-rx"></block></block>
+  <block id="7ff3ccb91596a802d1df63e95ddd3bd3" category="paragraph-title">Licenses and subscriptionsを確認するには、Consoleエージェントが必要ですか？</block>
+  <block id="7e6983239f1be0a45976fcb886e9f284" category="paragraph">サブスクリプション情報を表示するには、コンソールエージェントをデプロイする必要があります。Cloud Volumes ONTAPの直接ライセンスを表示するためにも、エージェントが必要です。</block>
+  <block id="6ee01e6be90e0aa1a6f4060e3db3a9da" category="paragraph-title">NetApp Consoleでは、どのサービスのライセンスとサブスクリプションを管理できますか？</block>
+  <block id="1a6db682e7620d09c7c25e949ab7f6e3" category="paragraph">バックアップとリカバリ、クラウド階層化、Cloud Volumes ONTAP、災害復旧（BYOLのみ）、およびランサムウェア対策のLicenses and subscriptionsを管理できます。</block>
+  <block id="b3f3c02902f1b0853ad298e9918b56e8" category="paragraph-title">NetApp ConsoleでLicenses and subscriptionsを管理できるロールは何ですか？</block>
+  <block id="fa2d64346232775184ba10a2678ec588" category="paragraph">Licenses and subscriptions管理者ロールを持つユーザーは、直接ライセンスの追加、編集、削除、およびMarketplaceとKeystoneサブスクリプションの関連付けまたは関連付け解除を行うことができます。</block>
+  <block id="58b6288a421556df6043d39b64070b4c" category="paragraph">該当する閲覧権限を持つユーザーは、Licenses and subscriptionsを閲覧できますが、変更を加えることはできません。</block>
+  <block id="052c4c5af2acbc73e0fbe897f70f8ebc" category="paragraph-title">概要ダッシュボードから新しいライセンスやサブスクリプションを追加できないのはなぜですか？</block>
+  <block id="2bd901bcae2ca84d22543fa99bd68ecc" category="paragraph">概要ダッシュボードは、既存のライセンス問題を確認し、解決することを目的としています。直接ライセンスを追加するには、*直接ライセンス*に移動してください。マーケットプレイスのサブスクリプションを追加または関連付けるには、*マーケットプレイスのサブスクリプション*に移動してください。</block>
+  <block id="72f39c1f99603202cb121b40b8c90b60" category="paragraph-title">ライセンスやサブスクリプションに注意が必要かどうかは、どうすればわかりますか？</block>
+  <block id="7a5e45661d4123156602f6a2dabd24f5" category="paragraph">概要ダッシュボードの*対応が必要*タイルは、有効期限が切れる、または容量制限に達するLicenses and subscriptionsについて警告します。*解決*が表示されない場合は、対処が必要な問題はありません。*解決*を選択すると、*Licenses*または*Subscriptions*タブから問題を表示して対処できるページに移動します。</block>
+  <block id="4f25441eda7b667305d4891e08c98400" category="section-title">直接ライセンス（BYOL）</block>
+  <block id="96a9a822e874fd81749e2f1a2b6e306c" category="paragraph-title">NSSアカウントを関連付けることと、ライセンスファイルを手動でアップロードすることの違いは何ですか？</block>
+  <block id="c4e4d091ff4be8fba7d96f91fc54765c" category="paragraph">ConsoleアカウントをNSSアカウントに関連付けることで、Consoleがライセンスを自動的に検出して更新できるようになります。ライセンスを追加または更新するためにシリアル番号を入力する場合にも必要です。</block>
+  <block id="d851862c0f2c2d5206d7a430fd4f1e3c" category="paragraph">コンソールがインターネットに接続されていない場合、またはコンソールアカウントがNSSアカウントに関連付けられていない場合は、NetAppライセンスファイルを手動で取得してアップロードする必要があります。このような場合、コンソールはライセンスを自動的に照会または更新することはできません。</block>
+  <block id="72be90f765aa59906f1d62ea6f3698f7" category="list-title">Cloud Volumes ONTAPの容量ベースとノードベースのBYOLライセンスの違いは何ですか？</block>
+  <block id="c86c234ca98705da5ac2cf9fd42dbfb8" category="list-text">*容量ベースのBYOLライセンス*の場合、ライセンスは単一のシステムではなく、Consoleアカウントに関連付けられます。各システムには固有のシリアル番号が割り当てられますが、同じアカウントに属する複数のシステムは共有容量プールから容量を使用します。</block>
+  <block id="03362570512ef9746d63f37f7a8b7080" category="list-text">*ノードベースのBYOLライセンス*の場合、プーリングは適用されません：各Cloud Volumes ONTAPシステムには専用のシステムライセンスが必要ですが、元のシステムを削除すれば、新しいシステムにライセンスを移行できます。</block>
+  <block id="bbad4106c25308fe9d3f73fb73d83cf6" category="inline-link">ノードベースのライセンスを容量ベースのライセンスに変換する方法</block>
+  <block id="d063728e3e5084e5fc69b2ddcdf6e039" category="paragraph">ノードベースのライセンスは、旧世代のモデルです。NetAppは、すべての新規導入に容量ベースのライセンスを推奨しており、既存のノードベースのライセンスは変換する必要があります。<block ref="78ff16872c9f49d77b6b262196f53fa3" category="inline-link-rx"></block>。</block>
+  <block id="f25ba906034fd51dd96d732d92ada1c7" category="paragraph-title">未割り当てのCloud Volumes ONTAPライセンスを別のサービスと交換するとどうなりますか？</block>
+  <block id="6ee37870f03dbded2322b3f33f465c2f" category="paragraph">未割り当てのCloud Volumes ONTAPライセンスを交換すると、そのライセンスは取り消され、新しいサービス（NetApp Backup and Recovery、データ分類、またはクラウド階層化）の同額のライセンスが作成されます。</block>
+  <block id="21fe571bcca5441bc73f4f47f9b69690" category="list-text">HAペアのライセンスは、51 TiBの直接ライセンスに変換されます。</block>
+  <block id="9da8005427de9857faf9e978012fc803" category="list-text">単一ノードのライセンスは、32 TiBの直接ライセンスに変換されます。</block>
+  <block id="6f804e7300ccd6aa4b32373ab4627167" category="paragraph">変換されたライセンスは、元のCloud Volumes ONTAPライセンスと同じ有効期限を保持します。</block>
+  <block id="e43abd0e284b050c49d5467674a8e6d4" category="paragraph-title">BYOLライセンスとPAYGOマーケットプレイスサブスクリプションのどちらが請求されているかを確認するにはどうすればよいですか？</block>
+  <block id="584fef7cc7b53eef9d7493a2eb0a4539" category="paragraph">コンソールは、まず利用可能なNetAppライセンスに対して使用料を請求しようとします。十分なライセンス容量が利用できない場合は、連携しているマーケットプレイスのPAYGOサブスクリプションに対して使用料が課金されます。</block>
+  <block id="ab151b5bc21dd015daf8120f1e3b41b3" category="paragraph">容量ベースのライセンスパッケージを変更しても、使用量がNetAppで購入したライセンス（BYOL）を通じて課金されるか、マーケットプレイスのPAYGOサブスクリプションを通じて課金されるかは変わりません。BYOLライセンスをマーケットプレイスのサブスクリプションに変換したり、その逆を行ったりする必要はありません。</block>
+  <block id="42a94f2594c760c6f154eeb8e4d5e03b" category="paragraph-title">マーケットプレイスの契約に含まれていない課金方法を選択した場合、どうなりますか？</block>
+  <block id="87b2cf4bb355ba521c552e592ad112be" category="paragraph">マーケットプレイスの個別オファーまたは契約に含まれていない課金方法を選択した場合、そのマーケットプレイスパッケージは使用できません。使用料は、利用可能な場合はNetAppライセンスに対して課金されるか、代わりにPAYGOを通じて課金されます。</block>
+  <block id="a5c2b81fbe88d1bf65404f4762cefc03" category="section-title">マーケットプレイスのサブスクリプションとプライベートオファー</block>
+  <block id="e1336e4dc4959a89830db63c600b6e25" category="paragraph-title">1つのAzureサブスクリプションまたはGoogle Cloudプロジェクトに、いくつのMarketplaceサブスクリプションを関連付けることができますか？</block>
+  <block id="d992ff58ac6eb19a409f65a445fe12ba" category="paragraph">Azure サブスクリプションまたは Google Cloud プロジェクトは、1 つの Marketplace サブスクリプションにのみ関連付けることができます。同じ Azure サブスクリプションまたは Google Cloud プロジェクト内のワークロードに 2 つの異なる Marketplace サブスクリプションを使用する場合は、サブスクリプションごとに 1 つずつ、2 つの別々の Console アカウントを作成する必要があります。</block>
+  <block id="f3442c3a8e665adfdf01f89a5cc83548" category="paragraph-title">Licenses and subscriptions からマーケットプレイスのサブスクリプションを削除できるのはいつですか？</block>
+  <block id="87098940f387ae7be985359aba04b860" category="inline-link-macro">サブスクリプションを削除する方法</block>
+  <block id="01fd8eb45d4278f8a98fe31e5663adf7" category="paragraph">ステータスが*Unsubscribed*のサブスクリプションのみを削除できます。また、削除する前に、関連するすべての設定、データ、構成をクリアまたはリセットする必要があります。サブスクリプションがまだ設定されている場合は、*Remove*オプションは利用できません。<block ref="66fbc603396c2dce18c0e649567a9cf9" category="inline-link-macro-rx"></block>。</block>
+  <block id="ee5e6baebd6caafa4477793c1d126855" category="paragraph-title">プライベートオファーを複数回承諾または有効化するリスクは何ですか？</block>
+  <block id="b515b2da3f5fbf13b5e757490029bf58" category="paragraph">プライベートオファーを複数回承諾して有効化すると、二重請求が発生する可能性があります。承認手続きにおいて必要な手順を省略すると、請求エラーやアクティベーションの問題が発生する可能性があります。</block>
+  <block id="ddb78f0e48ecb384173872083052805b" category="paragraph-title">プライベートオファーの条件、価格、または詳細が間違っているように見える場合はどうすればよいですか？</block>
+  <block id="ae7f532bfe6fb607d23c4deac70ce1b9" category="paragraph">オファーの条件、価格、詳細に相違点がある場合、またはどのオファーを受け入れるべきか不明な場合は、そのオファーを受け入れないでください。手続きを進める前に、NetAppの営業チームまたはアカウントチームに連絡して確認してください。</block>
+  <block id="6c609d5952e2b5dee78195a5c3d73be2" category="paragraph-title">変更後のGoogle Cloudプライベートオファーを受け入れた場合、または既に有効なPAYGOサブスクリプションをお持ちの場合はどうなりますか？</block>
+  <block id="4ca7b930f127f45934d6a3d9110011ad" category="paragraph">既に有効なPAYGOサブスクリプション、または変更されたプライベートオファーをお持ちの場合は、承認手順のみを実行してください。このような場合、Google Cloud Marketplace は同じリスティング内のプランを更新し、同じサブスクリプション ID を保持するため、コンソールでのサブスクリプションの関連付けはそのまま維持されます。</block>
+  <block id="8f800330489e046e59ba462eb4743db0" category="paragraph-title">無料トライアルの請求アカウントを使用して、Google Cloudのプライベートオファーを受け入れることはできますか？</block>
+  <block id="08266351633fe7e64dcda058b80f4c4a" category="paragraph">いいえ。Google Cloudの請求アカウントは無料トライアル期間中であってはなりません。無料トライアルアカウントでは、プライベートオファーを受け取ることができないためです。トライアル請求アカウントを使用しようとするとエラーが発生し、NetAppクラウドチームのサポートが必要になります。</block>
+  <block id="4758cae9153e1d37d120173e1c17b899" category="paragraph-title">複数のAWSサブスクリプションタイプを使用したり、複数のリスティングを移行したりした場合、二重に課金されますか？</block>
+  <block id="6e0ffc28497d27ad3c6bea6ff91952d8" category="section-title">Keystoneサブスクリプション</block>
+  <block id="afeacbb0058824cb96ab345802f0253c" category="paragraph-title">Keystoneサブスクリプションを使用する前に、NetAppがコンソールアカウントを承認する必要があるのはなぜですか？</block>
+  <block id="cc3683b84103b9d7025843298b37841e" category="inline-link-macro">Keystoneサブスクリプションのアカウント承認の詳細</block>
+  <block id="1ddbd326109478c150bd5ee42a2be073" category="paragraph">Keystoneサブスクリプションを使用または管理する前に、NetAppがお客様のConsoleアカウントを承認する必要があります。この承認により、対象となるKeystoneサブスクリプションがNetApp Consoleで利用可能になります。*Welcome to NetApp Keystone*ページが表示された場合は、そのページに記載されている連絡方法に従って承認をリクエストしてください。<block ref="ccba95fb3ce5ea62a11f1072c0db5deb" category="inline-link-macro-rx"></block>。</block>
+  <block id="92603228098fd0a7bccc76d25d61ffa5" category="paragraph-title">Keystoneサブスクリプションをリンクするとどうなりますか？</block>
+  <block id="f8b7497895781a40e677a93347ac5ad8" category="paragraph">Keystoneサブスクリプションをリンクすると、Consoleの組織またはアカウントに関連付けられ、新しいCloud Volumes ONTAP作業環境を作成する際の課金方法として利用できるようになります。</block>
+  <block id="baeca400c03940f797885029f24bbfb4" category="paragraph-title">Keystoneサブスクリプションのリンクはいつ解除できますか？</block>
+  <block id="696a535afea51e6026dd909607ef3c19" category="paragraph">Keystoneサブスクリプションのリンクを解除できるのは、既存のCloud Volumes ONTAPサブスクリプションに関連付けられていない場合のみです。</block>
+  <block id="393c65738fc34db3d8764271f51fc884" category="paragraph-title">Keystoneサブスクリプションのコミットされたキャパシティの変更をリクエストするにはどうすればよいですか？</block>
+  <block id="de5f733948f9b5c6c1c221e061760e74" category="paragraph">1つ以上のサブスクリプションに対して要求するコミット済み容量を入力し、追加の詳細情報を送信することで、コンソールから直接NetAppにリクエストを送信できます。これにより、処理のためにNetAppのシステムにチケットが作成されます。</block>
+  <block id="1dc35a17e636bd2e2598155007f82709" category="paragraph-title">「NetAppライセンス優先」と「Marketplaceサブスクリプションのみ」の課金モードの違いは何ですか？</block>
+  <block id="1c3c2018e4d1bcc85efd8f3c7e03b1e0" category="paragraph">「NetAppライセンス優先」は、アクティブなNetAppライセンスを通じた請求を優先し、その容量を使い果たすと、使用量はリンクされたMarketplaceサブスクリプションに引き継がれます。「Marketplaceサブスクリプションのみ」は、すべての請求をMarketplace契約経由で行い、NetAppライセンスを完全にバイパスします。これは、クラウド プロバイダの請求を通じて調達を標準化している組織で一般的です。</block>
+  <block id="f38b3fa18b7aefec432eaa16e00fd1bb" category="paragraph-title">請求設定でカスタムCVO構成を有効にすべきタイミングはいつですか？</block>
+  <block id="5d383c647692922fe9435887ff48c455" category="paragraph">組織が以下のことを必要とする場合は、カスタムCVO構成を有効にしてください：</block>
+  <block id="d4af80d7cf6a6a78ae22554d3e6a4c44" category="list-text">事業部門や環境によって管理する請求アカウントが異なるため、同じクラウド プロバイダ内の個々のCloud Volumes ONTAPインスタンスに複数のMarketplaceサブスクリプションをマッピングします。</block>
+  <block id="08cb18c400d0561bb5ba24bd41482941" category="list-text">1つのサブスクリプションを複数のクラウドプロジェクトにマッピングします。</block>
+  <block id="367951dd3427a3bc7d967d62fa29f958" category="paragraph">例えば、ビジネスユニット A が 1 つの Azure サブスクリプションに請求し、ビジネスユニット B が別の Azure サブスクリプションに請求する場合、カスタム CVO 構成を使用すると、各ビジネスユニットの Cloud Volumes ONTAP インスタンスを独自のサブスクリプションに紐付けることができます。</block>
+  <block id="9966fffbf27f7fdb0888dae3b958aee2" category="paragraph-title">カスタムCVO設定を有効にした後で無効にした場合、どうなりますか？</block>
+  <block id="aaf522015c944666cd50a385230fb07b" category="paragraph">カスタムCVO構成を無効にすると、すべてのCloud Volumes ONTAPの課金は、カスタムCVO構成で許可されていたインスタンスごとのサブスクリプションマッピングではなく、他のデータサービスで使用されているグローバル課金モード（NetAppライセンス優先、またはMarketplaceサブスクリプションのみ）にリセットされます。</block>
+  <block id="ef757573c417a6b6f47fed571a2762b0" category="paragraph-title">スタンドアロンのAWSサブスクリプションとNetApp Intelligent Services（NIS）サブスクリプションの両方がある場合、Cloud Volumes ONTAPの容量はどのように請求すればよいですか？</block>
+  <block id="9a99ccee6f9f390c3c6049ee3028f717" category="inline-link">Cloud Volumes ONTAPライセンスパッケージの詳細について</block>
+  <block id="f893601189dde189c09f2c31f2bc6a77" category="paragraph">AWS アカウントで両方のサブスクリプションが利用可能な場合は、請求設定を使用して、Cloud Volumes ONTAP の容量課金に使用するサブスクリプションを選択できます。すでに NIS を通じて課金されている既存の Cloud Volumes ONTAP システムの場合、請求設定を更新しない限り、スタンドアロン サブスクリプションを追加しても課金内容は変更されません。スタンドアロン サブスクリプションが利用可能になったあとに作成される新しいデプロイメントでは、設定を上書きしない限り、容量課金（Essentials/Freemium）にはデフォルトでスタンドアロン サブスクリプションが使用されます。<block ref="1ce900b2619df7c875d2732ee805a97d" category="inline-link-rx"></block>。</block>
+  <block id="9e45cbb032e60a5ad075f52ddebcb9d3" category="paragraph-title">スタンドアロンのCloud Volumes ONTAP AWSサブスクリプションを使用して、ProfessionalパッケージまたはBackup and Recoveryの課金を行うことはできますか？</block>
+  <block id="2a5535a986bf2e8ab19fcdd0751b05b3" category="paragraph">いいえ。スタンドアロンのCloud Volumes ONTAPサブスクリプションは、容量ベースのEssentialsおよびFreemiumパッケージのみをサポートしています。Professionalパッケージはサポートされておらず、引き続きNISサブスクリプションを通じて課金されます。スタンドアロンサブスクリプションのみが関連付けられている場合は、Essentialsを使用してCloud Volumes ONTAPをデプロイできますが、Backup and Recoveryの設定には別のサブスクリプションが必要です<block ref="1ce900b2619df7c875d2732ee805a97d" category="inline-link-rx"></block>。</block>
+  <block id="d11ce840a3409047f1a6a0f11bf10453" category="paragraph-title">請求設定のKeystoneフィールドは何に使用されますか？</block>
+  <block id="96805c41b51ac0c39a675d261c6a02ac" category="paragraph">Keystoneフィールドは、従量課金制サービスの使用状況をお客様のKeystone請求プロファイルに関連付けます。*契約ID*は、NetApp Consoleの請求記録をお客様のKeystone契約にリンクし、利用状況レポートの同期を可能にする一意の識別子です。*サービス範囲*は、Keystone契約の対象となるサービスまたは容量プールを一覧表示し、どのワークロードまたは環境が含まれるかを明確にして、対象となるリソースのみがKeystoneを通じて請求されるようにします。</block>
+  <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="sidebar">FAQ</block>
 </blocks>
