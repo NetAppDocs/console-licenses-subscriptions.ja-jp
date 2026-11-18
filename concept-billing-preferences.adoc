@@ -78,16 +78,29 @@ NetApp Console内のライセンスとサブスクリプションの管理は、
 
 AWSでは、Cloud Volumes ONTAP容量とNetAppデータサービスは、さまざまなAWSマーケットプレイスのサブスクリプションを通じて課金されます。AWS Enterprise Discount Program (EDP) の変更点と推奨事項の詳細については、link:https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/whats-new.html#flexible-billing-for-cloud-volumes-ontap-and-data-services-in-aws["Cloud Volumes ONTAPリリースノート"]を参照してください。
 
-スタンドアロンの Cloud Volumes ONTAP サブスクリプションと NetApp Intelligent Services （NIS） サブスクリプションの両方が AWS アカウントで利用可能な場合、*請求設定* を使用して、Cloud Volumes ONTAP の容量課金に使用するサブスクリプションを選択できます。
+AWS Marketplace を通じて契約する場合、以下の 4 つのプランから選択できます：
+
+[cols="1,3"]
+|===
+| オファリング | 説明 
 
 
-NOTE: 請求方法は、既存の Cloud Volumes ONTAP システムがすでに NIS を通じて稼働・課金されているかどうか、またはスタンドアロンの Cloud Volumes ONTAP サブスクリプションを追加した後に新しいシステムを展開するかどうかによって異なります。既存のシステムの場合、スタンドアロンのサブスクリプションを追加しても、*請求設定*を更新しない限り、請求内容は変更されません。スタンドアロン サブスクリプションが利用可能になった後に作成される新しいデプロイメントでは、*請求設定*で上書きしない限り、デフォルトで Cloud Volumes ONTAP の容量課金（Essentials/Freemium）にスタンドアロン サブスクリプションが使用されます。
-
-* スタンドアロン Cloud Volumes ONTAP サブスクリプション（推奨）：Cloud Volumes ONTAP 容量（Essentials/Freemium）
-* NetApp Intelligent Services（NIS）サブスクリプション：NetApp データサービス（および Cloud Volumes ONTAP Professional）
+| *Cloud Volumes ONTAP のみ（年間契約）* | 年間請求のスタンドアロンCloud Volumes ONTAPオファリング。Cloud Volumes ONTAPの新規導入に推奨されます。 
 
 
-スタンドアロンCloud Volumes ONTAPサブスクリプションは、容量ベースのEssentialsパッケージとFreemiumパッケージのみをサポートしています。Professionalパッケージはサポート対象外となり、引き続きNISを通じて請求されます。スタンドアロンサブスクリプションのみが関連付けられている場合は、EssentialsパッケージでCloud Volumes ONTAPをデプロイできますが、バックアップとリカバリの設定には別のサブスクリプションが必要です。
+| *Cloud Volumes ONTAP（PAYGO）のみ* | 柔軟な使用量ベースの課金を提供するスタンドアロンのCloud Volumes ONTAPオファリング。新規のCloud Volumes ONTAPの導入に推奨されます。 
+
+
+| *NetApp Intelligent Services（年間契約）* | NetAppの年間請求制データサービス。既存の契約に限り、Cloud Volumes ONTAPをサポートします。 
+
+
+| *NetApp Intelligent Services（PAYGO）* | NetAppの柔軟な使用量ベースの課金方式によるデータサービス。既存の契約でのみCloud Volumes ONTAPをサポートします。 
+|===
+これらのサブスクリプションがAWSアカウントに複数関連付けられている場合は、*請求設定*を使用して、Cloud Volumes ONTAPの容量課金に使用するサブスクリプションを選択してください。
+
+請求の動作は、すでに稼働中でNetApp Intelligent Servicesサブスクリプションを通じて課金されている既存のCloud Volumes ONTAPシステムがあるか、Cloud Volumes ONTAP専用サブスクリプションを追加した後に新しいシステムを導入するかによって異なります。既存のシステムの場合、*Billing preferences*を更新しない限り、Cloud Volumes ONTAP専用サブスクリプションを追加しても請求は変更されません。新規導入の場合、*Billing preferences*で上書きしない限り、Cloud Volumes ONTAPの容量課金（Essentials/Freemium）にはデフォルトでCloud Volumes ONTAP専用サブスクリプションが使用されます。
+
+Cloud Volumes ONTAPのみのオファリングは、容量ベースのEssentialsおよびFreemiumパッケージのみをサポートします。Professionalパッケージは、どちらのCloud Volumes ONTAPのみのオファリングでもサポートされておらず、引き続きNetApp Intelligent Servicesサブスクリプションを通じて請求されます。関連付けられているサブスクリプションがCloud Volumes ONTAPのみのサブスクリプションである場合、Essentialsを使用してCloud Volumes ONTAPをデプロイできますが、バックアップとリカバリの設定にはNetApp Intelligent Servicesサブスクリプションが必要です。
 
 
 

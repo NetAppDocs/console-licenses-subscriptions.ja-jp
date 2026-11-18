@@ -515,10 +515,6 @@
   <block id="85bb8fe222d28237b7a61c8962355819" category="admonition">*マーケットプレイス サブスクリプション* ページにはすべてのライセンスがリストされます。特定のデータ サービスのライセンスの詳細については、*概要* ダッシュボードのデータ サービス タイルを使用します。<block ref="9a2921323c53c040741c05db9c27525e" category="inline-link-macro-rx"></block> 。</block>
   <block id="aea9c467234db8f0360906cb49a2233c" category="section-title">新しいマーケットプレイスサブスクリプションを追加する</block>
   <block id="2739fe5739941e5e38c954a74ec97f61" category="paragraph">コンソールから直接マーケットプレイス サブスクリプションをサブスクライブできます。</block>
-  <block id="2be16f237d558bd6b00788d28d21b37e" category="list-text">*マーケットプレイス サブスクリプション*を選択します。</block>
-  <block id="5aa066be2a651f3b22275be1f4cc2b4e" category="list-text">*サブスクリプション* テーブルの上にある *サブスクリプションの追加* を選択します。</block>
-  <block id="04a880965367eaf965a6ae341940ab0d" category="list-text">「サブスクリプションの追加」ダイアログで、クラウド プロバイダーを選択します。</block>
-  <block id="03863fd8ecb98c1d2286d087aaa70e52" category="list-text">AWS サブスクリプションを選択する場合は、年間契約か PAYGO サブスクリプションかを選択します。</block>
   <block id="b3883d339b720269f1092a8f0dffcc59" category="list-text">*サブスクリプションの追加*を選択してプロバイダーのマーケットプレイスに移動し、提供されている手順を完了します。</block>
   <block id="3b32a98dd42670af00af73ef3e4b0007" category="list-text">クラウド プロバイダー マーケットプレイスでの作業が完了したら、コンソールに戻ってプロセスを完了します。</block>
   <block id="e858f445394700e621aa67dd8e3fe958" category="section-title">サブスクリプションを表示する</block>
@@ -558,7 +554,6 @@
   <block id="c53adc94271638b800aab67861b845fc" category="admonition">コンソールは、組織を使用してユーザーとリソースを管理する、標準モードの Identity and Access Management (IAM) をサポートしています。コンソールをプライベート モードまたは制限モードで使用している場合は、コンソール _アカウント_ を使用して、サブスクリプションなどのユーザーとリソースを管理します。</block>
   <block id="e43ddb0fd3dbaee9a42e954a181ab141" category="list-text">*関連付け*を選択します。</block>
   <block id="3b446cd4e304253a8a5be3d76f1f7d85" category="section-title">サブスクリプションに関連付けられた資格情報を表示する</block>
-  <block id="002d431b6337f0842f2c8f341268a2ad" category="paragraph">*Marketplace サブスクリプション* ページから特定のサブスクリプションの資格情報を表示できます。これにより、サブスクリプションの課金方法を確認できます。資格情報は使用しているエージェントに関連付けられているため、表示するサブスクリプションに関連付けられているエージェントを選択する必要があります。</block>
   <block id="305572f28aa8e98572395f6c22011dee" category="admonition">必要に応じて、上部のナビゲーション バーにあるエージェント ドロップダウンを使用してエージェントを切り替えます。</block>
   <block id="c9db549b3c47c258a77389c2a1310393" category="section-title">サブスクリプションを削除する</block>
   <block id="f718d4efc769e352af879333b97563c1" category="list-text">削除するサブスクリプションの行で、アクション メニューを開き、[削除] を選択します。</block>
@@ -942,7 +937,6 @@
   <block id="343b348d71ccb62dd010813fc2a13a5e" category="list-text"><block ref="6002f1f030715bc59708cf8f1b924fe3" category="inline-link-macro-rx"></block>。</block>
   <block id="259a94c9a9a486a09c1bd02fe5b547df" category="list-text"><block ref="9d10c472e1675ca6fce5c4e74a4b8028" category="inline-link-macro-rx"></block>。</block>
   <block id="57f2b91dd5d64f1e869c7510450457ba" category="list-text">必要に応じて、*請求書連絡先*と*通知連絡先*を更新してください。</block>
-  <block id="c574b540cd92e579d0adb2549eb5e6ad" category="list-text">必要に応じて、請求を内部会計コードに関連付けるために、*Cost center tag*を入力します。</block>
   <block id="d1aa6173b8b0f269bcc23f11e54d8e9f" category="list-text">プロンプトが表示されたら、確認ダイアログを確認してから*Confirm*を選択します。</block>
   <block id="05fef605ad17853dff22052e9ab0016f" category="doc">Cloud Volumes ONTAP の容量ベースのライセンスを管理する</block>
   <block id="5a4b99b6fc841017a0f50698712eacbd" category="paragraph"><block ref="13c3a734f25ff867542070e2d18cd1d4" category="inline-link-rx"></block>。</block>
@@ -982,17 +976,10 @@
   <block id="66f0f207e553b92ff141bcd4fe27ad0f" category="section-title">AWS における Cloud Volumes ONTAP とデータサービスの柔軟な請求</block>
   <block id="3d44d36eec8c18ebcfe6e7df6a18f232" category="inline-link-macro">Cloud Volumes ONTAPリリースノート</block>
   <block id="1248d5014ab39f00f176398e4dc459dd" category="paragraph">AWSでは、Cloud Volumes ONTAP容量とNetAppデータサービスは、さまざまなAWSマーケットプレイスのサブスクリプションを通じて課金されます。AWS Enterprise Discount Program (EDP) の変更点と推奨事項の詳細については、<block ref="c708501d41f6c7c2b393d4e8c20c8b78" category="inline-link-macro-rx"></block>を参照してください。</block>
-  <block id="55d4964721d8399c5c67100bdaa60f41" category="paragraph">スタンドアロンの Cloud Volumes ONTAP サブスクリプションと NetApp Intelligent Services （NIS） サブスクリプションの両方が AWS アカウントで利用可能な場合、*請求設定* を使用して、Cloud Volumes ONTAP の容量課金に使用するサブスクリプションを選択できます。</block>
-  <block id="5d31e1e7f8f8f7f232818d9271eaa736" category="admonition">請求方法は、既存の Cloud Volumes ONTAP システムがすでに NIS を通じて稼働・課金されているかどうか、またはスタンドアロンの Cloud Volumes ONTAP サブスクリプションを追加した後に新しいシステムを展開するかどうかによって異なります。既存のシステムの場合、スタンドアロンのサブスクリプションを追加しても、*請求設定*を更新しない限り、請求内容は変更されません。スタンドアロン サブスクリプションが利用可能になった後に作成される新しいデプロイメントでは、*請求設定*で上書きしない限り、デフォルトで Cloud Volumes ONTAP の容量課金（Essentials/Freemium）にスタンドアロン サブスクリプションが使用されます。</block>
-  <block id="e6d41b6ffe1a3ac4ac6f49198a9d0e97" category="list-text">スタンドアロン Cloud Volumes ONTAP サブスクリプション（推奨）：Cloud Volumes ONTAP 容量（Essentials/Freemium）</block>
-  <block id="4b7bf84649d39c27ca19dff9239bed8b" category="list-text">NetApp Intelligent Services（NIS）サブスクリプション：NetApp データサービス（および Cloud Volumes ONTAP Professional）</block>
-  <block id="d7d1942005392b35e5cbe164e61598f5" category="paragraph">スタンドアロンCloud Volumes ONTAPサブスクリプションは、容量ベースのEssentialsパッケージとFreemiumパッケージのみをサポートしています。Professionalパッケージはサポート対象外となり、引き続きNISを通じて請求されます。スタンドアロンサブスクリプションのみが関連付けられている場合は、EssentialsパッケージでCloud Volumes ONTAPをデプロイできますが、バックアップとリカバリの設定には別のサブスクリプションが必要です。</block>
   <block id="eb93ecbd8fdefaf3fdba89c22f5eb489" category="section-title">どこで設定するか</block>
   <block id="79422b968987cdd0a06fc1bfb81eff7e" category="paragraph">AWS Marketplace サブスクリプションは、*管理 &gt; Licenses and subscriptions &gt; マーケットプレイスのサブスクリプション* で関連付け、Cloud Volumes ONTAP の容量課金に使用するマーケットプレイスのサブスクリプションは *管理 &gt; Licenses and subscriptions &gt; Billing preferences* で選択します。課金の詳細は、Cloud Volumes ONTAP の使用状況レポートで確認できます。</block>
   <block id="2aef8c7aa3736a735e2c270ba5fba388" category="admonition">複数のサブスクリプションタイプを使用したり、リスティング間を移行したりしても、重複した計測は発生しません。</block>
   <block id="24c5718a7b37767099a36f2e0a1ef086" category="list-text">*マーケットプレイスプロバイダー* — 課金処理が行われるクラウドプラットフォームを識別します。プロバイダーは、サポートする機能、契約の種類、および更新ルールを決定します。例えば、AWS マーケットプレイスのサブスクリプションはアカウントベースの課金方式を採用していますが、Azure はアカウントベースとテナントベースの両方のモデルをサポートしている場合があります。</block>
-  <block id="dbf314f960a580dec77c3328f5a7dcfe" category="list-text">AWS マーケットプレイスのスタンドアロン Cloud Volumes ONTAP サブスクリプションを通じて Cloud Volumes ONTAP の容量を課金する予定がある場合、Cloud Volumes ONTAP システムはサポートされている容量ベースのパッケージ（Essentials または Freemium）を使用する必要があります。Professional パッケージはスタンドアロンリストには対応しておらず、引き続き NIS サブスクリプションを通じて課金されます。希望するパッケージを選択した後、NetApp Console の *請求設定* を使用して、Cloud Volumes ONTAP の課金に使用するマーケットプレイスのサブスクリプションを選択してください。</block>
-  <block id="3919d4b9a6b0d4b602f5cdf529c0ed29" category="admonition">AWSの場合、アカウントには複数のNetAppマーケットプレイスサブスクリプションが存在する可能性があります。スタンドアロンのCloud Volumes ONTAPサブスクリプションのみを関連付けた場合、Essentialsを使用してCloud Volumes ONTAPをデプロイできますが、バックアップとリカバリの設定には別のサブスクリプションが必要です。Cloud Volumes ONTAP容量課金に使用するサブスクリプションを選択するには（既存システムの課金変更を含む）、*管理 &gt; Licenses and subscriptions &gt; 請求設定*に移動してください。</block>
   <block id="9c4eec228f427828235463d59daed219" category="admonition">サブスクリプション情報を表示するには、コンソールエージェントをデプロイする必要があります。Cloud Volumes ONTAP の BYOL ライセンスを表示するにも、エージェントが必要です。</block>
   <block id="f7eccb32f78ffcc556a6e33ab837a577" category="section-title">パッケージの詳細を表示する</block>
   <block id="57ad4bfee5bc61eaf0dd46379c75ae34" category="summary">BYOL ライセンスを NetApp Console で管理して、Cloud Volumes ONTAP システムに必要な容量を備えた有効なライセンスが付与されていることを確認してください。</block>
@@ -1107,4 +1094,29 @@
   <block id="d11ce840a3409047f1a6a0f11bf10453" category="paragraph-title">請求設定のKeystoneフィールドは何に使用されますか？</block>
   <block id="96805c41b51ac0c39a675d261c6a02ac" category="paragraph">Keystoneフィールドは、従量課金制サービスの使用状況をお客様のKeystone請求プロファイルに関連付けます。*契約ID*は、NetApp Consoleの請求記録をお客様のKeystone契約にリンクし、利用状況レポートの同期を可能にする一意の識別子です。*サービス範囲*は、Keystone契約の対象となるサービスまたは容量プールを一覧表示し、どのワークロードまたは環境が含まれるかを明確にして、対象となるリソースのみがKeystoneを通じて請求されるようにします。</block>
   <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="sidebar">FAQ</block>
+  <block id="9e74f964be832424d75d00443a02abfd" category="paragraph">AWS Marketplace を通じて契約する場合、以下の 4 つのプランから選択できます：</block>
+  <block id="db69c473bc9f0522c1d1e82c01240f39" category="cell">オファリング</block>
+  <block id="98198b44d2e1ab7fe6a5be24c488e659" category="cell">*Cloud Volumes ONTAP のみ（年間契約）*</block>
+  <block id="1ab9338008d05cd8154f483bd90abd2f" category="cell">年間請求のスタンドアロンCloud Volumes ONTAPオファリング。Cloud Volumes ONTAPの新規導入に推奨されます。</block>
+  <block id="dd4a436c9beb7dcd8bf5dc5ae9f2f9d6" category="cell">*Cloud Volumes ONTAP（PAYGO）のみ*</block>
+  <block id="09c1bb1a2812a02691d07d3c9086b724" category="cell">柔軟な使用量ベースの課金を提供するスタンドアロンのCloud Volumes ONTAPオファリング。新規のCloud Volumes ONTAPの導入に推奨されます。</block>
+  <block id="6a9fd5a32f74db17ecd0194530742aa8" category="cell">*NetApp Intelligent Services（年間契約）*</block>
+  <block id="65b3785afe1903b8b021d02cacdaf6b4" category="cell">NetAppの年間請求制データサービス。既存の契約に限り、Cloud Volumes ONTAPをサポートします。</block>
+  <block id="4f03c079a0ee3afb1e6a9c1ed79d4d79" category="cell">*NetApp Intelligent Services（PAYGO）*</block>
+  <block id="3edef72cedaf27c2ba4e10c912e9baf5" category="cell">NetAppの柔軟な使用量ベースの課金方式によるデータサービス。既存の契約でのみCloud Volumes ONTAPをサポートします。</block>
+  <block id="c920df4a89ff6330ffaa097381cd8a4f" category="paragraph">これらのサブスクリプションがAWSアカウントに複数関連付けられている場合は、*請求設定*を使用して、Cloud Volumes ONTAPの容量課金に使用するサブスクリプションを選択してください。</block>
+  <block id="5657b1b17a5fee02b8774f6bf5a5e7a2" category="paragraph">請求の動作は、すでに稼働中でNetApp Intelligent Servicesサブスクリプションを通じて課金されている既存のCloud Volumes ONTAPシステムがあるか、Cloud Volumes ONTAP専用サブスクリプションを追加した後に新しいシステムを導入するかによって異なります。既存のシステムの場合、*Billing preferences*を更新しない限り、Cloud Volumes ONTAP専用サブスクリプションを追加しても請求は変更されません。新規導入の場合、*Billing preferences*で上書きしない限り、Cloud Volumes ONTAPの容量課金（Essentials/Freemium）にはデフォルトでCloud Volumes ONTAP専用サブスクリプションが使用されます。</block>
+  <block id="0410d47749298eb3edeea20578b17906" category="paragraph">Cloud Volumes ONTAPのみのオファリングは、容量ベースのEssentialsおよびFreemiumパッケージのみをサポートします。Professionalパッケージは、どちらのCloud Volumes ONTAPのみのオファリングでもサポートされておらず、引き続きNetApp Intelligent Servicesサブスクリプションを通じて請求されます。関連付けられているサブスクリプションがCloud Volumes ONTAPのみのサブスクリプションである場合、Essentialsを使用してCloud Volumes ONTAPをデプロイできますが、バックアップとリカバリの設定にはNetApp Intelligent Servicesサブスクリプションが必要です。</block>
+  <block id="6ec7e17a566e328b2783ba5967fe8cb3" category="list-text">必要に応じて、請求を内部会計コードに関連付けるための*コストセンタータグ*を入力してください。</block>
+  <block id="f17334f879855cf7befcf9561bf97a15" category="list-text">AWS MarketplaceのCloud Volumes ONTAP専用サブスクリプション（年間契約またはPAYGO）を通じてCloud Volumes ONTAPの容量を請求する予定がある場合、Cloud Volumes ONTAPシステムはサポートされている容量ベースのパッケージ（EssentialsまたはFreemium）を使用する必要があります。Professionalパッケージはスタンドアロンのリストではサポートされておらず、引き続きNetApp Intelligent Services（NIS）サブスクリプションを通じて請求されます。希望するパッケージを選択したら、NetApp Consoleの*請求設定*を使用して、Cloud Volumes ONTAPの請求に使用するMarketplaceサブスクリプションを選択します。</block>
+  <block id="3f965d7c45cc0190b87c2becf5a471e9" category="admonition">AWSの場合、アカウントで複数のNetAppマーケットプレイスサブスクリプションが利用可能になる場合があります。提供タイプは次の4つです：Cloud Volumes ONTAPのみ（年間契約）、Cloud Volumes ONTAPのみ（PAYGO）、NetApp Intelligent Services（年間契約）、およびNetApp Intelligent Services（PAYGO）。Cloud Volumes ONTAPのみのサブスクリプションを関連付けた場合、Essentialsを使用してCloud Volumes ONTAPを導入できますが、バックアップとリカバリの設定には別のサブスクリプションが必要です。Cloud Volumes ONTAPの容量課金に使用するサブスクリプションを選択するには（既存のシステムの課金変更を含む）、*管理 &gt; Licenses and subscriptions &gt; 請求設定*に移動します。</block>
+  <block id="43d2cf2ce71b8435c7a906180eb4df47" category="list-text">*Marketplaceサブスクリプション*を選択します。</block>
+  <block id="24ebc7d3fd7281fa0b500d76d5fe3e8f" category="list-text">*サブスクリプション*テーブルの上で、*サブスクリプションの追加*を選択します。</block>
+  <block id="91df5427a9330980edecff2e8529da59" category="list-text">*サブスクリプションの追加*ダイアログで、クラウド プロバイダを選択します。</block>
+  <block id="8281d9827f7929a1dbe1ae8a19025c6f" category="list-text">AWSサブスクリプションを選択する場合は、ご希望のプランを選択してください：</block>
+  <block id="ee229d507e42587befe7ec1f402601b6" category="list-text">Cloud Volumes ONTAPのみ（年間契約）</block>
+  <block id="c5dba2e1bb5fa2beb5c0ca425e27217b" category="list-text">Cloud Volumes ONTAPのみ（PAYGO）</block>
+  <block id="4ba62f564fde21087abb74a5b0fa4893" category="list-text">NetApp Intelligent Services（年間契約）</block>
+  <block id="e887dcff53cffb8d0e6690ae76695c8a" category="list-text">NetApp Intelligent Services（PAYGO）</block>
+  <block id="4e47334c9911a187f90ac8730b66533c" category="paragraph">特定のサブスクリプションの認証情報は、*Marketplace subscriptions*ページから確認できます。これにより、サブスクリプションの請求方法を確認できます。認証情報は使用しているエージェントに紐づいているため、表示したいサブスクリプションに関連付けられているエージェントを選択する必要があります。</block>
 </blocks>
